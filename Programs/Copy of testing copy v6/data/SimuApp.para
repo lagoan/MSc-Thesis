@@ -1,0 +1,67 @@
+# window size (x, y, width, height)
+main window rect = (0, 0, 280, 250)
+# in CSimuManager::OnCreate(...), the main window is automatically resized
+
+# parameters for glFrustum(...)
+# view boundary (left, right, bottom, top, near, far)
+#view boundary = (-10000 10000 -10000 10000 10000 210000)
+view boundary = (-50 50 -50 50 50 2000)
+
+# The initial eye position should be on y-z plane and focus position on y axis
+# so that the back ground can be displayed correctly
+# eye position (x y z)
+# big object view
+#eye position = (0 0 100000)
+eye position = (0 0 300)
+
+focus position = 0.0 0.0 0.0
+
+up direction = 0.0 1.0 0.0
+
+# step size (move rotate)
+#step size = 1000 0.02
+step size = 5 0.02
+
+# background (distance width height)
+#background dimension = 100000 1000000 1000000
+background dimension = 1000 100000 100000
+
+background color = 0.0 100.0 2.0
+#background color = 5.0 100.0 10.0
+
+# ground (level grid radius)
+#ground dimension = 0 2.0 2000000
+ground dimension = 0 2.0 2000
+
+ground color = 0.0 1.5 0.6
+
+#light0 position = -100000 50000 0 1
+light0 position = -200 100 -100 1
+# light0 specular (red green blue)
+light0 specular = 0.01 0.01 0.01 0
+light0 diffuse = 1.5 1.5 1.5 0
+light0 ambient = 0.1 0.1 0.1 0
+
+#light1 position = 100000 50000 0 1
+light1 position = 100 100 100 1
+# light0 specular (red green blue)
+light1 specular = 0.01 0.01 0.01 0
+light1 diffuse = 0.5 0.5 0.5 0
+light1 ambient = 0.3 0.3 0.3 0
+#light1 diffuse = 1.5 1.5 1.5 0
+#light1 ambient = 0.1 0.1 0.1 0
+
+#[surround cylinder]
+# radius height slices stacks
+#200.0 1000 60 60
+
+#[cylinder material: specular]
+#0.7, 0.7, 0.7
+#[cylinder material: diffuse]
+#0.7, 0.7, 0.7
+#[cylinder material: ambient]
+#0.1, 0.1, 0.1
+#[cylinder material: shininess]
+#100
+
+

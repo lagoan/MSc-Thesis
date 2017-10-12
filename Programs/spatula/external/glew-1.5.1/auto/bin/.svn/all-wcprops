@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/spatula/!svn/ver/1/trunk/external/glew-1.5.1/auto/bin
+END
+make_str.pl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/spatula/!svn/ver/1/trunk/external/glew-1.5.1/auto/bin/make_str.pl
+END
+make_list.pl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/spatula/!svn/ver/1/trunk/external/glew-1.5.1/auto/bin/make_list.pl
+END
+update_registry.sh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/spatula/!svn/ver/1/trunk/external/glew-1.5.1/auto/bin/update_registry.sh
+END
+make.pl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/spatula/!svn/ver/1/trunk/external/glew-1.5.1/auto/bin/make.pl
+END
+make_info_list.pl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/spatula/!svn/ver/1/trunk/external/glew-1.5.1/auto/bin/make_info_list.pl
+END
+parse_spec.pl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/spatula/!svn/ver/1/trunk/external/glew-1.5.1/auto/bin/parse_spec.pl
+END
+make_header.pl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/spatula/!svn/ver/1/trunk/external/glew-1.5.1/auto/bin/make_header.pl
+END
+make_info.pl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/spatula/!svn/ver/1/trunk/external/glew-1.5.1/auto/bin/make_info.pl
+END
+fix_OML_sync_control.sh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/spatula/!svn/ver/1/trunk/external/glew-1.5.1/auto/bin/fix_OML_sync_control.sh
+END
+make_struct_var.pl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/spatula/!svn/ver/1/trunk/external/glew-1.5.1/auto/bin/make_struct_var.pl
+END
+make_struct_fun.pl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/spatula/!svn/ver/1/trunk/external/glew-1.5.1/auto/bin/make_struct_fun.pl
+END
+make_init.pl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/spatula/!svn/ver/1/trunk/external/glew-1.5.1/auto/bin/make_init.pl
+END
+update_ext.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/spatula/!svn/ver/1/trunk/external/glew-1.5.1/auto/bin/update_ext.sh
+END
+make_html.pl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/spatula/!svn/ver/1/trunk/external/glew-1.5.1/auto/bin/make_html.pl
+END
+make_def_var.pl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/external/glew-1.5.1/auto/bin/make_def_var.pl
+END
+make_def_fun.pl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/external/glew-1.5.1/auto/bin/make_def_fun.pl
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/spatula/!svn/ver/1/trunk/vcglib/vcg/container
+END
+container_allocation_table.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/spatula/!svn/ver/1/trunk/vcglib/vcg/container/container_allocation_table.h
+END
+simple_temporary_data.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/vcglib/vcg/container/simple_temporary_data.h
+END
+entries_allocation_table.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/spatula/!svn/ver/1/trunk/vcglib/vcg/container/entries_allocation_table.h
+END
+derivation_chain.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/spatula/!svn/ver/1/trunk/vcglib/vcg/container/derivation_chain.h
+END
+vector_occ.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/vcglib/vcg/container/vector_occ.h
+END

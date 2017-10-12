@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_intersection
+END
+trimesh_intersection.pro
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_intersection/trimesh_intersection.pro
+END
+trimesh_intersection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_intersection/trimesh_intersection.cpp
+END

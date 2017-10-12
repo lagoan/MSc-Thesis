@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/spatula/!svn/ver/1/trunk/vcglib/apps/ptx2ply
+END
+ptx2ply.pro
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/spatula/!svn/ver/1/trunk/vcglib/apps/ptx2ply/ptx2ply.pro
+END
+ptx2ply.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/spatula/!svn/ver/1/trunk/vcglib/apps/ptx2ply/ptx2ply.cpp
+END
+ptx2ply.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/spatula/!svn/ver/1/trunk/vcglib/apps/ptx2ply/ptx2ply.vcproj
+END
+ptx2ply.sln
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/spatula/!svn/ver/1/trunk/vcglib/apps/ptx2ply/ptx2ply.sln
+END

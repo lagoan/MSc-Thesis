@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/spatula/!svn/ver/1/trunk/vcglib/wrap/qt
+END
+checkGLError.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/spatula/!svn/ver/1/trunk/vcglib/wrap/qt/checkGLError.h
+END
+trackball.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/spatula/!svn/ver/1/trunk/vcglib/wrap/qt/trackball.h
+END
+img_qt.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/spatula/!svn/ver/1/trunk/vcglib/wrap/qt/img_qt.h
+END
+img_qt_convert.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/spatula/!svn/ver/1/trunk/vcglib/wrap/qt/img_qt_convert.h
+END
+img_qt_io.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/spatula/!svn/ver/1/trunk/vcglib/wrap/qt/img_qt_io.h
+END

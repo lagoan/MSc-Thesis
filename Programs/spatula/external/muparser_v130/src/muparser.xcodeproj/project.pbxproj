@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F3D7EE3575404C66B372A4C /* muParserBase.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C96EDBF37998AB2AA24D39B3 /* muParserBase.cpp */; settings = {ATTRIBUTES = (); }; };
+		5D3442EB1079ACCA00C4B9F4 /* libmuparser.a in Project Copy */ = {isa = PBXBuildFile; fileRef = 5D3442E91079ACCA00C4B9F4 /* libmuparser.a */; };
+		60060A856BB2C5BDDA0A76D2 /* muParser.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7F65F5330D387F280B964A09 /* muParser.cpp */; settings = {ATTRIBUTES = (); }; };
+		6850CA341761B34EA9EC8F70 /* muParserBytecode.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = D461CCEDC8CB52CB6F403FCE /* muParserBytecode.cpp */; settings = {ATTRIBUTES = (); }; };
+		7353452D4E4CE9512EB96C3B /* muParserError.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = B3C2FFFB71F93F43FF380F34 /* muParserError.cpp */; settings = {ATTRIBUTES = (); }; };
+		8F8910C18867DC5E016F5EAD /* muParserCallback.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 2A239F57AFF485445E812DDB /* muParserCallback.cpp */; settings = {ATTRIBUTES = (); }; };
+		9C65333372EA2FC2D81AD5C2 /* muParserInt.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = A76885385F6638D4746E0D1E /* muParserInt.cpp */; settings = {ATTRIBUTES = (); }; };
+		BB80EDBD89916DC6BA608E8D /* muParserTokenReader.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 021C35D3749AFFAFB6EBADFA /* muParserTokenReader.cpp */; settings = {ATTRIBUTES = (); }; };
+		C1D04ADEA5E43FC06A970334 /* muParserComplex.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = B0DF41FC8053932B6660272B /* muParserComplex.cpp */; settings = {ATTRIBUTES = (); }; };
+		F0787FDA821D6E3EF1CEB6D8 /* muParserTest.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 938ED1BAA56241DD6D08796D /* muParserTest.cpp */; settings = {ATTRIBUTES = (); }; };
+		FE4E5759F8B3EFE4BCA1893A /* muParserDLL.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 64A4C138654A4D85F340BA72 /* muParserDLL.cpp */; settings = {ATTRIBUTES = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib/macx;
+			dstSubfolderSpec = 0;
+			files = (
+				5D3442EB1079ACCA00C4B9F4 /* libmuparser.a in Project Copy */,
+			);
+			name = "Project Copy";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		021C35D3749AFFAFB6EBADFA /* muParserTokenReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = muParserTokenReader.cpp; sourceTree = "<group>"; };
+		2A239F57AFF485445E812DDB /* muParserCallback.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = muParserCallback.cpp; sourceTree = "<group>"; };
+		5D3442E91079ACCA00C4B9F4 /* libmuparser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmuparser.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		64A4C138654A4D85F340BA72 /* muParserDLL.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = muParserDLL.cpp; sourceTree = "<group>"; };
+		7190656A8C4126E5484D8532 /* src.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = src.pro; sourceTree = "<group>"; };
+		7F65F5330D387F280B964A09 /* muParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = muParser.cpp; sourceTree = "<group>"; };
+		938ED1BAA56241DD6D08796D /* muParserTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = muParserTest.cpp; sourceTree = "<group>"; };
+		A76885385F6638D4746E0D1E /* muParserInt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = muParserInt.cpp; sourceTree = "<group>"; };
+		B0DF41FC8053932B6660272B /* muParserComplex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = muParserComplex.cpp; sourceTree = "<group>"; };
+		B3C2FFFB71F93F43FF380F34 /* muParserError.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = muParserError.cpp; sourceTree = "<group>"; };
+		C96EDBF37998AB2AA24D39B3 /* muParserBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = muParserBase.cpp; sourceTree = "<group>"; };
+		D461CCEDC8CB52CB6F403FCE /* muParserBytecode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = muParserBytecode.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A1043669E6E5A7426EA502A /* Frameworks & Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Frameworks & Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05596AB53D8D521C69802C27 /* muparser */ = {
+			isa = PBXGroup;
+			children = (
+				FB61758D0F0FDA4BA867C3D5 /* Sources */,
+				7CABE3C80E79AD2B307756D2 /* Sources [qmake] */,
+				5D3442EA1079ACCA00C4B9F4 /* Products */,
+			);
+			name = muparser;
+			sourceTree = "<group>";
+		};
+		5D3442EA1079ACCA00C4B9F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D3442E91079ACCA00C4B9F4 /* libmuparser.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CABE3C80E79AD2B307756D2 /* Sources [qmake] */ = {
+			isa = PBXGroup;
+			children = (
+				7190656A8C4126E5484D8532 /* src.pro */,
+			);
+			name = "Sources [qmake]";
+			sourceTree = "<group>";
+		};
+		FB61758D0F0FDA4BA867C3D5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7F65F5330D387F280B964A09 /* muParser.cpp */,
+				C96EDBF37998AB2AA24D39B3 /* muParserBase.cpp */,
+				D461CCEDC8CB52CB6F403FCE /* muParserBytecode.cpp */,
+				2A239F57AFF485445E812DDB /* muParserCallback.cpp */,
+				B0DF41FC8053932B6660272B /* muParserComplex.cpp */,
+				64A4C138654A4D85F340BA72 /* muParserDLL.cpp */,
+				B3C2FFFB71F93F43FF380F34 /* muParserError.cpp */,
+				A76885385F6638D4746E0D1E /* muParserInt.cpp */,
+				938ED1BAA56241DD6D08796D /* muParserTest.cpp */,
+				021C35D3749AFFAFB6EBADFA /* muParserTokenReader.cpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEF01E00A1C03951DA9B22D8 /* muparser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D3443121079ACDE00C4B9F4 /* Build configuration list for PBXNativeTarget "muparser" */;
+			buildPhases = (
+				D7BA7D76DAB5DD13389D6332 /* Qt Qmake */,
+				A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */,
+				F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */,
+				C29B8785722055ED95EF7B57 /* Build Sources */,
+				2A1043669E6E5A7426EA502A /* Frameworks & Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = muparser;
+			productInstallPath = ../../lib/macx/;
+			productName = muparser;
+			productReference = 5D3442E91079ACCA00C4B9F4 /* libmuparser.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91B15E841AA80083484172DE /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "muparser" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 05596AB53D8D521C69802C27 /* muparser */;
+			productRefGroup = 5D3442EA1079ACCA00C4B9F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEF01E00A1C03951DA9B22D8 /* muparser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Preprocessors";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/muparser_v130/src -f muparser.xcodeproj/qt_preprocess.mak";
+		};
+		D7BA7D76DAB5DD13389D6332 /* Qt Qmake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Qmake";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/muparser_v130/src -f muparser.xcodeproj/qt_makeqmake.mak";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C29B8785722055ED95EF7B57 /* Build Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60060A856BB2C5BDDA0A76D2 /* muParser.cpp in Build Sources */,
+				2F3D7EE3575404C66B372A4C /* muParserBase.cpp in Build Sources */,
+				6850CA341761B34EA9EC8F70 /* muParserBytecode.cpp in Build Sources */,
+				8F8910C18867DC5E016F5EAD /* muParserCallback.cpp in Build Sources */,
+				C1D04ADEA5E43FC06A970334 /* muParserComplex.cpp in Build Sources */,
+				FE4E5759F8B3EFE4BCA1893A /* muParserDLL.cpp in Build Sources */,
+				7353452D4E4CE9512EB96C3B /* muParserError.cpp in Build Sources */,
+				9C65333372EA2FC2D81AD5C2 /* muParserInt.cpp in Build Sources */,
+				F0787FDA821D6E3EF1CEB6D8 /* muParserTest.cpp in Build Sources */,
+				BB80EDBD89916DC6BA608E8D /* muParserTokenReader.cpp in Build Sources */,
+			);
+			name = "Build Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5D3443081079ACD700C4B9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/muparser_v130/src;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/usr/include,
+					../include,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.5/mkspecs/macx-xcode",
+				);
+				INSTALL_DIR = /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/muparser_v130/src/../../lib/macx/;
+				INSTALL_PATH = "";
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = STATIC;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = muparser;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Debug;
+		};
+		5D3443091079ACD700C4B9F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/muparser_v130/src;
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/usr/include,
+					../include,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.5/mkspecs/macx-xcode",
+				);
+				INSTALL_DIR = /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/muparser_v130/src/../../lib/macx/;
+				INSTALL_PATH = "";
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = STATIC;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = muparser;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Release;
+		};
+		5D34430A1079ACD700C4B9F4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/muparser_v130/src;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/usr/include,
+					../include,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.5/mkspecs/macx-xcode",
+				);
+				INSTALL_DIR = /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/muparser_v130/src/../../lib/macx/;
+				INSTALL_PATH = "";
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = STATIC;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = muparser;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Default;
+		};
+		8DB1DD96F65B1BF1FFC506E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		95E1EB2E5DDD587BE5B3E548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "muparser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB1DD96F65B1BF1FFC506E0 /* Debug */,
+				95E1EB2E5DDD587BE5B3E548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D3443121079ACDE00C4B9F4 /* Build configuration list for PBXNativeTarget "muparser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D3443081079ACD700C4B9F4 /* Debug */,
+				5D3443091079ACD700C4B9F4 /* Release */,
+				5D34430A1079ACD700C4B9F4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91B15E841AA80083484172DE /* Project object */;
+}

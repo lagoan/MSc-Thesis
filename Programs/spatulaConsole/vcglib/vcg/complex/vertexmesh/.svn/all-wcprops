@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/vertexmesh
+END
+base.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/vertexmesh/base.h
+END
+closest.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/vertexmesh/closest.h
+END
+allocate.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/vertexmesh/allocate.h
+END

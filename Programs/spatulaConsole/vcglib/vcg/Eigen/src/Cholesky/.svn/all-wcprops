@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Cholesky
+END
+LLT.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Cholesky/LLT.h
+END
+LDLT.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Cholesky/LDLT.h
+END
+CholeskyInstantiations.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Cholesky/CholeskyInstantiations.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Cholesky/CMakeLists.txt
+END

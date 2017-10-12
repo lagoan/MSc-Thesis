@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/spatula/!svn/ver/1/trunk/vcglib/wrap/dae
+END
+xmldocumentmanaging.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/spatula/!svn/ver/1/trunk/vcglib/wrap/dae/xmldocumentmanaging.cpp
+END
+xmldocumentmanaging.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/spatula/!svn/ver/1/trunk/vcglib/wrap/dae/xmldocumentmanaging.h
+END
+util_dae.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/spatula/!svn/ver/1/trunk/vcglib/wrap/dae/util_dae.h
+END
+colladaformat.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/spatula/!svn/ver/1/trunk/vcglib/wrap/dae/colladaformat.h
+END

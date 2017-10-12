@@ -1,0 +1,1415 @@
+// FluidPrtl.cpp: implementation of the CFluidPrtl class.
+//
+//////////////////////////////////////////////////////////////////////
+
+//#include "stdafx.h"
+#include "system/constants.h"
+#include "SimuFlexApp.h"
+#include "FluidPrtl.h"
+#define _USE_MATH_DEFINES
+#include <math.h>
+
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CFluidPrtl::CFluidPrtl()
+{
+	m_fpOnSurface = false;
+	m_fpFixedMotion = false;
+	m_fpNoDelaunay = false;
+	m_fpInCollision = false;
+	m_fpNewPrtl = false;
+	m_pbFixedParticle = false;
+	m_pbTrueCurrentSurface = false;
+	m_fpMass = 0;
+	m_fpDensity = 0;
+	m_fpPressure = 0;
+	m_fpHTRate = 0;
+	startGravity = false;
+	m_fpTemperature = CSimuManager::m_prtlIniTemperature;
+	m_bpIsBubble = false;
+	continueGrowing = true;
+	m_pfCO2 = 0;
+	m_pfCO2Sum = 0;
+	lastTemperatureWhenBubbleWasAdded = CSimuManager::m_minTemperature;
+	m_fpFinalDensity = 0;
+	//changeInCO2Generation = 0;
+	//crash = false;
+	//m_epParticleType = FluidParticle;
+	m_fpShearModulus = 0;
+	m_fpOrgDensity = 0;
+	m_fpInitialDensity = 0;
+	m_fpInitialSmoothingLength = 0;
+	m_decayRate = 0.0f;
+	m_pbTrueCurrentSurfaceTime = 0.0f;
+	
+	m_pointBelongsToFacet	= 0;
+	m_pfSize				= 0;
+	m_initBubbleSize		= m_pfSize;
+	m_initBubbleTemperature	= m_fpTemperature;
+	m_initBubblePressure	= 0;
+	m_bubbleDensityChange	= 0;
+	m_bubbleSizeChange		= 0;
+	m_bubbleMass			= 0;
+	m_bubbleDensity			= 0;
+	presssureInitialized	= false;
+	initialPressure			= 0;
+	
+	initialNeighborCount = 0;
+	firstSmoothLengthReset = true;
+	visible = true;
+	m_bubblePressure = 0.0f;
+
+        velocityTuner = 0.3;
+	colorGradientLength = 0;
+
+	//m_fpCrashNgbrs.InitializeClassArray(false, SIMU_PARA_NGBR_PRTL_ALLOC_SIZE);
+	m_fpNgbrs.InitializeClassArray(false, SIMU_PARA_NGBR_PRTL_ALLOC_SIZE);
+	m_viscosity = 100.0;
+}
+
+CFluidPrtl::~CFluidPrtl()
+{
+
+}
+
+void CFluidPrtl::SetAsFixedMotion(SimuValue airPressure)
+{
+	m_fpFixedMotion = true;
+	if (!m_fpNoDelaunay)
+		SetVirtualPrtlColor(CSimuManager::COLOR_FIXED);
+}
+
+void CFluidPrtl::AddVelocity(CVector3D* deltaVel)
+{
+	m_vpVel->AddedBy(deltaVel);
+}
+
+void CFluidPrtl::AddVelocity(CVector3D* deltaVel, SimuValue scalar)
+{
+	m_vpVel->AddedBy(deltaVel, scalar);
+}
+
+void CFluidPrtl::DeregisterFromNgbrPrtls()
+{
+	for (int i=0; i < m_fpNgbrs.m_paNum; i++)
+	{
+		if (!m_fpNgbrs[i]->m_fpNgbrs.RemoveOnePointer(this))
+			CSimuMsg::ExitWithMessage("CFluidPrtl::DeregisterFromNgbrPrtls()",
+										"This prtl is not found in ngbr list.");
+	}
+}
+
+SimuValue CFluidPrtl::ComputeDistWeightSum(SimuValue radius)
+{
+	SimuValue dist, weightSum = 0;
+	for (int i=0; i < m_fpNgbrs.m_paNum; i++)
+	{
+		CFluidPrtl* pPrtl = m_fpNgbrs[i];
+		dist = m_vpPos->GetDistanceToVector(pPrtl->m_vpPos);
+		//if (dist > radius) continue;
+		weightSum += SplineWeightFunction(dist, pPrtl->m_pfSmoothLen);
+	}
+	weightSum += SplineWeightFunction(0, m_pfSmoothLen);
+	return weightSum;
+}
+
+SimuValue CFluidPrtl::ComputeDistWeightSumAndGrad(CVector3D &grad, SimuValue radius)
+{
+	grad.SetValue((SimuValue)0);
+	SimuValue dist, weight, weightSum = 0;
+	CVector3D relaPosVect;
+	for (int i=0; i < m_fpNgbrs.m_paNum; i++)
+	{
+		CFluidPrtl* pPrtl = m_fpNgbrs[i];
+		relaPosVect.SetValueAsSubstraction(m_vpPos, pPrtl->m_vpPos);
+		dist = relaPosVect.Length();
+		//if (dist > radius) continue;
+		weight = SplineWeightFunction(dist, pPrtl->m_pfSmoothLen);
+		weightSum += weight;
+		if (dist > SIMU_VALUE_EPSILON)
+			grad.AddedBy(&relaPosVect, weight/dist);
+	}
+	weightSum += SplineWeightFunction(0, m_pfSmoothLen);
+	return weightSum;
+}
+
+void CFluidPrtl::ComputePrtlNumDenAndGradLen(SimuValue radius,
+											 SimuValue &pnd, SimuValue &gradLen)
+{
+	pnd = 0;
+	CVector3D grad, vector;
+	SimuValue dist, gradWeight;
+	for (int i=0; i < m_fpNgbrs.m_paNum; i++)
+	{
+		CFluidPrtl* ngbrPrtl = m_fpNgbrs[i];
+		vector.SetValueAsSubstraction(m_vpPos, ngbrPrtl->m_vpPos);
+		dist = vector.Length();
+		//if (dist > radius) continue;
+		SimuValue ngbrVol = ngbrPrtl->m_fpMass/ngbrPrtl->m_fpDensity;
+		pnd += ngbrVol * SplineWeightFunction(dist, ngbrPrtl->m_pfSmoothLen);
+
+		if (dist <= SIMU_VALUE_EPSILON) continue;
+		gradWeight = - ngbrVol * SplineGradientWeightFunction(dist, ngbrPrtl->m_pfSmoothLen);
+		grad.AddedBy(&vector, gradWeight);
+	}
+	gradLen = grad.Length();
+}
+
+void CFluidPrtl::ComputePrtlNumDenGradLen(SimuValue radius, SimuValue &gradLen)
+{
+	CVector3D grad, vector;
+	SimuValue dist, gradWeight;
+	for (int i=0; i < m_fpNgbrs.m_paNum; i++)
+	{
+		CFluidPrtl* ngbrPrtl = m_fpNgbrs[i];
+		vector.SetValueAsSubstraction(m_vpPos, ngbrPrtl->m_vpPos);
+		dist = vector.Length();
+		if (dist > radius) continue;
+		SimuValue ngbrVol = ngbrPrtl->m_fpMass/ngbrPrtl->m_fpDensity;
+		if (dist <= SIMU_VALUE_EPSILON) continue;
+		gradWeight = - ngbrVol* SplineGradientWeightFunction(dist, ngbrPrtl->m_pfSmoothLen);
+		grad.AddedBy(&vector, gradWeight);
+	}
+	gradLen = grad.Length();
+}
+
+
+SimuValue CFluidPrtl::computeDecayRate()
+{
+	
+	SimuValue T, k, b;
+	
+	
+	T = -1.0f * m_fpTemperature;
+	k = 10; //20;
+	b = CSimuManager::m_minTemperature;
+	
+	//return pow(M_E, T + b); 
+	return pow(M_E, (T + b) / k); 
+	
+}
+
+
+SimuValue CFluidPrtl::computeVaporPressure(SimuValue temp)
+{
+
+	// in the original formula you had
+	// 6.11 x pow(10.0, (7.5 * temp) / ( 237.7 + temp ) ) ;
+	// which handled kelvins but we are alway using celsius
+	
+	//return 6.11 * pow(10.0, (7.5 * temp) / ( temp ) ) ;
+	
+	// from marcotte 2004
+	
+	return pow(M_E, ( 1.0f / CSimuManager::m_minTemperature ) - ( 1.0f / temp ) ) ; 
+	
+	/*
+	//antoine equation
+	
+	SimuValue A = 0, B = 0, C = 0;
+	
+	return 1;
+	
+	if (temp >= 1 && temp < 99) {
+		A = 8.07131;
+		B = 1730.63;
+		C = 233.423;
+		
+	}
+	else if (temp >= 99) {
+		A = 8.14019;
+		B = 1810.94;
+		C = 244.485;
+		
+		
+	}
+	
+	return pow(10.0f, A - ( B / ( C + temp ) ) ); 
+	*/
+}
+
+
+void CFluidPrtl::ComputePrtlDensity(bool initialD)
+{
+	char location[] = "CFluidPrtl::ComputePrtlDensity(radius)";
+	SimuValue radius = m_pfSmoothLen;
+	SimuValue dist, weight;
+	SimuValue oldDensity;
+	//if (!initialD && m_bpIsBubble) return;
+
+		
+	//m_fpDensity = 0;
+	
+ 
+	oldDensity = m_fpDensity;
+	//if ( !initialD && !m_bpIsBubble ) return;
+	//if ( !initialD  ) return; // just initialize
+	
+	
+	//if (initialD || !m_bpIsBubble) { // buenero
+		
+		//if (m_fpTemperature > 100) return;
+		
+		//if ( ! (initialD &&  !m_bpIsBubble) ) return; // test setting density only initially
+		
+		m_fpDensity = 0;
+		
+		for (int i=0; i < m_fpNgbrs.m_paNum; i++)
+		{
+			//if (m_fpNgbrs[i]->m_bpIsBubble) continue;
+			dist = m_vpPos->GetDistanceToVector(m_fpNgbrs[i]->m_vpPos);
+			//if (dist > radius) continue;
+			weight = SplineWeightFunction(dist, m_fpNgbrs[i]->m_pfSmoothLen);
+                        m_fpDensity += weight *m_fpNgbrs[i]->m_fpMass;
+		}
+		
+		
+		
+		
+		if (m_bpIsBubble && initialD) { // initializing bubble values
+			m_initBubbleSize = m_pfSize;
+			m_initBubbleTemperature = m_fpTemperature;
+			//m_pfSize = (computeVaporPressure(m_initBubbleTemperature) * (m_initBubbleSize) * m_fpTemperature ) / 
+			//		   (computeVaporPressure(m_fpTemperature) *  m_initBubbleTemperature );
+			m_pfSize = (m_initBubbleSize* m_fpTemperature ) / ( m_initBubbleTemperature );
+
+		}
+		
+	//}
+	
+	
+	
+	if ( m_bpIsBubble && !m_pbTrueCurrentSurface) {
+		
+		
+		SimuValue oldSize = m_pfSize;
+		SimuValue decayRate = computeDecayRate();
+		
+		// V2 = ( P1 V1 T2 ) / ( P2 T1 )
+		//m_pfSize = (computeVaporPressure(m_initBubbleTemperature) * (m_initBubbleSize) * m_fpTemperature ) / 
+		//		   (computeVaporPressure(m_fpTemperature) *  m_initBubbleTemperature );
+
+		
+		m_pfSize = (m_initBubbleSize * m_fpTemperature ) / ( m_initBubbleTemperature );
+		
+		//if (  m_pfSize > m_initBubbleSize * 3.5f ) {
+		//	m_pfSize = m_initBubbleSize * 3.5f;
+		//}
+
+		
+		//SimuValue deltaVolume = m_pfSize - oldSize;
+		
+			
+		//m_pfSize = (m_pfSize * decayRate) + (oldSize * ( 1.0 - decayRate) );
+		
+				
+
+	}
+
+	
+
+
+	
+	
+	
+        //if (m_fpMass < SIMU_VALUE_EPSILON)
+        //	CSimuMsg::ExitWithMessage(location, "Particle has no mass.");
+	
+	//if (initialD || !m_bpIsBubble) {
+                m_fpDensity +=  m_fpMass *  SplineWeightFunction(0, m_pfSmoothLen);
+		
+		// for use on bubbles mainly
+		
+		//m_myConstant = (m_fpDensity * m_pfSize) / m_fpMass;
+		
+		if (initialD) {
+			m_fpInitialDensity = m_fpDensity;
+			
+			
+		}
+	//}
+ 
+	 
+	// decay rate
+	
+
+	
+	if ( m_bpIsBubble && ( initialD ||  ! m_pbTrueCurrentSurface) ) { // set density for bubbles
+		
+		//m_fpDensity = (m_fpMass / m_pfSize) * m_myConstant;
+		
+		//if (m_pfSize > 1.5) m_pfSize = 1.5;
+		
+		/*
+		SimuValue temporalShift = m_fpInitialDensity - ( (m_fpMass / m_pfSize) * m_myConstant );
+		temporalShift *= 0.5f;
+		
+	
+		m_bubbleDensity = m_fpInitialDensity - temporalShift;
+		*/
+		
+		//m_bubbleDensity =  (m_fpMass / m_pfSize) * m_myConstant ;
+		
+		
+		
+		// buenero
+		
+		//if(!initialD) return;
+		
+		//m_bubbleDensity = m_fpInitialDensity / m_pfSize;
+		m_bubbleDensity = m_fpInitialDensity / m_pfSize;
+	}
+	
+	
+	//if (oldDensity > m_fpDensity)
+	//	m_fpDensity = oldDensity;
+	
+	if (m_fpDensity < SIMU_VALUE_EPSILON)
+		CSimuMsg::ExitWithMessage(location, "Particle has no density.");
+}
+
+
+
+
+void CFluidPrtl::ComputePrtlBubblePressureGradient()
+{
+	CVector3D presGrad;
+	m_fpBubblePresGrad.SetValue((SimuValue)0);
+	for (int i=0; i < m_fpNgbrs.m_paNum; i++)
+	{
+		//if (m_fpNgbrs[i]->m_bpIsBubble) {
+			ComputePrtlBubblePressureGradientFromOneNgbr(m_fpNgbrs[i], presGrad);
+			m_fpBubblePresGrad.AddedBy(&presGrad);
+		//}
+		
+	}
+	// test
+	//m_fpBubblePresGrad.v[0] = 0;
+	//m_fpBubblePresGrad.v[2] = 0;
+}
+
+void CFluidPrtl::ComputePrtlBubblePressureGradientFromOneNgbr(CFluidPrtl* ngbrPrtl,
+														CVector3D &presGrad)
+{
+	char location[] = "CFluidPrtl::ComputePrtlPressureGradientFromOneNgbr(...)";
+	
+	
+	
+	if (this == ngbrPrtl)
+		CSimuMsg::ExitWithMessage(location, "Neighbor prtl is same as <this> prtl.");
+	
+	SimuValue dist, weight;
+	
+	presGrad.SetValueAsSubstraction(m_vpPos, ngbrPrtl->m_vpPos);
+	
+	dist = presGrad.Length();
+	
+	
+	if (dist < SIMU_VALUE_EPSILON)
+	{
+		//CSimuMsg::PauseMessage("Two prtls are too close.", CSimuManager::m_bSkipWarning);
+		std::cout << "Twho particles are too close in bubble\n";
+		return;
+	}
+	
+	presGrad.ScaledBy(1/dist);
+	
+	weight = SplineGradientWeightFunction(dist, ngbrPrtl->m_pfSmoothLen);
+	
+	
+	weight *= m_bubblePressure/( m_fpDensity * m_fpDensity )
+	+ ngbrPrtl->m_bubblePressure/( ngbrPrtl->m_fpDensity * ngbrPrtl->m_fpDensity );
+	weight *= ngbrPrtl->m_fpMass;
+	
+	presGrad.ScaledBy(weight);
+	
+}
+
+
+#if 1 // option
+
+
+void CFluidPrtl::ComputePrtlPressureGradient(SimuValue radius)
+{
+	CVector3D presGrad;
+	m_fpPresGrad.SetValue((SimuValue)0);
+	for (int i=0; i < m_fpNgbrs.m_paNum; i++)
+	{
+		if (this != m_fpNgbrs[i]) {
+			ComputePrtlPressureGradientFromOneNgbr(m_fpNgbrs[i], presGrad, radius);
+			m_fpPresGrad.AddedBy(&presGrad);
+		}
+	}
+}
+
+void CFluidPrtl::ComputePrtlPressureGradientFromOneNgbr(CFluidPrtl* ngbrPrtl,
+                                                        CVector3D &presGrad,
+                                                        SimuValue radius)
+{
+	char location[] = "CFluidPrtl::ComputePrtlPressureGradientFromOneNgbr(...)";
+	
+	
+
+        if (this == ngbrPrtl) {
+                //CSimuMsg::ExitWithMessage(location, "Neighbor prtl is same as <this> prtl.");
+
+            std::cout << "Neighbor prtl is same as <this> prtl.\n";
+        }
+	SimuValue dist, weight;
+	
+	presGrad.SetValueAsSubstraction(m_vpPos, ngbrPrtl->m_vpPos);
+	
+	dist = presGrad.Length();
+	
+	if (dist < SIMU_VALUE_EPSILON)
+	{
+		//CSimuMsg::PauseMessage("Two prtls are too close.", CSimuManager::m_bSkipWarning);
+		std::cout << "Twho particles are too close in pressure gradient\n";
+		presGrad.ResetMemberVariables();
+
+		return;
+	}
+	
+	presGrad.ScaledBy(1.0/dist);
+	
+        //weight = SpikyGradientWeightFunction(dist, ngbrPrtl->m_pfSmoothLen);
+	if (m_bpIsBubble || ngbrPrtl->m_bpIsBubble) {
+		//weight = SplineGradientWeightInitialFunction(dist);
+		weight = SplineGradientWeightFunction(dist, ngbrPrtl->m_pfSmoothLen);
+	} else {
+        	weight = SplineGradientWeightFunction(dist, ngbrPrtl->m_pfSmoothLen);
+	}
+	// option
+        //weight *= (m_fpPressure + ngbrPrtl->m_fpPressure) / (2.0 * ngbrPrtl->m_fpDensity);
+        //weight *= ngbrPrtl->m_fpMass;
+        
+        // backup
+	weight *= m_fpPressure/( m_fpDensity * m_fpDensity )
+	+ ngbrPrtl->m_fpPressure/( ngbrPrtl->m_fpDensity * ngbrPrtl->m_fpDensity );
+	weight *= ngbrPrtl->m_fpMass;
+	
+	presGrad.ScaledBy(weight);
+	
+}
+
+
+#endif
+
+#if 0 // backup
+void CFluidPrtl::ComputePrtlPressureGradient(SimuValue radius)
+{
+	CVector3D presGrad;
+	m_fpPresGrad.SetValue((SimuValue)0);
+	for (int i=0; i < m_fpNgbrs.m_paNum; i++)
+	{
+		
+		ComputePrtlPressureGradientFromOneNgbr(m_fpNgbrs[i], presGrad, radius);
+		m_fpPresGrad.AddedBy(&presGrad);
+		
+	}
+}
+
+void CFluidPrtl::ComputePrtlPressureGradientFromOneNgbr(CFluidPrtl* ngbrPrtl,
+														CVector3D &presGrad,
+														SimuValue radius)
+{
+	char location[] = "CFluidPrtl::ComputePrtlPressureGradientFromOneNgbr(...)";
+
+	if (this == ngbrPrtl)
+		CSimuMsg::ExitWithMessage(location, "Neighbor prtl is same as <this> prtl.");
+
+	SimuValue dist, weight;
+
+	presGrad.SetValueAsSubstraction(m_vpPos, ngbrPrtl->m_vpPos);
+	dist = presGrad.Length();
+	if (dist < SIMU_VALUE_EPSILON)
+	{
+//		CSimuMsg::PauseMessage("Two prtls are too close.", CSimuManager::m_bSkipWarning);
+		return;
+	}
+	presGrad.ScaledBy(1/dist);
+        //if (CSimuManager::m_bSpikyGradient)
+        //	weight = CSimuUtility::SpikyGradientWeightFunction(dist, radius);
+        //else
+        //	weight = CSimuUtility::SplineGradientWeightFunction(dist, radius);
+	
+        weight = SplineGradientWeightFunction(dist, ngbrPrtl->m_pfSmoothLen);
+
+	weight *= m_fpPressure/pow(m_fpDensity, 2.0f) + ngbrPrtl->m_fpPressure/pow(ngbrPrtl->m_fpDensity, 2.0f);
+	
+	/*
+	weight *= m_fpPressure / ( m_fpDensity * m_fpDensity ) + 
+			  ngbrPrtl->m_fpPressure / ( ngbrPrtl->m_fpDensity * ngbrPrtl->m_fpDensity );
+	*/
+	weight *= ngbrPrtl->m_fpMass;
+	presGrad.ScaledBy(weight);
+//	CSimuUtility::AssertSimuVector3D(&presGrad);
+}
+#endif 
+
+#if 0 // option
+SimuValue CFluidPrtl::ComputeHeatChange(SimuValue radius)
+{
+	SimuValue heatChange = 0;
+	for (int i=0; i < m_fpNgbrs.m_paNum; i++) {
+		heatChange += ComputeHeatChangeFromOneNgbr(m_fpNgbrs[i], radius);
+	}
+	return heatChange;
+}
+
+SimuValue CFluidPrtl::ComputeHeatChangeFromOneNgbr(CFluidPrtl* ngbrPrtl, SimuValue radius)
+{
+	
+	SimuValue massOverDensity = ngbrPrtl->m_fpMass / ngbrPrtl->m_fpDensity;
+	SimuValue densities = (4.0 * m_fpDensity) / (m_fpDensity + ngbrPrtl->m_fpDensity);
+	SimuValue heatChange =  ngbrPrtl->m_fpTemperature - m_fpTemperature;
+	
+	heatChange = m_fpTemperature - ngbrPrtl->m_fpTemperature;
+	
+	CVector3D xij;
+	xij.SetValueAsSubstraction(m_vpPos, ngbrPrtl->m_vpPos);
+	CVector3D gradient;
+	gradient.SetValue(&xij);
+	SimuValue distance = xij.Length();
+	SimuValue weight = CSimuUtility::SplineGradientWeightFunction(distance, radius);
+	gradient.Normalize(1.0);
+	
+	gradient.ScaledBy(weight);
+	
+	SimuValue rightOperation = xij.DotProduct(&gradient) / ( (distance * distance) + (0.01 * radius * radius) );
+	
+	return massOverDensity * densities * heatChange * rightOperation;
+	
+	/*
+	 SimuValue dist = ngbrPrtl->m_vpPos->GetDistanceToVector(m_vpPos);
+	 SimuValue heatChange = ngbrPrtl->m_fpTemperature - m_fpTemperature;
+	 
+	 if (CSimuManager::NOT_CONSERVE_HEAT)
+	 heatChange *= ngbrPrtl->m_fpMass/ngbrPrtl->m_fpDensity;
+	 else
+	 heatChange *= (ngbrPrtl->m_fpMass + m_fpMass)/(ngbrPrtl->m_fpDensity + m_fpDensity);
+	 
+	 
+	 heatChange *= CSimuUtility::SplineWeightFunction(dist, radius);
+	 return heatChange;
+	 */
+}
+#endif 
+
+
+#if 1 // backup
+SimuValue CFluidPrtl::ComputeHeatChange(SimuValue radius)
+{
+	SimuValue heatChange = 0;
+	//if (m_bpIsBubble) return heatChange;
+	for (int i=0; i < m_fpNgbrs.m_paNum; i++)
+	{
+		// temp test
+		//if (m_fpNgbrs[i]->m_bpIsBubble) continue;
+		heatChange += ComputeHeatChangeFromOneNgbr(m_fpNgbrs[i], radius);
+	}
+	return heatChange;
+}
+
+/*
+SimuValue CFluidPrtl::ComputeHeatChangeFromOneNgbr(CFluidPrtl* ngbrPrtl, SimuValue radius)
+{
+	SimuValue dist = ngbrPrtl->m_vpPos->GetDistanceToVector(m_vpPos);
+	SimuValue heatChange = ngbrPrtl->m_fpTemperature - m_fpTemperature;
+	heatChange *= (4.0 * ngbrPrtl->m_fpMass) / pow(ngbrPrtl->m_fpDensity + m_fpDensity ,2.0);
+	heatChange *= SplineSecondDerivativeFunction(dist, ngbrPrtl->m_pfSmoothLen);
+	return heatChange;
+}
+*/
+
+SimuValue CFluidPrtl::ComputeHeatChangeFromOneNgbr(CFluidPrtl* ngbrPrtl, SimuValue radius)
+{
+
+	SimuValue dist = ngbrPrtl->m_vpPos->GetDistanceToVector(m_vpPos);
+	SimuValue heatChange = ngbrPrtl->m_fpTemperature - m_fpTemperature;
+	if (CSimuManager::NOT_CONSERVE_HEAT)
+		heatChange *= ngbrPrtl->m_fpMass/ngbrPrtl->m_fpDensity;
+	else
+		heatChange *= (ngbrPrtl->m_fpMass + m_fpMass)/(ngbrPrtl->m_fpDensity + m_fpDensity);
+	heatChange *= SplineWeightFunction(dist, ngbrPrtl->m_pfSmoothLen);
+	return heatChange;
+}
+
+#endif
+// option
+#if 1
+void CFluidPrtl::ComputeViscosity(CVector3D &viscosity, SimuValue radius)
+{
+	CVector3D interVisc;
+	viscosity.SetValue((SimuValue)0);
+	for (int i=0; i < m_fpNgbrs.m_paNum; i++)
+	{
+		if (this == m_fpNgbrs[i]) continue;
+		ComputeViscosityFromOneNgbr(m_fpNgbrs[i], interVisc, radius);
+		viscosity.AddedBy(&interVisc);
+	}
+        
+    viscosity.ScaledBy(m_viscosity );
+}
+#endif
+// backup
+#if 0
+void CFluidPrtl::ComputeViscosity(CVector3D &viscosity, SimuValue radius)
+{
+        CVector3D interVisc;
+        viscosity.SetValue((SimuValue)0);
+        for (int i=0; i < m_fpNgbrs.m_paNum; i++)
+        {
+                ComputeViscosityFromOneNgbr(m_fpNgbrs[i], interVisc, radius);
+                viscosity.AddedBy(&interVisc);
+        }
+        viscosity.ScaledBy(1.0);
+
+        //viscosity.ScaledBy(CSimuManager::m_viscosity);
+}
+#endif
+
+
+#if 1// testing 1
+void CFluidPrtl::ComputeViscosityFromOneNgbr(CFluidPrtl* ngbrPrtl, 
+											 CVector3D &interVisc,
+                                             SimuValue radius)
+{
+
+	if (this == ngbrPrtl)
+    	return;
+                
+    SimuValue dist, weight;
+    //interVisc.SetValue(ngbrPrtl->m_vpVel);
+	interVisc.SetValueAsSubstraction(ngbrPrtl->m_vpVel, m_vpVel);
+    dist = ngbrPrtl->m_vpPos->GetDistanceToVector(m_vpPos);
+   	weight = ViscSecondDerivativeWeightFunction(dist, ngbrPrtl->m_pfSmoothLen);
+    //weight = SplineSecondDerivativeFunction(dist, ngbrPrtl->m_pfSmoothLen);
+    //weight = ViscocitySecondWeightFunction(dist, ngbrPrtl->m_pfSmoothLen);
+	//weight = ViscSecondDerivativeWeightFunction(dist, ngbrPrtl->m_pfSmoothLen);
+	weight *= (ngbrPrtl->m_fpMass/ngbrPrtl->m_fpDensity);
+	interVisc.ScaledBy(weight);
+}
+#endif
+
+// option
+#if 0
+void CFluidPrtl::ComputeViscosityFromOneNgbr(CFluidPrtl* ngbrPrtl, CVector3D &interVisc,
+                                                                                         SimuValue radius)
+{
+        char location[] = "CFluidPrtl::ComputeViscosityFromOneNgbr(...)";
+
+        if (this == ngbrPrtl)
+                CSimuMsg::ExitWithMessage(location, "Neighbor prtl is same as <this> prtl.");
+
+        SimuValue dist, weight;
+
+        interVisc.SetValueAsSubstraction(ngbrPrtl->m_vpVel, m_vpVel);
+        dist = m_vpPos->GetDistanceToVector(ngbrPrtl->m_vpPos);
+
+        weight = ViscSecondDerivativeWeightFunction(dist, ngbrPrtl->m_pfSmoothLen);
+        //weight = SplineSecondDerivativeFunction(dist, ngbrPrtl->m_pfSmoothLen);
+        //weight = ViscocitySecondWeightFunction(dist, ngbrPrtl->m_pfSmoothLen);
+        weight *= /* (m_fpMass/m_fpDensity) * */ (ngbrPrtl->m_fpMass/ngbrPrtl->m_fpDensity);
+        weight *= (m_viscosity + ngbrPrtl->m_viscosity) / 2.0;
+
+        interVisc.ScaledBy(weight);
+        //weight = SplineGradientWeightFunction(dist, ngbrPrtl->m_pfSmoothLen);
+        //weight *= ngbrPrtl->m_fpMass/(pow((double)m_fpDensity, (double)2.0f) + pow((double)ngbrPrtl->m_fpDensity,(double) 2.0f));
+        //interVisc.ScaledBy(weight);
+//	CSimuUtility::AssertSimuVector3D(&interVisc);
+}
+#endif
+
+// backup
+#if 0
+void CFluidPrtl::ComputeViscosityFromOneNgbr(CFluidPrtl* ngbrPrtl, CVector3D &interVisc,
+                                                                                         SimuValue radius)
+{
+        char location[] = "CFluidPrtl::ComputeViscosityFromOneNgbr(...)";
+
+        if (this == ngbrPrtl)
+                CSimuMsg::ExitWithMessage(location, "Neighbor prtl is same as <this> prtl.");
+
+        SimuValue dist, weight;
+
+        interVisc.SetValueAsSubstraction(ngbrPrtl->m_vpVel, m_vpVel);
+        dist = m_vpPos->GetDistanceToVector(ngbrPrtl->m_vpPos);
+        weight = SplineGradientWeightFunction(dist, ngbrPrtl->m_pfSmoothLen); // backup
+        //weight = SplineSecondDerivativeFunction(dist, ngbrPrtl->m_pfSmoothLen);
+        weight *= ngbrPrtl->m_fpMass/(pow((double)m_fpDensity, (double)2.0f) + pow((double)ngbrPrtl->m_fpDensity,(double) 2.0f));
+        interVisc.ScaledBy(weight);
+//	CSimuUtility::AssertSimuVector3D(&interVisc);
+}
+#endif
+void CFluidPrtl::ComputeVelocityGradient(SimuValue velGrad[3][3], SimuValue radius)
+{
+	int i, j, k;
+	for (i=0; i < 3; i++)
+	for (j=0; j < 3; j++)
+		velGrad[i][j] = 0;
+
+	CVector3D tmpNormal;
+	tmpNormal.SetValue((SimuValue)0);
+	SimuValue tmpWeight;
+	for(k=0; k < m_fpNgbrs.m_paNum; k++)
+	{
+		CFluidPrtl* pNgbrPrtl = m_fpNgbrs[k];
+		tmpNormal.SetValueAsSubstraction(m_vpPos, pNgbrPrtl->m_vpPos);
+		SimuValue tmpDist = tmpNormal.Length();
+		// get normal direction
+		if (tmpDist <= SIMU_VALUE_EPSILON)
+			continue;
+		tmpWeight = SplineGradientWeightFunction(tmpDist, pNgbrPrtl->m_pfSmoothLen);
+		tmpWeight *= pNgbrPrtl->m_fpMass/pNgbrPrtl->m_fpDensity;
+		tmpNormal.ScaledBy(tmpWeight/tmpDist);
+		for (i=0; i < 3; i++)
+		{
+			SimuValue deltaVel_i_ = pNgbrPrtl->m_vpVel->v[i] - m_vpVel->v[i];
+			for (j=0; j < 3; j++)
+			{
+				velGrad[i][j] += deltaVel_i_ * tmpNormal[j];
+//				CSimuUtility::AssertSimuValue(velGrad[i][j]);
+			}
+		}
+	}
+}
+
+SimuValue CFluidPrtl::ComputeMaxRelativeVelMagnitude()
+{
+	SimuValue maxMagnitude = -SIMU_VALUE_MAX;
+	CVector3D relativeVel;
+	for (int i=0; i < m_fpNgbrs.m_paNum; i++)
+	{
+		relativeVel.SetValueAsSubstraction(m_fpNgbrs[i]->m_vpVel, m_vpVel);
+		SimuValue velMagnitude = relativeVel.Length();
+		if (maxMagnitude < velMagnitude)
+			maxMagnitude = velMagnitude;
+	}
+	return maxMagnitude;
+}
+
+SimuValue CFluidPrtl::ComputeMaxRelativePresGradMagnitude()
+{
+	SimuValue maxMagnitude = -SIMU_VALUE_MAX;
+	CVector3D relativePresGrad;
+	for (int i=0; i < m_fpNgbrs.m_paNum; i++)
+	{
+		relativePresGrad.SetValueAsSubstraction(&(m_fpNgbrs[i]->m_fpPresGrad), &m_fpPresGrad);
+		SimuValue velMagnitude = relativePresGrad.Length();
+		if (maxMagnitude < velMagnitude)
+			maxMagnitude = velMagnitude;
+	}
+	return maxMagnitude;
+}
+
+// interpolate prtl orgDensity, density, temperature, and velocity
+void CFluidPrtl::InterpolatePrtlValues(TPointerArray<CFluidPrtl> &aryPossibleNgbrs,
+									   SimuValue radius)
+{
+	char location[] = "CFluidPrtl::InterpolatePrtlValues(...)";
+
+	ResetPrtlValues();
+
+	SimuValue dist, weight, totalWeight = 0;
+	SimuValue radiusSqr = radius*radius;
+	SimuValue tmpDistSqr;
+	for (int k=0; k < aryPossibleNgbrs.m_paNum; k++)
+	{
+		CFluidPrtlNonNew* dataPrtl = (CFluidPrtlNonNew*)aryPossibleNgbrs[k];
+		tmpDistSqr = m_vpPos->GetDistanceSquareToVector(dataPrtl->m_vpPos);
+		if (tmpDistSqr > radiusSqr) continue;
+		dist = sqrt(tmpDistSqr);
+		
+		if (dist <= SIMU_VALUE_EPSILON)
+		{
+			//if ( ! m_bpIsBubble ) {
+				m_fpOrgDensity = dataPrtl->m_fpOrgDensity;
+				m_fpDensity = dataPrtl->m_fpDensity;
+			//}
+			m_fpTemperature = dataPrtl->m_fpTemperature;
+			m_vpVel->SetValue(dataPrtl->m_vpVel);
+			return;
+		}
+		
+		weight = SplineWeightFunction(dist, dataPrtl->m_pfSmoothLen);
+		weight *= dataPrtl->m_fpMass/dataPrtl->m_fpDensity;
+		totalWeight += weight;
+
+		//if ( ! m_bpIsBubble ) {
+			m_fpOrgDensity += weight*dataPrtl->m_fpOrgDensity;
+			m_fpDensity += weight*dataPrtl->m_fpDensity;
+		//}
+		m_fpTemperature += weight*dataPrtl->m_fpTemperature;
+		m_vpVel->AddedBy(dataPrtl->m_vpVel, weight);
+	}
+	if (totalWeight > SIMU_VALUE_EPSILON)
+	{
+	//	if ( ! m_bpIsBubble ) {
+			m_fpOrgDensity /= totalWeight;
+			m_fpDensity /= totalWeight;
+	//	}
+		m_fpTemperature /= totalWeight;
+		m_vpVel->ScaledBy(1/totalWeight);
+	}
+	else if (totalWeight == 0)
+	{
+		m_geHighlit = true;
+		CSimuMsg::ExitWithMessage(location, "No data prtl is found within radius.", CSimuManager::m_bSkipWarning);
+		m_geHighlit = false;
+	}
+}
+
+void CFluidPrtl::ResetPrtlValues()
+{
+	m_fpOrgDensity = 0;
+	m_fpDensity = 0;
+	m_fpTemperature = 0;
+	m_vpVel->SetValue((SimuValue)0);
+}
+
+SimuValue CFluidPrtl::GetClosestNgbrPrtl(CFluidPrtl* pPrtl, CFluidPrtl* &closestPrtl,
+										 TGeomElemArray<CFluidPrtl> &ngbrPrtls)
+{
+	closestPrtl = NULL;
+	SimuValue minDist = SIMU_VALUE_MAX;
+	for (int i=0; i < ngbrPrtls.m_paNum; i++)
+	{
+		CFluidPrtl* ngbrPrtl = ngbrPrtls[i];
+		SimuValue distSqr = pPrtl->m_vpPos->GetDistanceSquareToVector(ngbrPrtl->m_vpPos);
+		if (minDist > distSqr)
+		{
+			minDist = distSqr;
+			closestPrtl = ngbrPrtl;
+		}
+	}
+	minDist = sqrt(minDist);
+	return minDist;
+}
+
+SimuValue CFluidPrtl::ComputeWeightedPrtlNumDenAndGrad(CVector3D &pos, CVector3D &grad,
+													   TPointerArray<CFluidPrtl> &ngbrPrtls,
+													   SimuValue radius)
+{
+	grad.SetElements(0, 0, 0);
+	SimuValue prtlNumDensity = 0;
+	SimuValue radiusSquare = radius*radius;
+	SimuValue dist, weight, volume;
+	CVector3D vector;
+	for (int i=0; i < ngbrPrtls.m_paNum; i++)
+	{
+		CFluidPrtl* ngbrPrtl = ngbrPrtls[i];
+		vector.SetValueAsSubstraction(&pos, ngbrPrtl->m_vpPos);
+		dist = vector.LengthSquare();
+		//if (dist > radiusSquare) continue;
+		dist = sqrt(dist);
+		volume = ngbrPrtl->m_fpMass/ngbrPrtl->m_fpDensity;
+		prtlNumDensity += volume * ngbrPrtl->SplineWeightFunction(dist, radius);
+		if (dist <= SIMU_VALUE_EPSILON) continue;
+		vector.ScaledBy(1/dist);
+		weight = - volume * ngbrPrtl->SplineGradientWeightFunction(dist, radius);
+		grad.AddedBy(&vector, weight);
+	}
+	return prtlNumDensity;
+}
+
+void CFluidPrtl::CreateRandomPrtls(CVector3D* ctrPos, SimuValue radius, int numTotalPrtls,
+								   TGeomElemArray<CFluidPrtl> &ranPrtls)
+{
+	int numPrtls = 0;
+	int iterations = 0;
+	CVector3D ranPos;
+	while (numPrtls < numTotalPrtls
+		&& iterations < numTotalPrtls*100
+			// <ranPos> may be out of radius, thus allow more iterations
+		)
+	{
+		iterations++;
+		if (iterations >= numTotalPrtls*100)
+			CSimuMsg::ExitWithMessage("CFluidPrtl::CreateRandomPrtls(...)",
+									"No enough prtls are created.");
+
+		CSimuUtility::CreateRandomPos(radius, &ranPos);
+		if (ranPos.Length() <= radius)
+		{
+			CFluidPrtl* pPrtl = ranPrtls.CreateOneElement();
+			pPrtl->m_vpPos->SetValue(&ranPos);
+			pPrtl->m_vpPos->AddedBy(ctrPos);
+			numPrtls++;
+		}
+	}
+}
+
+SimuValue CFluidPrtl::ComputeVERatio(CVector3D* presGrad, CVector3D* stress)
+{
+	SimuValue veRatio = presGrad->DotProduct(stress);
+	veRatio /= presGrad->LengthSquare();
+	return veRatio;
+}
+
+SimuValue CFluidPrtl::ComputeWeightLaplacian(CVector3D* ctrPos, SimuValue radius,
+											 TGeomElemArray<CFluidPrtl> &ngbrPrtls)
+{
+	#if 0
+	SimuValue weightLaplacian = 0;
+	for (int i=0; i < ngbrPrtls.m_paNum; i++)
+	{
+		CFluidPrtl* ngbrPrtl = ngbrPrtls[i];
+		SimuValue dist = ctrPos->GetDistanceToVector(ngbrPrtl->m_vpPos);
+		if (dist > radius) continue;
+		SimuValue volume = ngbrPrtl->m_fpMass/ngbrPrtl->m_fpDensity;
+		weightLaplacian += volume*CSimuUtility::PolySecondDerivativeWeightFunction(dist, radius);
+	}
+	return weightLaplacian;
+	#endif
+}
+
+void CFluidPrtl::ComputeWeightGradient(CVector3D* ctrPos, SimuValue radius,
+									   TGeomElemArray<CFluidPrtl> &ngbrPrtls, CVector3D* grad)
+{
+	grad->SetElements(0, 0, 0);
+	SimuValue radiusSquare = radius*radius;
+	CVector3D vector;
+	for (int i=0; i < ngbrPrtls.m_paNum; i++)
+	{
+		CFluidPrtl* ngbrPrtl = ngbrPrtls[i];
+		vector.SetValueAsSubstraction(ctrPos, ngbrPrtl->m_vpPos);
+		SimuValue dist = vector.LengthSquare();
+		//if (dist > radiusSquare) continue;
+		dist = sqrt(dist);
+		SimuValue volume = ngbrPrtl->m_fpMass/ngbrPrtl->m_fpDensity;
+		if (dist <= SIMU_VALUE_EPSILON) continue;
+		vector.ScaledBy(1/dist);
+		SimuValue weight = - volume * ngbrPrtl->SplineGradientWeightFunction(dist, radius);
+		grad->AddedBy(&vector, weight);
+	}
+}
+
+void CFluidPrtl::resetSmoothingLength(double g)
+{
+
+
+	
+	/*
+	double scale = 1.0 + (m_fpTemperature - minTemp) / (maxTemp - minTemp);
+	static double test = 0;
+	m_pfSmoothLen = scale * m_fpInitialSmoothingLength;
+	*/
+	
+	/*
+	if (test < m_pfSmoothLen) {
+		test = m_pfSmoothLen;
+		std::cout << test << "\n";
+	}
+	*/
+//        m_pfSmoothLen = 2 * m_fpInitialSmoothingLength; return;
+//	m_pfSmoothLen = m_fpInitialSmoothingLength * pow( (double)(m_fpInitialDensity/m_fpDensity) , (double)(1.0f/3.0f) );
+
+
+	double k = 1.1;
+	double e = -1.0/5.0;
+	m_pfSmoothLen = m_fpInitialSmoothingLength * k * pow((m_fpDensity / g), e); 
+	
+	
+	
+	//if(m_fpShearModulus<m_fpInitialSmoothingLength)
+	//	m_fpShearModulus=m_fpInitialSmoothingLength;
+	//m_pfSmoothLen = m_fpInitialSmoothingLength * 1.5;
+/*	
+	double li = (m_fpTemperature - 26.0) / (130.0-26.0);
+
+	if (li < 0) std::cout << "li le 0\n";
+	if (li > 1) std::cout << "li ge 1\n";
+
+	m_pfSmoothLen = m_fpInitialSmoothingLength + (0.5 * li * m_fpInitialSmoothingLength);
+	
+*/
+//m_pfSmoothLen = m_fpInitialSmoothingLength * 1.5;
+ 
+//m_pfSmoothLen = m_fpInitialSmoothingLength * 1.5;
+/*
+	if (m_pfSmoothLen < m_fpInitialSmoothingLength) {
+		m_pfSmoothLen < m_fpInitialSmoothingLength;
+	} else if (m_pfSmoothLen > m_fpInitialSmoothingLength*4) {
+		m_pfSmoothLen = m_fpInitialSmoothingLength*4;
+	}
+*/
+//	m_pfSmoothLen = m_fpInitialSmoothingLength * 1.5;
+
+	/*
+	double temp = m_fpInitialDensity/m_fpDensity;
+
+	if (temp < 1.0) temp = 1.0f;
+	if (temp > 4.0) temp = 4.0f;
+
+	m_pfSmoothLen = m_fpInitialSmoothingLength * temp;
+	*/
+
+	/*
+	if (m_pfSmoothLen > 4.0 * m_fpInitialSmoothingLength) {
+		m_pfSmoothLen = 4.0 * m_fpInitialSmoothingLength;
+		continueGrowing = false;
+	}
+
+	if (m_pfSmoothLen < m_fpInitialSmoothingLength) {
+		m_pfSmoothLen = m_fpInitialSmoothingLength;
+	}
+	*/
+	/*
+	if (m_pfSmoothLen < m_fpInitialSmoothingLength ) {
+		m_pfSmoothLen = m_fpInitialSmoothingLength;
+		
+	}
+	*/
+	//std::cout << m_fpInitialSmoothingLength << " m_pfSmoothLen " << m_pfSmoothLen << std::endl;
+	
+}
+
+
+SimuValue CFluidPrtl::ComputeHeatFromAir()
+{
+    
+    //double heatTransferCoefficient = 1;
+    //SimuValue heatChange = -1 * heatTransferCoefficient * (m_fpTemperature - CSimuManager::m_maxTemperature);
+	//return heatChange;
+
+	double r = (3.0/(4.0 * SIMU_PI))* (m_fpMass/ m_fpInitialDensity);
+	r = pow(fabs(r), 1.0/3.0);
+	return (CSimuManager::m_maxTemperature - m_fpTemperature) * ((r*r)/m_fpInitialDensity);
+
+}
+
+
+
+void CFluidPrtl::ComputeVelocityGradient()
+{
+	int i, j, k;
+	for (i=0; i < 3; i++)
+		for (j=0; j < 3; j++)
+			velocityGradient[i][j] = SIMU_VALUE_EPSILON;
+	
+	CVector3D tmpNormal;
+	tmpNormal.SetValue((SimuValue)0);
+	SimuValue tmpWeight;
+	for(k=0; k < m_fpNgbrs.m_paNum; k++) {
+		
+		CFluidPrtl* pNgbrPrtl = m_fpNgbrs[k];
+		tmpNormal.SetValueAsSubstraction(m_vpPos, pNgbrPrtl->m_vpPos);
+		SimuValue tmpDist = tmpNormal.Length();
+		// get normal direction
+		if (tmpDist <= SIMU_VALUE_EPSILON)
+			continue;
+		tmpWeight = SplineGradientWeightFunction(tmpDist, pNgbrPrtl->m_pfSmoothLen);
+		tmpWeight *= pNgbrPrtl->m_fpMass/pNgbrPrtl->m_fpDensity;
+		
+		tmpNormal.ScaledBy(tmpWeight/tmpDist);
+		
+		for (i=0; i < 3; i++) {
+			
+			SimuValue deltaVel_i_ = pNgbrPrtl->m_vpVel->v[i] - m_vpVel->v[i];
+			for (j=0; j < 3; j++) {
+				velocityGradient[i][j] += deltaVel_i_ * tmpNormal[j];
+			}
+		}
+	}
+}
+
+// not spiky
+SimuValue CFluidPrtl::SpikyGradientWeightFunction(SimuValue distance, SimuValue otherRadius)
+{
+
+        SimuValue radius = (m_pfSmoothLen + otherRadius) / 2.0;
+        SimuValue r = distance;
+        SimuValue h = radius;
+        SimuValue weight = 0;
+	if (radius < distance) return 0;
+        //SIMU_PARA_VISC_KERNEL_NORMALIZER
+        if (distance < radius)
+        {
+                weight = -3*r/pow(h, 3) + 2/(h*h) + h/pow(r, 3);
+                weight *= (7.5/SIMU_PI)/pow(h, 3);
+        }
+        return weight;
+
+        //if (distance < radius)
+        //{
+         //       weight = -6*distance*pow((double)radius*radius - distance*distance , (double)2.0f);
+           //     weight *= 315/(64*SIMU_PI)/pow((double)radius,(double) 9);
+        //}
+        //return weight;
+
+}
+
+
+SimuValue CFluidPrtl::SplineWeightFunction(SimuValue distance, SimuValue otherRadius)
+{
+
+
+	#if 0
+	SimuValue radius = m_pfSmoothLen;
+	
+	if (radius > otherRadius) {
+		radius = otherRadius;
+	}
+	#endif
+	
+	
+	
+	SimuValue radius = (m_pfSmoothLen + otherRadius) / 2.0;
+	if (radius < distance) return 0;
+	
+	
+	if (distance > m_pfSmoothLen) return 0;
+	if (distance > otherRadius) return 0;
+#if 0
+	double h = radius / 2.0;
+	double normalizing = 3.0 / (2 * SIMU_PI * h*h*h);
+	double q = distance/h;
+	double weight = 0;
+	// cubic spline
+	if (q >= 0 && q < 1) {
+		weight = (2.0/3.0 - q*q) + (0.5* q*q*q);
+	} else if (q >= 1 && q < 2) {
+		weight = 1.0/6.0 * pow(2.0 - q, 3.0);
+	} else { // q < 0
+		return weight; // weight = 0
+	}
+	weight *= normalizing;
+	return weight;
+#endif
+#if 1	
+	SimuValue h = radius*0.5;
+	SimuValue q = distance/h;
+	SimuValue weight = 0;
+	if (q >= 0 && q < 1)
+	{
+		weight = 1 - 1.5*q*q + 0.75*q*q*q;
+	}
+	else if (q >= 1 && q < 2)
+	{
+		weight = 0.25*pow((2.0-q), 3.0);
+	}
+	else // q < 0
+		return weight; // weight = 0
+	//weight /= SIMU_PI*pow(h, 3.0);
+	weight /= SIMU_PI*h*h*h;
+	
+	return weight;
+#endif
+}
+
+SimuValue CFluidPrtl::ViscocitySecondWeightFunction(SimuValue distance, SimuValue otherRadius)
+{
+
+    SimuValue radius = (m_pfSmoothLen + otherRadius) / 2.0;
+    SimuValue h = 0.5*radius;
+    SimuValue q = distance/h;
+    SimuValue weight = 0;
+    if (radius < distance) return 0;
+    if (0 <= distance && distance <= h) {
+        return 45.0/(SIMU_PI * pow(h,6.0)) * (h - distance);
+
+    }
+
+    return weight;
+
+}
+
+
+SimuValue CFluidPrtl::SplineGradientWeightInitialFunction(SimuValue distance)
+{
+	#if 0
+	SimuValue radius = m_pfSmoothLen;
+	
+	if (radius > otherRadius) {
+		radius = otherRadius;
+	}
+	#endif
+	
+	SimuValue radius =  m_fpInitialSmoothingLength;
+	
+
+
+	SimuValue h = 0.5*radius;
+	SimuValue q = distance/h;
+	SimuValue weight = 0;
+	if (q >= 0 && q < 1)
+	{
+		weight = -3*q + 2.25*q*q; // pow (2.25, 2);
+	}
+	else if (q >= 1 && q < 2)
+	{
+		//weight = -0.75*pow((2-q), 2.0f);
+		weight = -0.75 * ((2-q) * (2-q));
+	}
+	else // weight = 0
+		return weight;
+	
+	//weight /= SIMU_PI*pow(h, 4.0f);
+	weight /= SIMU_PI*h*h*h*h;
+	return weight;
+}
+
+SimuValue CFluidPrtl::SplineGradientWeightFunction(SimuValue distance, SimuValue otherRadius)
+{
+	#if 0
+	SimuValue radius = m_pfSmoothLen;
+	
+	if (radius > otherRadius) {
+		radius = otherRadius;
+	}
+	#endif
+	
+	SimuValue radius = (m_pfSmoothLen + otherRadius) / 2.0;
+	
+	if (radius < distance) return 0;
+
+	SimuValue h = 0.5*radius;
+	SimuValue q = distance/h;
+	SimuValue weight = 0;
+	if (q >= 0 && q < 1)
+	{
+		weight = -3*q + 2.25*q*q; // pow (2.25, 2);
+	}
+	else if (q >= 1 && q < 2)
+	{
+		//weight = -0.75*pow((2-q), 2.0f);
+		weight = -0.75 * ((2-q) * (2-q));
+	}
+	else // weight = 0
+		return weight;
+	
+	//weight /= SIMU_PI*pow(h, 4.0f);
+	weight /= SIMU_PI*h*h*h*h;
+	return weight;
+}
+
+SimuValue CFluidPrtl::SplineSecondDerivativeFunction(SimuValue distance, SimuValue otherRadius)
+{
+	#if 0
+	SimuValue radius = m_pfSmoothLen;
+	
+	if (radius > otherRadius) {
+		radius = otherRadius;
+	}
+	#endif
+	
+	SimuValue radius = (m_pfSmoothLen + otherRadius) / 2.0;
+	
+	if (radius < distance) return 0;
+
+	SimuValue h = 0.5*radius;
+	SimuValue q = distance/h;
+	SimuValue weight = 0;
+	if (q >= 0 && q < 1)
+	{
+		weight = -3 + 4.5*q;
+	}
+	else if (q >= 1 && q < 2)
+	{
+		weight = 1.5*(2-q);
+	}
+	else // weight = 0
+		return weight;
+	
+	weight /= SIMU_PI*pow((double)h, (double)5.0f);
+	return weight;
+}
+
+SimuValue CFluidPrtl::TESTDerivativeWeightFunction(SimuValue distance, SimuValue otherRadius)
+{
+	
+	// POLY
+	// SimuValue radius = m_pfSmoothLen;
+	// 	
+	// 	if (radius > otherRadius) {
+	// 		radius = otherRadius;
+	// 	}
+	
+	//PolySecondDerivativeWeightFunction
+	// SimuValue weight = 0;
+	// if (distance < radius)
+	// {
+	// 	weight = (radius*radius - distance*distance)*(-6*radius*radius + 30*distance*distance);
+	// 	weight *= (315/(64*SIMU_PI))/pow(radius, 9);
+	// }
+	// return weight;
+	
+	//spiky
+	// SimuValue s = radius - distance;
+	// SimuValue weight = 0;
+	// if (s > 0)
+	// {
+	// 	// original formula
+	// 	weight = 6*s;
+	// 	weight *= (15.0/SIMU_PI)/pow((double)radius, (double)6.0f);
+	// }
+	// // else: weight = 0;
+	// return weight;
+	
+	// SPLINE
+	
+
+	
+	SimuValue radius = (m_pfSmoothLen + otherRadius) / 2.0;
+	
+	if (radius < distance) return 0;
+
+	
+	SimuValue h = 0.5*radius;
+	SimuValue q = distance/h;
+	SimuValue weight = 0;
+	if (q >= 0 && q < 1)
+	{
+		weight = -3 + 4.5*q;
+	}
+	else if (q >= 1 && q < 2)
+	{
+		weight = 1.5*(2-q);
+	}
+	else // weight = 0
+		return weight;
+	
+	weight /= SIMU_PI*pow((double)h, (double)5.0f);
+	return weight;
+}
+
+SimuValue CFluidPrtl::ViscSecondDerivativeWeightFunction(SimuValue distance, SimuValue otherRadius)
+{
+
+	SimuValue radius = (m_pfSmoothLen + otherRadius) / 2.0;
+	
+	if (radius < distance) return 0;
+
+
+	SimuValue weight = 0;
+	SimuValue h = radius;
+    	SimuValue r = distance/h;
+
+	if (distance < radius) {
+   		weight = 45.0/(SIMU_PI * pow(h,6.0)) * (h-r);       
+    }
+	return weight;
+}
+
+
+#if 0
+SimuValue CFluidPrtl::ViscSecondDerivativeWeightFunction(SimuValue distance, SimuValue otherRadius)
+{
+        SimuValue radius = (m_pfSmoothLen + otherRadius) / 2.0;
+        SimuValue weight = 0;
+        SimuValue r = distance;
+        SimuValue h = 0.5*radius;
+        // poly
+        if (distance < radius)
+        {
+                weight = (radius*radius - distance*distance)*(-6*radius*radius + 30*distance*distance);
+                weight *= (315/(64*SIMU_PI))/pow(radius, 9);
+        }
+        return weight;
+        return weight;
+}
+#endif

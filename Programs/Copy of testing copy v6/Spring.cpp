@@ -1,0 +1,27 @@
+// Spring.cpp: implementation of the CSpring class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "SimuFlexApp.h"
+#include "Spring.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CSpring::CSpring()
+{
+
+}
+
+CSpring::~CSpring()
+{
+
+}

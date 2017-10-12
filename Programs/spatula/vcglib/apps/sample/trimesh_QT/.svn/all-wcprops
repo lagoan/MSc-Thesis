@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_QT
+END
+glarea.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_QT/glarea.h
+END
+mainwindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_QT/mainwindow.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_QT/main.cpp
+END
+mainwindow.ui
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_QT/mainwindow.ui
+END
+glarea.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_QT/glarea.cpp
+END
+mainwindow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_QT/mainwindow.cpp
+END
+trimesh_qt.pro
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_QT/trimesh_qt.pro
+END

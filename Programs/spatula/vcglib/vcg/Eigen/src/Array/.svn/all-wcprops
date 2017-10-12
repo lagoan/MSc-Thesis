@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Array
+END
+CwiseOperators.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Array/CwiseOperators.h
+END
+Norms.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Array/Norms.h
+END
+Select.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Array/Select.h
+END
+Random.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Array/Random.h
+END
+Functors.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Array/Functors.h
+END
+PartialRedux.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Array/PartialRedux.h
+END
+BooleanRedux.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Array/BooleanRedux.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Array/CMakeLists.txt
+END

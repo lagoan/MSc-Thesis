@@ -1,0 +1,123 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SimuFlexApp - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\orodrigu\LOCALS~1\Temp\RSP711D.tmp" with contents
+[
+/nologo /MDd /w /W0 /Gm /GR /GX /ZI /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/SimuFlexApp.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\orodrigu\My Documents\hai\Copy of testing copy v6\SimuModeler.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\orodrigu\LOCALS~1\Temp\RSP711D.tmp" 
+Creating temporary file "C:\DOCUME~1\orodrigu\LOCALS~1\Temp\RSP711E.tmp" with contents
+[
+opengl32.lib glu32.lib glaux.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/SimuFlexApp.pdb" /debug /machine:I386 /out:"Debug/SimuFlexApp.exe" /pdbtype:sept 
+".\Debug\BdryBouncingSlope.obj"
+".\Debug\BdryBowl.obj"
+".\Debug\BdryHollowCone.obj"
+".\Debug\BdrySolidBox.obj"
+".\Debug\BdrySolidOval.obj"
+".\Debug\BdrySolidRod.obj"
+".\Debug\BdrySolidRodSticky.obj"
+".\Debug\BdrySolidTorus.obj"
+".\Debug\BdrySquareSlope.obj"
+".\Debug\Boundary.obj"
+".\Debug\BoxOnXYPlane.obj"
+".\Debug\ConeAlongZAxis.obj"
+".\Debug\ConvexHull.obj"
+".\Debug\CylinderAlongZAxis.obj"
+".\Debug\DataExImport.obj"
+".\Debug\DelaunayTetrahedron.obj"
+".\Debug\DlgFileMoveCopy.obj"
+".\Debug\DlgOptionDisplay.obj"
+".\Debug\DlgOptionElementSelect.obj"
+".\Debug\DlgOptionImExport.obj"
+".\Debug\DlgOptionMesher.obj"
+".\Debug\DlgOptionMeshTexture.obj"
+".\Debug\DlgOptionModeling.obj"
+".\Debug\DlgOptionParticleSelect.obj"
+".\Debug\DlgOptionSurface.obj"
+".\Debug\DlgOptionViewing.obj"
+".\Debug\Edge3D.obj"
+".\Debug\Edge3DOnTriangle.obj"
+".\Debug\FluidMeshPrtl.obj"
+".\Debug\FluidNozzleShuttle.obj"
+".\Debug\FluidPrtl.obj"
+".\Debug\FluidPrtlNonNew.obj"
+".\Debug\FluidPrtlPoisson.obj"
+".\Debug\FluidPrtlSpring.obj"
+".\Debug\GeometryElement.obj"
+".\Debug\Grid.obj"
+".\Debug\GridDlnyTetra.obj"
+".\Debug\Index3D.obj"
+".\Debug\LinearTemperaTexture.obj"
+".\Debug\MeshPrtl.obj"
+".\Debug\OvalAlong3DAxes.obj"
+".\Debug\ParticleSearch.obj"
+".\Debug\Point3D.obj"
+".\Debug\Point3DIntPos.obj"
+".\Debug\Point3DOnEdge.obj"
+".\Debug\Point3DOnTetra.obj"
+".\Debug\PrtlFluid.obj"
+".\Debug\PrtlFluidSpring.obj"
+".\Debug\PrtlFluidUpsample.obj"
+".\Debug\PrtlInBox.obj"
+".\Debug\PrtlInOval.obj"
+".\Debug\PrtlInSrfcMesh.obj"
+".\Debug\PrtlTriangle.obj"
+".\Debug\PrtlTriangleMesh.obj"
+".\Debug\RigidBall.obj"
+".\Debug\RotationToZAxis.obj"
+".\Debug\SimuBoundaryBox.obj"
+".\Debug\SimuBoundaryCylinder.obj"
+".\Debug\SimuBoundaryTable.obj"
+".\Debug\SimuCGSolver.obj"
+".\Debug\SimuCGSolver3D.obj"
+".\Debug\SimuDriver.obj"
+".\Debug\SimuEnclosingBall.obj"
+".\Debug\SimuFlexApp.obj"
+".\Debug\SimuFluidNozzle.obj"
+".\Debug\SimuManager.obj"
+".\Debug\SimuMarchingCube.obj"
+".\Debug\SimuMCTexture.obj"
+".\Debug\SimuMessageDlg.obj"
+".\Debug\SimuModeler.obj"
+".\Debug\SimuMonitor.obj"
+".\Debug\SimuMsg.obj"
+".\Debug\SimuPoint3D.obj"
+".\Debug\SimuQuestionDlg.obj"
+".\Debug\SimuSrfcPoint3D.obj"
+".\Debug\SimuTriangle.obj"
+".\Debug\SimuUtility.obj"
+".\Debug\SimuView.obj"
+".\Debug\Spring.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TemperatureToTexture.obj"
+".\Debug\TetraDelaunay.obj"
+".\Debug\Tetrahedron.obj"
+".\Debug\TorusOnXYPlane.obj"
+".\Debug\Triangle3D.obj"
+".\Debug\Triangle3DIntNorm.obj"
+".\Debug\TriangleOnTetra.obj"
+".\Debug\TSimuPtrStack.obj"
+".\Debug\Vector.obj"
+".\Debug\Vector3D.obj"
+".\Debug\VirtualPrtl.obj"
+".\Debug\SimuFlexApp.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\orodrigu\LOCALS~1\Temp\RSP711E.tmp"
+<h3>Output Window</h3>
+Compiling...
+SimuModeler.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+SimuFlexApp.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

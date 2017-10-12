@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/spatula/!svn/ver/1/trunk/vcglib/apps/metro
+END
+history.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/spatula/!svn/ver/1/trunk/vcglib/apps/metro/history.txt
+END
+sampling.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/spatula/!svn/ver/1/trunk/vcglib/apps/metro/sampling.h
+END
+mesh_type.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/spatula/!svn/ver/1/trunk/vcglib/apps/metro/mesh_type.h
+END
+metro.pro
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/spatula/!svn/ver/1/trunk/vcglib/apps/metro/metro.pro
+END
+defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/spatula/!svn/ver/1/trunk/vcglib/apps/metro/defs.h
+END
+metro.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/spatula/!svn/ver/1/trunk/vcglib/apps/metro/metro.cpp
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/spatula/!svn/ver/1/trunk/vcglib/apps/metro/readme.txt
+END

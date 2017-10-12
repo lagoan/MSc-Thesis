@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A238F4FA30364F1C146DA29 /* ease.c in Build Sources */ = {isa = PBXBuildFile; fileRef = 17DF5CA674C1AA7903EB686E /* ease.c */; settings = {ATTRIBUTES = (); }; };
+		174F2E3D5BED17332F869BD2 /* vector.c in Build Sources */ = {isa = PBXBuildFile; fileRef = F90C6E320566683390E1D1E0 /* vector.c */; settings = {ATTRIBUTES = (); }; };
+		36168095585427A94A44E25A /* file.c in Build Sources */ = {isa = PBXBuildFile; fileRef = 8C7645F6E48751E00E39630B /* file.c */; settings = {ATTRIBUTES = (); }; };
+		47A0EDFAB4585315DB59B26F /* material.c in Build Sources */ = {isa = PBXBuildFile; fileRef = 0C96800B5D3B2179F8182FE3 /* material.c */; settings = {ATTRIBUTES = (); }; };
+		47AB1E158FCAE7EC19A77705 /* node.c in Build Sources */ = {isa = PBXBuildFile; fileRef = 8975934304501D000C20A990 /* node.c */; settings = {ATTRIBUTES = (); }; };
+		48AC5CCCE1BE40F81CB90949 /* camera.c in Build Sources */ = {isa = PBXBuildFile; fileRef = A90771AD9D8C9CBAAEE534E3 /* camera.c */; settings = {ATTRIBUTES = (); }; };
+		51743E1E6D9AC8F6648B84B0 /* light.c in Build Sources */ = {isa = PBXBuildFile; fileRef = 71BA8B5BBE0AA67114A8FC01 /* light.c */; settings = {ATTRIBUTES = (); }; };
+		5777E4821BBD88CBE824CB0A /* mesh.c in Build Sources */ = {isa = PBXBuildFile; fileRef = 561B75BB42DFC7CDDAB56852 /* mesh.c */; settings = {ATTRIBUTES = (); }; };
+		5C10EAFAD83D8C6A0AD38932 /* chunk.c in Build Sources */ = {isa = PBXBuildFile; fileRef = ABDD77E97BA98A99C4B23D0F /* chunk.c */; settings = {ATTRIBUTES = (); }; };
+		5D3442E41079ACCA00C4B9F4 /* lib3ds.a in Project Copy */ = {isa = PBXBuildFile; fileRef = 5D3442E21079ACCA00C4B9F4 /* lib3ds.a */; };
+		6129F3C7468941FD96C4F222 /* viewport.c in Build Sources */ = {isa = PBXBuildFile; fileRef = 8D51A81EEBD5CE5205D9E2EE /* viewport.c */; settings = {ATTRIBUTES = (); }; };
+		6B2CFE47B5752446211A9973 /* tracks.c in Build Sources */ = {isa = PBXBuildFile; fileRef = E3A45EFA7B5EC51ACEDA4A3A /* tracks.c */; settings = {ATTRIBUTES = (); }; };
+		6E35E863D83F8729DFB766D0 /* shadow.c in Build Sources */ = {isa = PBXBuildFile; fileRef = D3F4B394EEF352B447C8652C /* shadow.c */; settings = {ATTRIBUTES = (); }; };
+		70FE33BFA9536B5CD268B636 /* quat.c in Build Sources */ = {isa = PBXBuildFile; fileRef = D6CF724D32DC3728AB8C8969 /* quat.c */; settings = {ATTRIBUTES = (); }; };
+		90123CC9A792AF1C7DA02A38 /* tcb.c in Build Sources */ = {isa = PBXBuildFile; fileRef = C8174B7CC6727017A7CD5488 /* tcb.c */; settings = {ATTRIBUTES = (); }; };
+		BCA5093B0C470FE7B6E4DD08 /* matrix.c in Build Sources */ = {isa = PBXBuildFile; fileRef = EF8462A2FD19505BE9B755C3 /* matrix.c */; settings = {ATTRIBUTES = (); }; };
+		D57422E52D8F443768279591 /* background.c in Build Sources */ = {isa = PBXBuildFile; fileRef = 428179DA2CDD1E9BE7572503 /* background.c */; settings = {ATTRIBUTES = (); }; };
+		DC441A2780E3152617D025E5 /* io.c in Build Sources */ = {isa = PBXBuildFile; fileRef = ED091F6C90607EE51D580E36 /* io.c */; settings = {ATTRIBUTES = (); }; };
+		DDF16B53639999CA495349C6 /* atmosphere.c in Build Sources */ = {isa = PBXBuildFile; fileRef = 10B4ADDA1248D583397B38B3 /* atmosphere.c */; settings = {ATTRIBUTES = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib/macx;
+			dstSubfolderSpec = 0;
+			files = (
+				5D3442E41079ACCA00C4B9F4 /* lib3ds.a in Project Copy */,
+			);
+			name = "Project Copy";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09C758D04CAADA3C2E73014F /* tcb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tcb.h; sourceTree = "<group>"; };
+		0C96800B5D3B2179F8182FE3 /* material.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = material.c; sourceTree = "<group>"; };
+		10B4ADDA1248D583397B38B3 /* atmosphere.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = atmosphere.c; sourceTree = "<group>"; };
+		1480081DD2F69DB3319FB793 /* camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		16D0024EFA27575D7D031709 /* ease.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ease.h; sourceTree = "<group>"; };
+		17DF5CA674C1AA7903EB686E /* ease.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ease.c; sourceTree = "<group>"; };
+		1D41EF23D929AFD51195220E /* tracks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tracks.h; sourceTree = "<group>"; };
+		34EE7F0502F62FF4793C60BE /* node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
+		38BD3ACF827466BDAE5EC675 /* chunk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chunk.h; sourceTree = "<group>"; };
+		428179DA2CDD1E9BE7572503 /* background.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = background.c; sourceTree = "<group>"; };
+		45C3140D7FFEB753471C2DEE /* shadow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shadow.h; sourceTree = "<group>"; };
+		51C4325A9516303137D061EE /* file.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = file.h; sourceTree = "<group>"; };
+		5381F033770BFAD2F797A2CD /* viewport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = viewport.h; sourceTree = "<group>"; };
+		561B75BB42DFC7CDDAB56852 /* mesh.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mesh.c; sourceTree = "<group>"; };
+		5CF4031D23BB098AE948300B /* chunktable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chunktable.h; sourceTree = "<group>"; };
+		5D3442E21079ACCA00C4B9F4 /* lib3ds.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = lib3ds.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		70AC6DCBF542FC3196C96065 /* quat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quat.h; sourceTree = "<group>"; };
+		71BA8B5BBE0AA67114A8FC01 /* light.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = light.c; sourceTree = "<group>"; };
+		7AFD3A676173123ABC03D6DA /* background.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = background.h; sourceTree = "<group>"; };
+		7C18C42D50C77E66A0BE1664 /* light.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = light.h; sourceTree = "<group>"; };
+		7D4B013835A502C7AD101A33 /* atmosphere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = atmosphere.h; sourceTree = "<group>"; };
+		7E0D28C0D7E7DACAD55E50FD /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		8975934304501D000C20A990 /* node.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = node.c; sourceTree = "<group>"; };
+		8C7645F6E48751E00E39630B /* file.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = file.c; sourceTree = "<group>"; };
+		8D51A81EEBD5CE5205D9E2EE /* viewport.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = viewport.c; sourceTree = "<group>"; };
+		921695CE94AE6B361FFB49AF /* lib3ds.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = lib3ds.pro; sourceTree = "<group>"; };
+		97C2593DC35E9AAD9E6D97BA /* material.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = material.h; sourceTree = "<group>"; };
+		A90771AD9D8C9CBAAEE534E3 /* camera.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = camera.c; sourceTree = "<group>"; };
+		ABDD77E97BA98A99C4B23D0F /* chunk.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = chunk.c; sourceTree = "<group>"; };
+		B104F2574FAB578700E9B96C /* vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
+		C2A50B1373029AA0B1F97A48 /* io.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = io.h; sourceTree = "<group>"; };
+		C8174B7CC6727017A7CD5488 /* tcb.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tcb.c; sourceTree = "<group>"; };
+		D3F4B394EEF352B447C8652C /* shadow.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shadow.c; sourceTree = "<group>"; };
+		D6CF724D32DC3728AB8C8969 /* quat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quat.c; sourceTree = "<group>"; };
+		DF5CC8B36FE92868912C38E4 /* matrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
+		E3A45EFA7B5EC51ACEDA4A3A /* tracks.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tracks.c; sourceTree = "<group>"; };
+		EA160EDB4AA746FB1D00057F /* mesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mesh.h; sourceTree = "<group>"; };
+		ED091F6C90607EE51D580E36 /* io.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = io.c; sourceTree = "<group>"; };
+		EF8462A2FD19505BE9B755C3 /* matrix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = matrix.c; sourceTree = "<group>"; };
+		F90C6E320566683390E1D1E0 /* vector.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vector.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A1043669E6E5A7426EA502A /* Frameworks & Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Frameworks & Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05596AB53D8D521C69802C27 /* 3ds */ = {
+			isa = PBXGroup;
+			children = (
+				FB61758D0F0FDA4BA867C3D5 /* Sources */,
+				883D7615C4D2DE3FA1218F12 /* Headers */,
+				7CABE3C80E79AD2B307756D2 /* Sources [qmake] */,
+				5D3442E31079ACCA00C4B9F4 /* Products */,
+			);
+			name = 3ds;
+			sourceTree = "<group>";
+		};
+		5D3442E31079ACCA00C4B9F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D3442E21079ACCA00C4B9F4 /* lib3ds.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CABE3C80E79AD2B307756D2 /* Sources [qmake] */ = {
+			isa = PBXGroup;
+			children = (
+				921695CE94AE6B361FFB49AF /* lib3ds.pro */,
+			);
+			name = "Sources [qmake]";
+			sourceTree = "<group>";
+		};
+		883D7615C4D2DE3FA1218F12 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				7D4B013835A502C7AD101A33 /* atmosphere.h */,
+				7AFD3A676173123ABC03D6DA /* background.h */,
+				1480081DD2F69DB3319FB793 /* camera.h */,
+				38BD3ACF827466BDAE5EC675 /* chunk.h */,
+				5CF4031D23BB098AE948300B /* chunktable.h */,
+				16D0024EFA27575D7D031709 /* ease.h */,
+				51C4325A9516303137D061EE /* file.h */,
+				C2A50B1373029AA0B1F97A48 /* io.h */,
+				7C18C42D50C77E66A0BE1664 /* light.h */,
+				97C2593DC35E9AAD9E6D97BA /* material.h */,
+				DF5CC8B36FE92868912C38E4 /* matrix.h */,
+				EA160EDB4AA746FB1D00057F /* mesh.h */,
+				34EE7F0502F62FF4793C60BE /* node.h */,
+				70AC6DCBF542FC3196C96065 /* quat.h */,
+				45C3140D7FFEB753471C2DEE /* shadow.h */,
+				09C758D04CAADA3C2E73014F /* tcb.h */,
+				1D41EF23D929AFD51195220E /* tracks.h */,
+				7E0D28C0D7E7DACAD55E50FD /* types.h */,
+				B104F2574FAB578700E9B96C /* vector.h */,
+				5381F033770BFAD2F797A2CD /* viewport.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		FB61758D0F0FDA4BA867C3D5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				10B4ADDA1248D583397B38B3 /* atmosphere.c */,
+				428179DA2CDD1E9BE7572503 /* background.c */,
+				A90771AD9D8C9CBAAEE534E3 /* camera.c */,
+				ABDD77E97BA98A99C4B23D0F /* chunk.c */,
+				17DF5CA674C1AA7903EB686E /* ease.c */,
+				8C7645F6E48751E00E39630B /* file.c */,
+				ED091F6C90607EE51D580E36 /* io.c */,
+				71BA8B5BBE0AA67114A8FC01 /* light.c */,
+				0C96800B5D3B2179F8182FE3 /* material.c */,
+				EF8462A2FD19505BE9B755C3 /* matrix.c */,
+				561B75BB42DFC7CDDAB56852 /* mesh.c */,
+				8975934304501D000C20A990 /* node.c */,
+				D6CF724D32DC3728AB8C8969 /* quat.c */,
+				D3F4B394EEF352B447C8652C /* shadow.c */,
+				C8174B7CC6727017A7CD5488 /* tcb.c */,
+				E3A45EFA7B5EC51ACEDA4A3A /* tracks.c */,
+				F90C6E320566683390E1D1E0 /* vector.c */,
+				8D51A81EEBD5CE5205D9E2EE /* viewport.c */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02FFA8317F68F205E05D8380 /* 3ds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D3442FF1079ACD100C4B9F4 /* Build configuration list for PBXNativeTarget "3ds" */;
+			buildPhases = (
+				D7BA7D76DAB5DD13389D6332 /* Qt Qmake */,
+				A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */,
+				F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */,
+				C29B8785722055ED95EF7B57 /* Build Sources */,
+				2A1043669E6E5A7426EA502A /* Frameworks & Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 3ds;
+			productInstallPath = ../../lib/macx/;
+			productName = 3ds;
+			productReference = 5D3442E21079ACCA00C4B9F4 /* lib3ds.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91B15E841AA80083484172DE /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "3ds" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 05596AB53D8D521C69802C27 /* 3ds */;
+			productRefGroup = 5D3442E31079ACCA00C4B9F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02FFA8317F68F205E05D8380 /* 3ds */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Preprocessors";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds -f 3ds.xcodeproj/qt_preprocess.mak";
+		};
+		D7BA7D76DAB5DD13389D6332 /* Qt Qmake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Qmake";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds -f 3ds.xcodeproj/qt_makeqmake.mak";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C29B8785722055ED95EF7B57 /* Build Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF16B53639999CA495349C6 /* atmosphere.c in Build Sources */,
+				D57422E52D8F443768279591 /* background.c in Build Sources */,
+				48AC5CCCE1BE40F81CB90949 /* camera.c in Build Sources */,
+				5C10EAFAD83D8C6A0AD38932 /* chunk.c in Build Sources */,
+				0A238F4FA30364F1C146DA29 /* ease.c in Build Sources */,
+				36168095585427A94A44E25A /* file.c in Build Sources */,
+				DC441A2780E3152617D025E5 /* io.c in Build Sources */,
+				51743E1E6D9AC8F6648B84B0 /* light.c in Build Sources */,
+				47A0EDFAB4585315DB59B26F /* material.c in Build Sources */,
+				BCA5093B0C470FE7B6E4DD08 /* matrix.c in Build Sources */,
+				5777E4821BBD88CBE824CB0A /* mesh.c in Build Sources */,
+				47AB1E158FCAE7EC19A77705 /* node.c in Build Sources */,
+				70FE33BFA9536B5CD268B636 /* quat.c in Build Sources */,
+				6E35E863D83F8729DFB766D0 /* shadow.c in Build Sources */,
+				90123CC9A792AF1C7DA02A38 /* tcb.c in Build Sources */,
+				6B2CFE47B5752446211A9973 /* tracks.c in Build Sources */,
+				174F2E3D5BED17332F869BD2 /* vector.c in Build Sources */,
+				6129F3C7468941FD96C4F222 /* viewport.c in Build Sources */,
+			);
+			name = "Build Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5D3442F51079ACCD00C4B9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = "/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds";
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/usr/include,
+					..,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.5/mkspecs/macx-xcode",
+				);
+				INSTALL_DIR = "/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/../../lib/macx/";
+				INSTALL_PATH = "";
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = STATIC;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = 3ds;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Debug;
+		};
+		5D3442F61079ACCD00C4B9F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = "/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds";
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/usr/include,
+					..,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.5/mkspecs/macx-xcode",
+				);
+				INSTALL_DIR = "/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/../../lib/macx/";
+				INSTALL_PATH = "";
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = STATIC;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = 3ds;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Release;
+		};
+		5D3442F71079ACCD00C4B9F4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = "/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds";
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/usr/include,
+					..,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.5/mkspecs/macx-xcode",
+				);
+				INSTALL_DIR = "/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/../../lib/macx/";
+				INSTALL_PATH = "";
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = STATIC;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = 3ds;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Default;
+		};
+		8DB1DD96F65B1BF1FFC506E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		95E1EB2E5DDD587BE5B3E548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "3ds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB1DD96F65B1BF1FFC506E0 /* Debug */,
+				95E1EB2E5DDD587BE5B3E548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D3442FF1079ACD100C4B9F4 /* Build configuration list for PBXNativeTarget "3ds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D3442F51079ACCD00C4B9F4 /* Debug */,
+				5D3442F61079ACCD00C4B9F4 /* Release */,
+				5D3442F71079ACCD00C4B9F4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91B15E841AA80083484172DE /* Project object */;
+}

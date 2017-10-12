@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space
+END
+obox3.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/obox3.h
+END
+colorspace.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/colorspace.h
+END
+space.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/space.h
+END
+deprecated_point2.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/deprecated_point2.h
+END
+deprecated_point3.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/deprecated_point3.h
+END
+deprecated_point4.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/deprecated_point4.h
+END
+tetra3.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/tetra3.h
+END
+color4.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/color4.h
+END
+sphere3.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/sphere3.h
+END
+deprecated_point.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/deprecated_point.h
+END
+texcoord2.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/texcoord2.h
+END
+box2.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/box2.h
+END
+point2.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/point2.h
+END
+box3.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/box3.h
+END
+point3.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/point3.h
+END
+point4.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/point4.h
+END
+plane3.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/plane3.h
+END
+segment2.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/segment2.h
+END
+segment3.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/segment3.h
+END
+intersection2.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/intersection2.h
+END
+point.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/point.h
+END
+intersection3.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/intersection3.h
+END
+normal_extrapolation.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/normal_extrapolation.h
+END
+line2.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/line2.h
+END
+planar_polygon_tessellation.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/planar_polygon_tessellation.h
+END
+line3.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/line3.h
+END
+ray2.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/ray2.h
+END
+ray3.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/ray3.h
+END
+smallest_enclosing.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/smallest_enclosing.h
+END
+triangle2.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/triangle2.h
+END
+fitting3.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/fitting3.h
+END
+box.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/box.h
+END
+triangle3.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/spatula/!svn/ver/1/trunk/vcglib/vcg/space/triangle3.h
+END

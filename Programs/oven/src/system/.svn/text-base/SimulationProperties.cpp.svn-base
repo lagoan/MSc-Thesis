@@ -1,0 +1,859 @@
+/*
+ *  SimulationProperties.cpp
+ *  oven
+ *
+ *  Created by Omar Rodriguez-Arenas on 10/09/07.
+ *  Copyright 2007 __MyCompanyName__. All rights reserved.
+ *
+ */
+
+#include <cstdlib>
+#include <utility>
+
+#include "SimulationProperties.h"
+#include "ColorPalette.h"
+// scene properties methods
+
+ovBool SceneProperties::renderCutOuts = true;
+
+SceneProperties::SceneProperties(const SceneProperties& prop)
+{
+	setb(startFrame, true);
+	
+	_intLock.lockForWrite();
+	_valuesInt		= prop._valuesInt;
+	_intLock.unlock();
+
+	_floatLock.lockForWrite();
+	_valuesFloat	= prop._valuesFloat;
+	_floatLock.unlock();
+
+	_boolLock.lockForWrite();
+	_valuesBool		= prop._valuesBool;
+	_boolLock.unlock();
+
+
+}
+
+
+void SceneProperties::reset()
+{
+	// initial values for the scene properties
+	
+	_intLock.lockForWrite();
+	_floatLock.lockForWrite();
+	_boolLock.lockForWrite();
+	
+	_valuesInt.clear();
+
+	_valuesInt.insert( std::pair<ScenePropertyType,ovInt>(startFrame ,0) );
+	_valuesInt.insert( std::pair<ScenePropertyType,ovInt>(endFrame ,255) );
+	_valuesInt.insert( std::pair<ScenePropertyType,ovInt>(currentFrame ,0) );
+	_valuesInt.insert( std::pair<ScenePropertyType,ovInt>(liquidBubbleInteractionFrequency, 0) ); // 1
+	_valuesInt.insert( std::pair<ScenePropertyType,ovInt>(framesPerSecond, 24) );
+        _valuesInt.insert( std::pair<ScenePropertyType,ovInt>(stepsPerFrame , 4) );
+
+	_valuesFloat.clear();
+	_valuesFloat.insert( std::pair<ScenePropertyType,ovFloat>(endTime , 30.0f) );
+	_valuesFloat.insert( std::pair<ScenePropertyType,ovFloat>(isoDensityRatio, 0.3f) );
+	_valuesFloat.insert( std::pair<ScenePropertyType,ovFloat>(meshGridSizeOverParticleDistance, 0.7f) );
+	_valuesFloat.insert( std::pair<ScenePropertyType,ovFloat>(isoDensityRadiusRatio, 5.0f) );
+	_valuesFloat.insert( std::pair<ScenePropertyType,ovFloat>(particleDistance, 0.20f) );
+	_valuesFloat.insert( std::pair<ScenePropertyType,ovFloat>(minTemp, 26.0f) );
+	_valuesFloat.insert( std::pair<ScenePropertyType,ovFloat>(maxTemp, 130.0f) );
+	_valuesFloat.insert( std::pair<ScenePropertyType,ovFloat>(startCookTime, 3.0f) );
+
+
+	_valuesBool.clear();
+	_valuesBool.insert( std::pair<ScenePropertyType,ovFloat>(renderSurface , false) );
+	_valuesBool.insert( std::pair<ScenePropertyType,ovFloat>(useParticleNumberDensity , false) );
+	_valuesBool.insert( std::pair<ScenePropertyType,ovFloat>(performBaking , true) );
+	_valuesBool.insert( std::pair<ScenePropertyType,ovFloat>(ambientHeatTransfer , true) );
+
+	_boolLock.unlock();
+	_floatLock.unlock();
+	_intLock.unlock();
+
+}
+
+QString SceneProperties::getName(ScenePropertyType scenePropertyType)
+{
+	
+	switch ( scenePropertyType ) {
+		case startFrame:
+			return "Start frame";
+		case endFrame:
+			return "End frame";
+		case endTime:
+			return "End time";
+		case currentFrame:
+			return "Current Frame";
+		case stepsPerFrame:
+			return "Steps per frame";
+		case renderSurface:
+			return "Render fluid surface";
+		case particleDistance:
+			return "Particle distance";
+		case useParticleNumberDensity:
+			return "Use particle number density";
+		case isoDensityRatio:
+			return "Iso density ratio";
+		case meshGridSizeOverParticleDistance:
+			return "Mesh grid size / particle distance";
+		case isoDensityRadiusRatio:
+			return "Iso density radius ratio";
+		case liquidBubbleInteractionFrequency:
+			return "Liquid/Bubble unmixed steps";
+		case framesPerSecond:
+			return "Frames per second";
+		case minTemp:
+			return "Min temperature";
+		case maxTemp:
+			return "Max temperature";
+		case startCookTime:
+			return "Start cooking at";
+		case performBaking:
+			return "Perform baking";
+		case ambientHeatTransfer:
+			return "Ambient heat";
+		default:
+			return "Uknown";
+
+	};
+
+}
+
+QString SceneProperties::getTextValue( ScenePropertyType scenePropertyType )
+{
+	switch ( scenePropertyType ) {
+		case startFrame:
+		case endFrame:
+		case currentFrame:
+		case liquidBubbleInteractionFrequency:
+		case framesPerSecond:
+		case stepsPerFrame:
+			return QString::number(geti(scenePropertyType));
+		
+		case endTime:
+		case isoDensityRatio:
+		case meshGridSizeOverParticleDistance:
+		case isoDensityRadiusRatio :
+		case particleDistance:
+		case minTemp:
+		case maxTemp:
+		case startCookTime:
+
+			return QString::number(getf(scenePropertyType));
+
+		case renderSurface:
+		case useParticleNumberDensity:
+		case performBaking:
+		case ambientHeatTransfer:
+			if ( getb(scenePropertyType) ) 
+				return "True";
+			else
+				return "False";
+
+		default:
+			return "Uknown value type";
+
+
+	}
+
+
+}
+
+/* initializeProperties will initialize the static vector that holds the 
+ * possible properties, the order in which they appear in the vector is the 
+ * order in which they should appear on the gui.
+ */
+
+std::vector<ScenePropertyType> SceneProperties::initializeProperties()
+{
+	std::vector<ScenePropertyType> properties;
+
+	properties.push_back(startFrame);
+	properties.push_back(endFrame);
+	properties.push_back(endTime);
+	properties.push_back(currentFrame);
+	properties.push_back(stepsPerFrame);
+	properties.push_back(framesPerSecond);
+	properties.push_back(renderSurface);
+	properties.push_back(particleDistance);
+	properties.push_back(useParticleNumberDensity);
+	properties.push_back(isoDensityRatio);
+	properties.push_back(meshGridSizeOverParticleDistance);
+	properties.push_back(isoDensityRadiusRatio);
+	properties.push_back(liquidBubbleInteractionFrequency);
+	properties.push_back(ambientHeatTransfer);
+	properties.push_back(performBaking);
+	properties.push_back(minTemp);
+	properties.push_back(maxTemp);
+	properties.push_back(startCookTime);
+	
+	return properties;
+}
+
+
+std::vector<ScenePropertyType> SceneProperties::_properties( SceneProperties::initializeProperties() );
+
+
+void SceneProperties::setc(ScenePropertyType type, ovInt index)
+{
+	switch (type) {
+		case renderSurface:
+		case useParticleNumberDensity:
+		case performBaking:
+		case ambientHeatTransfer:
+			_valuesBool[type] = index != 1;
+	}
+
+
+}
+
+// object properties methods
+
+ObjectProperties::ObjectProperties(const ObjectProperties &prop)
+{	
+	_intLock.lockForWrite();
+	_valuesInt		= prop._valuesInt;
+	_intLock.unlock();
+
+	_floatLock.lockForWrite();
+	_valuesFloat	= prop._valuesFloat;
+	_floatLock.unlock();
+
+	_boolLock.lockForWrite();
+	_valuesBool		= prop._valuesBool;
+	_boolLock.unlock();
+
+}
+
+ObjectType ObjectProperties::getObjectType()
+{
+
+	ObjectType temp;
+	_objectTypeLock.lock();
+	temp = _objectType;
+	_objectTypeLock.unlock();
+	return temp;
+}
+
+
+
+void ObjectProperties::setObjectType(ObjectType type)
+{
+	_objectTypeLock.lock();
+	_objectType = type;
+	_objectTypeLock.unlock();
+}
+
+void ObjectProperties::reset()
+{
+	// initial values for the scene properties
+	
+
+	_floatLock.lockForWrite();
+	//_valuesFloat.clear();
+	
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(surfaceTensionValue, 100000.0f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(massValue ,100.0f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(densityValue ,0.1f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(localParticleDistance ,0.05f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(particlePositionJitter ,0.0f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(shearModulus ,1000.0f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(relaxationTime ,0.1f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(frictionRate ,0.0f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(distanceDumpingRate ,0.0f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(energyDumpingRate ,0.0f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(soundSpeed ,1000.0f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(velocityTuner ,0.5f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(courantFactor ,0.1f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(smoothLengthRatio ,2.0f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(surfaceDensityThreshold ,0.9f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(cgTolerance ,0.01f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(positionJitter ,0.0f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(maxSizeScale ,1.0f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(minSizeScale ,1.0f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(bubbleDistance ,0.08f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(bubbleJitter , 0.025f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(co2EnoughForBubble , 25.0f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(co2PeakGeneration, 4.0f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(co2TemperatureMean, 40.0f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(co2TemperatureRange , 10.0f) );
+	_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(heatConductivity, 100.0f) );
+	//_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(heatConductivity, 2100.0f) );
+	//_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(heatConductivity, 700.0f) );
+	//_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(heatConductivity, 2300000.0f) );
+	//_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(heatConductivity, 2600000.0f) );
+	//_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(heatConductivity, 3000000.0f) );
+	//_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(heatConductivity, 2100000.0f) );
+	//_valuesFloat.insert( std::pair<ObjectPropertyType,ovFloat>(heatConductivity, 1700000.0f) );
+
+
+
+
+	
+	_floatLock.unlock();
+
+	_intLock.lockForWrite();
+	_valuesInt.insert( std::pair<ObjectPropertyType,ovInt>(co2BubblesPerParticle, 10) );
+	_intLock.unlock();
+
+	_boolLock.lockForWrite();
+
+	_valuesBool.insert( std::pair<ObjectPropertyType,ovBool>(fixedParticles, false) );
+	_valuesBool.insert( std::pair<ObjectPropertyType,ovBool>(applyGravity, true) );
+	_valuesBool.insert( std::pair<ObjectPropertyType,ovBool>(fixedMotion, false) );
+	_valuesBool.insert( std::pair<ObjectPropertyType,ovBool>(applySurfaceTension, false) );
+	_valuesBool.insert( std::pair<ObjectPropertyType,ovBool>(bubblyFluid, false) );
+	_valuesBool.insert( std::pair<ObjectPropertyType,ovBool>(addBubblesFromCO2, false) );
+	_valuesBool.insert( std::pair<ObjectPropertyType,ovBool>(generateCO2, false) );
+
+	_boolLock.unlock();
+
+	_objectTypeLock.lock();
+	_objectType = Passive;
+	_objectTypeLock.unlock();
+
+	// XXX temp
+	_particleFluidType				= SPH;
+	_fluidCompressibility			= PoissonEquation;
+	_fluidType						= NonNewtonian;	
+	_tensorIntegration				= Explicit;
+	_initializeParticle				= MassValue;
+	_addBubblesByTotalOrRate		= ByTotalNumber;
+
+}
+
+
+QString ObjectProperties::getName(ObjectPropertyType objectPropertyType)
+{
+	
+	switch ( objectPropertyType ) {
+		case objectType:
+			return "Object type";
+		case particleFluidType:
+			return "Particle fluid type";
+		case fluidCompressibility:
+			return "Fluid compressibility";
+		case fluidType:
+			return "Fluid type";
+		case tensorIntegration:
+			return "Tensor integration";
+		case fixedParticles:
+			return "Fixed particles";
+		case applyGravity:
+			return "Apply gravity";
+		case fixedMotion:
+			return "Fixed motion";
+		case applySurfaceTension:
+			return "Apply surface tension";
+		case surfaceTensionValue:
+			return "Surface tension";
+		case initializeParticle:
+			return "Initialize particle with";
+		case massValue:
+			return "Mass";
+		case densityValue:
+			return "Density";
+		case localParticleDistance:
+			return "Particle Distance";
+		case particlePositionJitter:
+			return "Particle Position Jitter";
+		case shearModulus:
+			return "Shear Modulus";
+		case relaxationTime:
+			return "Relaxation time";
+		case frictionRate:
+			return "Friction rate";
+		case distanceDumpingRate:
+			return "Distance dumping rate";
+		case energyDumpingRate:
+			return "Energy dumping rate";
+		case soundSpeed:
+			return "Sound speed";
+		case velocityTuner:
+			return "Velocity tuner";
+		case courantFactor:
+			return "Courant Factor";
+		case smoothLengthRatio:
+			return "Smooth length ratio";
+		case surfaceDensityThreshold:
+			return "Surface density threshold";
+		case cgTolerance:
+			return "CG Tolerance";
+		case positionJitter:
+			return "Position jitter";
+		case maxSizeScale:
+			return "Max size scale";
+		case minSizeScale:
+			return "Min size scale";
+		case bubblyFluid:
+			return "Bubbly fluid";
+		case bubbleDistance:
+			return "Bubble distance";
+		case bubbleJitter:
+			return "Bubble jitter";
+		case addBubblesFromCO2:
+			return "Add bubbles from CO2";
+		case addBubblesByTotalOrRate:
+			return "Bubbles from total CO2 or rate";
+		case co2BubblesPerParticle:
+			return "Number of bubbles per particle";
+		case co2EnoughForBubble:
+			return "CO2 per bubble";
+		case co2PeakGeneration:
+			return "CO2 peak generation";
+		case co2TemperatureMean:
+			return "CO2 temperture mean";
+		case co2TemperatureRange:
+			return "CO2 temperature range";
+		case heatConductivity:
+			return "Heat conductiviy";
+		case generateCO2:
+			return "Generate CO2";
+
+		default:
+			return "Uknown";
+
+
+	};
+
+}
+
+QString ObjectProperties::getTextValue( ObjectPropertyType objectPropertyType )
+{
+
+	ObjectType currentObjectType;
+	
+	_objectTypeLock.lock();
+	currentObjectType = _objectType;
+	_objectTypeLock.unlock();
+
+	
+	switch ( objectPropertyType ) {
+		case objectType:
+			if (currentObjectType == Passive) 
+				return "Passive";
+			else if (currentObjectType == Solid)
+				return "Solid";
+			else if (currentObjectType == Fluid)
+				return "Fluid";
+			else if (currentObjectType == CutOut)
+				return "Cut out";
+			else return "Bubbly fluid";
+
+		case particleFluidType:	
+			if (_particleFluidType == SPH) 
+				return "SPH";
+			else 
+				return "Upsample";
+		
+		case fluidCompressibility:
+			if (_fluidCompressibility == GasStateEquation)
+				return "Gas state equation";
+			else if (_fluidCompressibility == PoissonEquation)
+				return "Poisson equation";
+			else
+				return "No compressibility";
+
+		case fluidType:
+			if (_fluidType == NonNewtonian)
+				return "Non Newtonian";
+			else 
+				return "Newtonian";
+
+		case tensorIntegration:
+			if (_tensorIntegration == Explicit) 
+				return "Explicit";
+			else
+				return "Implicit";
+		
+		case initializeParticle:
+			if (_initializeParticle == MassValue) 
+				return "Mass";
+			else
+				return "Density";
+
+		case addBubblesByTotalOrRate:
+			if (_addBubblesByTotalOrRate == ByTotalNumber)
+				return "Number of bubbles";
+			else
+				return "CO2 per bubble";
+
+		case surfaceTensionValue:
+		case massValue:
+		case densityValue:
+		case localParticleDistance:
+		case particlePositionJitter:
+		case shearModulus:
+		case relaxationTime:
+		case frictionRate:
+		case distanceDumpingRate:
+		case energyDumpingRate:
+		case soundSpeed:
+		case velocityTuner:
+		case courantFactor:
+		case smoothLengthRatio:
+		case surfaceDensityThreshold:
+		case cgTolerance:
+		case positionJitter:
+		case maxSizeScale:
+		case minSizeScale:
+		case bubbleDistance:
+		case bubbleJitter:
+		case co2EnoughForBubble:
+		case co2PeakGeneration:
+		case co2TemperatureMean:
+		case co2TemperatureRange:
+		case heatConductivity:
+	
+
+			return QString::number(getf(objectPropertyType));
+		
+		case fixedParticles:
+		case applyGravity:
+		case fixedMotion:
+		case applySurfaceTension:
+		case bubblyFluid:
+		case addBubblesFromCO2:
+		case generateCO2:
+			if ( getb(objectPropertyType) )
+				return "True";
+			else
+				return "False";
+
+		case co2BubblesPerParticle:
+			
+			return QString::number(geti(objectPropertyType));
+		
+		default:
+			return "Uknown value type";
+
+	};
+
+
+}
+
+// initializeProperties will initialize the static vector that holds the 
+// possible properties, the order in which they appear in the vector is the 
+// order in which they should appear on the gui.
+
+std::vector<ObjectPropertyType> ObjectProperties::initializeProperties()
+{
+
+	std::vector<ObjectPropertyType> properties;
+
+	properties.push_back(objectType);
+	properties.push_back(particleFluidType);
+	properties.push_back(fluidCompressibility);
+	properties.push_back(fluidType);
+	properties.push_back(tensorIntegration);
+	properties.push_back(fixedParticles);
+	properties.push_back(applyGravity);
+	properties.push_back(fixedMotion);
+	properties.push_back(applySurfaceTension);
+	properties.push_back(surfaceTensionValue);
+	properties.push_back(initializeParticle);
+	properties.push_back(massValue);
+	properties.push_back(densityValue);
+	properties.push_back(localParticleDistance);
+	properties.push_back(particlePositionJitter);
+	properties.push_back(shearModulus);
+	properties.push_back(relaxationTime);
+	properties.push_back(frictionRate);
+	properties.push_back(distanceDumpingRate);
+	properties.push_back(energyDumpingRate);
+	properties.push_back(soundSpeed);
+	properties.push_back(velocityTuner);
+	properties.push_back(courantFactor);
+	properties.push_back(smoothLengthRatio);
+	properties.push_back(surfaceDensityThreshold);
+	properties.push_back(cgTolerance);
+	properties.push_back(positionJitter);
+	properties.push_back(maxSizeScale);
+	properties.push_back(minSizeScale);
+	properties.push_back(bubblyFluid);
+	properties.push_back(bubbleDistance);
+	properties.push_back(bubbleJitter);
+	properties.push_back(addBubblesFromCO2);
+	properties.push_back(addBubblesByTotalOrRate);
+	properties.push_back(co2BubblesPerParticle);
+	properties.push_back(co2EnoughForBubble);
+	properties.push_back(co2PeakGeneration);
+	properties.push_back(co2TemperatureMean);
+	properties.push_back(co2TemperatureRange);
+	properties.push_back(heatConductivity);
+	properties.push_back(generateCO2);
+
+
+	return properties;
+}
+
+
+
+std::vector<ObjectPropertyType> ObjectProperties::_properties( ObjectProperties::initializeProperties() );
+
+
+void ObjectProperties::setc(ObjectPropertyType type, ovInt index)
+{
+	
+	ObjectType currentObjectType;
+	
+		
+	
+	switch (type) {
+		case objectType:
+			
+			_objectTypeLock.lock();
+			_objectType = (ObjectType) index;
+			currentObjectType = _objectType;
+			_objectTypeLock.unlock();
+			
+			
+			if (currentObjectType == Passive) {
+				_color = ColorPalette::objectPassive;
+			}
+			else if (currentObjectType == Solid) {
+				_color = ColorPalette::objectSolid;
+			}
+			else if (currentObjectType == CutOut ){
+				_color = ColorPalette::objectCutOut;
+			}
+			else if (currentObjectType == Fluid ){
+				_color.r = rand()/(RAND_MAX * 1.0f);
+				_color.g = rand()/(RAND_MAX * 1.0f);
+				_color.b = rand()/(RAND_MAX * 1.0f);
+
+			}
+		
+
+			break;
+		case particleFluidType:
+			_particleFluidType = (ParticleFluidType) index;
+			break;
+		case fluidCompressibility:
+			_fluidCompressibility = (FluidCompressibility) index;
+			break;
+		case fluidType:
+			_fluidType = (FluidType) index;
+			break;
+		case tensorIntegration:
+			_tensorIntegration = (TensorIntegration) index;
+			break;
+		case initializeParticle:
+			_initializeParticle = (InitializeParticle) index;
+			break;
+		case addBubblesByTotalOrRate:
+			_addBubblesByTotalOrRate = (AddBubblesByTotalOrRate) index;
+		case fixedParticles:
+		case applyGravity:
+		case fixedMotion:
+		case applySurfaceTension:
+		case bubblyFluid:
+		case addBubblesFromCO2:
+		case generateCO2:
+			_valuesBool[type] = index != 1;
+	}
+
+
+}
+
+
+// simulation properties methods
+
+
+SimulationProperties::SimulationProperties() {
+
+	processingAnimation = false;
+}
+
+SimulationProperties::~SimulationProperties() {
+
+	std::map<ovInt, ObjectProperties*>::iterator iter;
+
+	for (iter = _objectsProperties.begin(); iter != _objectsProperties.end(); ++iter) {
+		if ((*iter).second) {
+			delete (*iter).second;
+		}
+	}
+}
+
+SimulationProperties* SimulationProperties::getInstance()
+{
+	static SimulationProperties* simulationProperties = new SimulationProperties();
+	return simulationProperties;
+}
+
+void SimulationProperties::reset()
+{
+	_sceneProperties.reset();
+	_objectsProperties.clear();
+}
+
+
+inline void SimulationProperties::setSceneProperties(SceneProperties prop)
+{
+	_sceneProperties = prop;
+}
+
+void SimulationProperties::addObjectProperties(ovInt glName, ObjectProperties* objectProperties)
+{
+	_objectsProperties.insert( std::pair<ovInt,ObjectProperties*>(glName,objectProperties));
+}
+
+
+
+SceneProperties& SimulationProperties::getSceneProperties()
+{
+	return  _sceneProperties;
+}
+
+ObjectProperties* SimulationProperties::getObjectProperties(ovInt glName)
+{
+	return _objectsProperties[glName];
+}
+
+/*
+const inline SceneProperties& SimulationProperties::getSceneProperties() const
+{
+	return _sceneProperties;
+}
+
+const inline ObjectProperties& SimulationProperties::getObjectProperties(ovInt glName) const
+{
+	return _objectsProperties[glName];
+}
+*/
+void SimulationProperties::initialize(Scene* scene)
+{
+	ovInt size;
+	Node* node;
+	ObjectProperties* _objectProperties;
+
+	_objectsProperties.clear();
+
+	size = scene->directory.getSize();
+
+	for (ovInt i = 0; i < size; i++) {
+		node = scene->directory.getNode(i);
+		if (node->nodeType == GeometricObjectNode) { // if we are dealing with  
+													 // a geometric object add
+													 // default properties
+			_objectProperties = new ObjectProperties;
+			addObjectProperties( node->glName, _objectProperties);
+			
+
+		}
+
+	}
+
+}
+
+
+/* updateSceneValues should make changes for int values and comboboxes as well
+ */
+
+void SimulationProperties::updateValuesInt(ovInt row , ovInt value )
+{
+
+	NodeType nodeType;
+
+	nodeType = PROPERTIES->selectedNodeType;
+
+	if (nodeType == SceneNode) {
+		_sceneProperties.seti(SceneProperties::getPropertiesType(row), value);
+
+	}
+	else if (nodeType == GeometricObjectNode) {
+		_objectsProperties[PROPERTIES->selectedObject]->seti(ObjectProperties::getPropertiesType(row), value);
+
+	}
+	emit updatedValues();
+}
+
+void SimulationProperties::updateValuesFloat(ovInt row , ovFloat value )
+{
+	NodeType nodeType;
+
+	nodeType = PROPERTIES->selectedNodeType;
+
+	if (nodeType == SceneNode) {
+		_sceneProperties.setf(SceneProperties::getPropertiesType(row), value);
+
+	}
+	else if (nodeType == GeometricObjectNode) {
+		_objectsProperties[PROPERTIES->selectedObject]->setf(ObjectProperties::getPropertiesType(row), value);
+
+	}
+	emit updatedValues();
+}
+
+void SimulationProperties::updateValuesCombo(ovInt row, ovInt index )
+{
+	NodeType nodeType;
+
+	nodeType = PROPERTIES->selectedNodeType;
+
+	if (nodeType == SceneNode) {
+		_sceneProperties.setc(SceneProperties::getPropertiesType(row), index);
+
+	}
+	else if (nodeType == GeometricObjectNode) {
+		_objectsProperties[PROPERTIES->selectedObject]->setc(ObjectProperties::getPropertiesType(row), index);
+
+	}
+	emit updatedValues();
+}
+
+
+ParticleFluidType ObjectProperties::getParticleFluidType()
+{
+	return _particleFluidType;
+}
+
+FluidCompressibility ObjectProperties::getFluidCompressibility()
+{
+	return _fluidCompressibility;
+}
+
+FluidType ObjectProperties::getFluidType()
+{
+	return _fluidType;
+}
+
+TensorIntegration ObjectProperties::getTensorIntegration()
+{
+	return _tensorIntegration;
+}
+
+InitializeParticle ObjectProperties::getInitializeParticle()
+{
+	return _initializeParticle;
+}
+
+ovTuple3f ObjectProperties::getColor()
+{
+	return _color;
+
+}
+
+AddBubblesByTotalOrRate ObjectProperties::getBubbleGenerationType()
+{
+	return _addBubblesByTotalOrRate;
+
+}
+
+void ObjectProperties::setColor(ovTuple3f newColor)
+{
+	_color = newColor;
+}
+
+void ObjectProperties::setColor(ovFloat r, ovFloat g, ovFloat b)
+{
+	_color.r = r;
+	_color.g = g;
+	_color.b = b;
+
+}

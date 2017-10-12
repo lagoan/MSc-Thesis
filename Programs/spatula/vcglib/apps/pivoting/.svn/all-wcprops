@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/spatula/!svn/ver/1/trunk/vcglib/apps/pivoting
+END
+glarea.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/spatula/!svn/ver/1/trunk/vcglib/apps/pivoting/glarea.h
+END
+cmesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/spatula/!svn/ver/1/trunk/vcglib/apps/pivoting/cmesh.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/spatula/!svn/ver/1/trunk/vcglib/apps/pivoting/main.cpp
+END
+ring.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/spatula/!svn/ver/1/trunk/vcglib/apps/pivoting/ring.h
+END
+curvature.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/spatula/!svn/ver/1/trunk/vcglib/apps/pivoting/curvature.h
+END
+pivot.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/spatula/!svn/ver/1/trunk/vcglib/apps/pivoting/pivot.h
+END
+mainwindow.ui
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/spatula/!svn/ver/1/trunk/vcglib/apps/pivoting/mainwindow.ui
+END
+glarea.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/spatula/!svn/ver/1/trunk/vcglib/apps/pivoting/glarea.cpp
+END
+pivot.dev
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/spatula/!svn/ver/1/trunk/vcglib/apps/pivoting/pivot.dev
+END

@@ -1,0 +1,616 @@
+# Microsoft Developer Studio Project File - Name="SimuFlexApp" - Package Owner=<4>
+# Microsoft Developer Studio Generated Build File, Format Version 6.00
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (x86) Application" 0x0101
+
+CFG=SimuFlexApp - Win32 Debug
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "SimuFlexApp.mak".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "SimuFlexApp.mak" CFG="SimuFlexApp - Win32 Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "SimuFlexApp - Win32 Release" (based on "Win32 (x86) Application")
+!MESSAGE "SimuFlexApp - Win32 Debug" (based on "Win32 (x86) Application")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+CPP=cl.exe
+MTL=midl.exe
+RSC=rc.exe
+
+!IF  "$(CFG)" == "SimuFlexApp - Win32 Release"
+
+# PROP BASE Use_MFC 6
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "Release"
+# PROP BASE Intermediate_Dir "Release"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 6
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "Release"
+# PROP Intermediate_Dir "Release"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Yu"stdafx.h" /FD /c
+# ADD CPP /nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Yu"stdafx.h" /FD /c
+# ADD BASE MTL /nologo /D "NDEBUG" /mktyplib203 /win32
+# ADD MTL /nologo /D "NDEBUG" /mktyplib203 /win32
+# ADD BASE RSC /l 0x409 /d "NDEBUG" /d "_AFXDLL"
+# ADD RSC /l 0x409 /d "NDEBUG" /d "_AFXDLL"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 /nologo /subsystem:windows /machine:I386
+# ADD LINK32 opengl32.lib glu32.lib glaux.lib /nologo /subsystem:windows /incremental:yes /machine:I386
+
+!ELSEIF  "$(CFG)" == "SimuFlexApp - Win32 Debug"
+
+# PROP BASE Use_MFC 6
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "Debug"
+# PROP BASE Intermediate_Dir "Debug"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 6
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "Debug"
+# PROP Intermediate_Dir "Debug"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Yu"stdafx.h" /FD /GZ /c
+# ADD CPP /nologo /MDd /w /W0 /Gm /GR /GX /ZI /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR /Yu"stdafx.h" /FD /GZ /c
+# ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /win32
+# ADD MTL /nologo /D "_DEBUG" /mktyplib203 /win32
+# ADD BASE RSC /l 0x409 /d "_DEBUG" /d "_AFXDLL"
+# ADD RSC /l 0x409 /d "_DEBUG" /d "_AFXDLL"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 /nologo /subsystem:windows /debug /machine:I386 /pdbtype:sept
+# ADD LINK32 opengl32.lib glu32.lib glaux.lib /nologo /subsystem:windows /debug /machine:I386 /pdbtype:sept
+
+!ENDIF 
+
+# Begin Target
+
+# Name "SimuFlexApp - Win32 Release"
+# Name "SimuFlexApp - Win32 Debug"
+# Begin Group "Source Files"
+
+# PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Source File
+
+SOURCE=.\DlgOptionDisplay.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\DlgOptionImExport.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\DlgOptionModeling.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\DlgOptionParticleSelect.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\DlgOptionSurface.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\FluidResamplePrtls.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\MdlDropletOverTableDlg.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\MdlLiquidNozzleOverFloorDlg.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\ParticleVarMass.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuBoundary.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuBoundaryBox.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuBoundaryCylinder.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuBoundaryTable.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuCGSolver.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuCGSolver3D.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuDebugger.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuDriver.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuEnclosingBall.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFlexApp.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFlexApp.rc
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidBody.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidBodyComp.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidBodyIncomp.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidBodyNonNew.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidNozzle.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidOnSolid.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidParticle.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidParticleIncomp.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidParticleNonNew.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidParticleOnSolid.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFunc.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFuncPlotter.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuGrid.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuHangingSheet.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuManager.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuMarchingCube.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuMassParticle.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuMassSpring.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuMassSpringBall.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuMassSpringBody.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuMessageDlg.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuModeler.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuMonitor.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuMsg.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuObjAdmin.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuPoint3D.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuQuestionDlg.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuRecycledObject.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuRodClimbing.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuSrfcMassParticle.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuSrfcPoint3D.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuSrfcTriangle.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuTriangle.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuUtility.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuVector3D.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuView.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuVirtualParticle.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\StdAfx.cpp
+# ADD CPP /Yc"stdafx.h"
+# End Source File
+# Begin Source File
+
+SOURCE=.\TSimuPtrStack.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\Vector.cpp
+# End Source File
+# End Group
+# Begin Group "Resource Files"
+
+# PROP Default_Filter "ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
+# Begin Source File
+
+SOURCE=.\res\SimuFlexApp.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\SimuFlexApp.rc2
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\Toolbar.bmp
+# End Source File
+# End Group
+# Begin Group "Header Files"
+
+# PROP Default_Filter "h;hpp;hxx;hm;inl"
+# Begin Source File
+
+SOURCE=.\DlgOptionDisplay.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\DlgOptionImExport.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\DlgOptionModeling.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\DlgOptionParticleSelect.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\DlgOptionSurface.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\FluidResamplePrtls.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\MdlDropletOverTableDlg.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\MdlLiquidNozzleOverFloorDlg.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\ParticleVarMass.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Resource.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuBoundary.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuBoundaryBox.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuBoundaryCylinder.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuBoundaryTable.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuCGSolver.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuCGSolver3D.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuConstant.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuDebugger.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuDriver.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuEnclosingBall.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFlexApp.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidBody.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidBodyComp.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidBodyIncomp.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidBodyNonNew.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidNozzle.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidOnSolid.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidParticle.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidParticleIncomp.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidParticleNonNew.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFluidParticleOnSolid.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFunc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuFuncPlotter.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuGrid.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuHangingSheet.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuManager.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuMarchingCube.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuMarchingCubeLookupTables.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuMassParticle.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuMassSpring.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuMassSpringBall.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuMassSpringBody.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuMessageDlg.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuModeler.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuMonitor.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuMsg.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuObjAdmin.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuPoint3D.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuQuestionDlg.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuRecycledObject.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuRodClimbing.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuSrfcMassParticle.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuSrfcPoint3D.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuSrfcTriangle.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuTriangle.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuUtility.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuVector3D.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuView.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimuVirtualParticle.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\StdAfx.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\TPointerArray.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\TSimuPtrStack.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Vector.h
+# End Source File
+# End Group
+# Begin Source File
+
+SOURCE=.\ApplicationMemo.txt
+# End Source File
+# Begin Source File
+
+SOURCE=.\ReadMe.txt
+# End Source File
+# End Target
+# End Project

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_isosurface
+END
+trimesh_isosurface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_isosurface/trimesh_isosurface.cpp
+END
+simple_volume.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_isosurface/simple_volume.h
+END
+trimesh_isosurface.pro
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_isosurface/trimesh_isosurface.pro
+END

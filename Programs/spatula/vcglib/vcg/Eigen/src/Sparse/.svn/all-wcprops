@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse
+END
+CompressedStorage.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/CompressedStorage.h
+END
+SparseUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseUtil.h
+END
+SparseTranspose.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseTranspose.h
+END
+SparseDiagonalProduct.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseDiagonalProduct.h
+END
+SparseLU.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseLU.h
+END
+TriangularSolver.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/TriangularSolver.h
+END
+RandomSetter.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/RandomSetter.h
+END
+SparseFlagged.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseFlagged.h
+END
+SparseLLT.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseLLT.h
+END
+SparseLDLT.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseLDLT.h
+END
+SparseVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseVector.h
+END
+SparseMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseMatrix.h
+END
+CholmodSupport.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/CholmodSupport.h
+END
+CoreIterators.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/CoreIterators.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/CMakeLists.txt
+END
+SparseCwise.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseCwise.h
+END
+AmbiVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/AmbiVector.h
+END
+SuperLUSupport.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SuperLUSupport.h
+END
+SparseCwiseBinaryOp.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseCwiseBinaryOp.h
+END
+SparseProduct.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseProduct.h
+END
+SparseAssign.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseAssign.h
+END
+SparseDot.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseDot.h
+END
+SparseRedux.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseRedux.h
+END
+SparseFuzzy.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseFuzzy.h
+END
+SparseCwiseUnaryOp.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseCwiseUnaryOp.h
+END
+SparseBlock.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseBlock.h
+END
+MappedSparseMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/MappedSparseMatrix.h
+END
+TaucsSupport.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/TaucsSupport.h
+END
+SparseMatrixBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/SparseMatrixBase.h
+END
+UmfPackSupport.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/UmfPackSupport.h
+END
+DynamicSparseMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/Sparse/DynamicSparseMatrix.h
+END

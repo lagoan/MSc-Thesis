@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh
+END
+inertia.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/inertia.h
+END
+bitquad_optimization.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/bitquad_optimization.h
+END
+edge_support.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/edge_support.h
+END
+refine_loop.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/refine_loop.h
+END
+overlap_estimation.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/overlap_estimation.h
+END
+subset.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/subset.h
+END
+append.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/append.h
+END
+refine.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/refine.h
+END
+smooth.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/smooth.h
+END
+base.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/base.h
+END
+inside.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/inside.h
+END
+stat.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/stat.h
+END
+closest.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/closest.h
+END
+autoalign_4pcs.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/autoalign_4pcs.h
+END
+bitquad_creation.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/bitquad_creation.h
+END
+crease_cut.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/crease_cut.h
+END
+clustering.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/clustering.h
+END
+textcoord_optimization.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/textcoord_optimization.h
+END
+geodesic.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/geodesic.h
+END
+clean.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/clean.h
+END
+point_sampling.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/point_sampling.h
+END
+polygon_support.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/polygon_support.h
+END
+allocate.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/allocate.h
+END
+bitquad_support.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/bitquad_support.h
+END
+edge_collapse.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/edge_collapse.h
+END
+clip.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/clip.h
+END
+hole.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/hole.h
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/tetramesh/update
+END
+topology.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/tetramesh/update/topology.h
+END
+triconvert.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/tetramesh/update/triconvert.h
+END
+bounding.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/tetramesh/update/bounding.h
+END
+normal.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/tetramesh/update/normal.h
+END

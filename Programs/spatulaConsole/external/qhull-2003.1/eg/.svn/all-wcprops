@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/spatula/!svn/ver/1/trunk/external/qhull-2003.1/eg
+END
+q_test
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/spatula/!svn/ver/1/trunk/external/qhull-2003.1/eg/q_test
+END
+q_test.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/spatula/!svn/ver/1/trunk/external/qhull-2003.1/eg/q_test.bat
+END
+q_eg
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/spatula/!svn/ver/1/trunk/external/qhull-2003.1/eg/q_eg
+END
+q_egtest
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/external/qhull-2003.1/eg/q_egtest
+END
+Qhull-go.bat
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/spatula/!svn/ver/1/trunk/external/qhull-2003.1/eg/Qhull-go.bat
+END

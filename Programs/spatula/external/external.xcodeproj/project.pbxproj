@@ -1,0 +1,188 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		5D3442E61079ACCA00C4B9F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 751F13A82137C0A5223D5306 /* 3ds.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5D3442E21079ACCA00C4B9F4 /* lib3ds.a */;
+			remoteInfo = 3ds;
+		};
+		5D3442ED1079ACCA00C4B9F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D26756AC36CA43D07C368A05 /* muparser.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5D3442E91079ACCA00C4B9F4 /* libmuparser.a */;
+			remoteInfo = muparser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		751F13A82137C0A5223D5306 /* 3ds.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = 3ds.xcodeproj; path = "/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/3ds.xcodeproj"; sourceTree = "<absolute>"; };
+		B85BEE8845CB1D28B01938C8 /* bz2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = bz2.xcodeproj; path = "/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/bzip2-1.0.5/bz2.xcodeproj"; sourceTree = "<absolute>"; };
+		D26756AC36CA43D07C368A05 /* muparser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = muparser.xcodeproj; path = /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/muparser_v130/src/muparser.xcodeproj; sourceTree = "<absolute>"; };
+		DA92AF429256F4C48E9E3ABF /* levmar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = levmar.xcodeproj; path = "/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/levmar-2.3/levmar.xcodeproj"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		025663EAF0EBE6530BBFC2DB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D26756AC36CA43D07C368A05 /* muparser.xcodeproj */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		0526803B169F2CC9CE50E556 /* muparser_v130 */ = {
+			isa = PBXGroup;
+			children = (
+				025663EAF0EBE6530BBFC2DB /* src */,
+			);
+			name = muparser_v130;
+			sourceTree = "<group>";
+		};
+		0E71022E8970293824BA089C = {
+			isa = PBXGroup;
+			children = (
+				45EA5E39364B7AFA15F932A7 /* lib3ds-1.3.0 */,
+				B85BEE8845CB1D28B01938C8 /* bz2.xcodeproj */,
+				0526803B169F2CC9CE50E556 /* muparser_v130 */,
+				DA92AF429256F4C48E9E3ABF /* levmar.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		26DEE04FB8F7A7993450330D /* lib3ds */ = {
+			isa = PBXGroup;
+			children = (
+				751F13A82137C0A5223D5306 /* 3ds.xcodeproj */,
+			);
+			name = lib3ds;
+			sourceTree = "<group>";
+		};
+		3C8A0F7D45F97B4A88A7B2DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CD383C657EECE27B66FF6DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D3442E71079ACCA00C4B9F4 /* lib3ds.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45EA5E39364B7AFA15F932A7 /* lib3ds-1.3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				26DEE04FB8F7A7993450330D /* lib3ds */,
+			);
+			name = "lib3ds-1.3.0";
+			sourceTree = "<group>";
+		};
+		B54F1A6DDA7313ADEBD7E3F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D3442EE1079ACCA00C4B9F4 /* libmuparser.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE7097E8CBC72917ECD629C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		83F5E4B52EF1918F746DF6D4 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 30E61B081CF688BCA30A6135 /* Build configuration list for PBXProject "external" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = 0E71022E8970293824BA089C;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3CD383C657EECE27B66FF6DD /* Products */;
+					ProjectRef = 751F13A82137C0A5223D5306 /* 3ds.xcodeproj */;
+				},
+				{
+					ProductGroup = 3C8A0F7D45F97B4A88A7B2DE /* Products */;
+					ProjectRef = B85BEE8845CB1D28B01938C8 /* bz2.xcodeproj */;
+				},
+				{
+					ProductGroup = CE7097E8CBC72917ECD629C9 /* Products */;
+					ProjectRef = DA92AF429256F4C48E9E3ABF /* levmar.xcodeproj */;
+				},
+				{
+					ProductGroup = B54F1A6DDA7313ADEBD7E3F5 /* Products */;
+					ProjectRef = D26756AC36CA43D07C368A05 /* muparser.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5D3442E71079ACCA00C4B9F4 /* lib3ds.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = lib3ds.a;
+			remoteRef = 5D3442E61079ACCA00C4B9F4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5D3442EE1079ACCA00C4B9F4 /* libmuparser.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmuparser.a;
+			remoteRef = 5D3442ED1079ACCA00C4B9F4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin XCBuildConfiguration section */
+		B2A2D94BC0E5A82DA3503E81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		C6EE5F4E4F422FDDBF285003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30E61B081CF688BCA30A6135 /* Build configuration list for PBXProject "external" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2A2D94BC0E5A82DA3503E81 /* Debug */,
+				C6EE5F4E4F422FDDBF285003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83F5E4B52EF1918F746DF6D4 /* Project object */;
+}

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/spatula/!svn/ver/1/trunk/vcglib/apps/tetraviewer
+END
+mainframe.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/spatula/!svn/ver/1/trunk/vcglib/apps/tetraviewer/mainframe.cpp
+END
+mainframe.ui.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/spatula/!svn/ver/1/trunk/vcglib/apps/tetraviewer/mainframe.ui.h
+END
+myglwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/spatula/!svn/ver/1/trunk/vcglib/apps/tetraviewer/myglwidget.h
+END
+tetrastats.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/spatula/!svn/ver/1/trunk/vcglib/apps/tetraviewer/tetrastats.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/spatula/!svn/ver/1/trunk/vcglib/apps/tetraviewer/main.cpp
+END
+mainframe.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/spatula/!svn/ver/1/trunk/vcglib/apps/tetraviewer/mainframe.h
+END
+myclasses.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/spatula/!svn/ver/1/trunk/vcglib/apps/tetraviewer/myclasses.h
+END
+MainFrame.ui
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/spatula/!svn/ver/1/trunk/vcglib/apps/tetraviewer/MainFrame.ui
+END
+moc_myglwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/spatula/!svn/ver/1/trunk/vcglib/apps/tetraviewer/moc_myglwidget.cpp
+END
+qmake_image_collection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/spatula/!svn/ver/1/trunk/vcglib/apps/tetraviewer/qmake_image_collection.cpp
+END
+myglwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/spatula/!svn/ver/1/trunk/vcglib/apps/tetraviewer/myglwidget.cpp
+END
+moc_mainframe.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/spatula/!svn/ver/1/trunk/vcglib/apps/tetraviewer/moc_mainframe.cpp
+END

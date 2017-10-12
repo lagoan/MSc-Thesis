@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/spatula/!svn/ver/1/trunk/src/meshlab
+END
+meshmodel.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/spatula/!svn/ver/1/trunk/src/meshlab/meshmodel.h
+END
+filterparameter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/spatula/!svn/ver/1/trunk/src/meshlab/filterparameter.cpp
+END
+interfaces.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/spatula/!svn/ver/1/trunk/src/meshlab/interfaces.h
+END
+filterparameter.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/spatula/!svn/ver/1/trunk/src/meshlab/filterparameter.h
+END
+meshmodel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/spatula/!svn/ver/1/trunk/src/meshlab/meshmodel.cpp
+END

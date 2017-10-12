@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/QR
+END
+Tridiagonalization.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/QR/Tridiagonalization.h
+END
+EigenSolver.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/QR/EigenSolver.h
+END
+HessenbergDecomposition.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/QR/HessenbergDecomposition.h
+END
+QR.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/QR/QR.h
+END
+QrInstantiations.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/QR/QrInstantiations.cpp
+END
+SelfAdjointEigenSolver.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/QR/SelfAdjointEigenSolver.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/src/QR/CMakeLists.txt
+END

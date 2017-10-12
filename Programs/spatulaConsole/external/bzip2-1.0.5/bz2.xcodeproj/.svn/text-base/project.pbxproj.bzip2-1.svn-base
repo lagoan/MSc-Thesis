@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+		D7BA7D76DAB5DD13389D6332 = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			generatedFileNames = (
+				);
+			isa = PBXShellScriptBuildPhase;
+			name = "Qt Qmake";
+			neededFileNames = (
+				);
+			shellPath = "/bin/sh";
+			shellScript = "make\ -C\ /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/bzip2-1.0.5\ -f\ bz2.xcodeproj/qt_makeqmake.mak";
+		};
+		2868F90ADCBF0268B9C7BFF1 = {
+			isa = PBXFileReference;
+			name = "blocksort.c";
+			path = "blocksort.c";
+			refType = 4;
+		};
+		19EAA3B7E64DA9723FCAEB5B = {
+			fileRef = "2868F90ADCBF0268B9C7BFF1";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		2D1387CA92E7B83C7AA238C3 = {
+			isa = PBXFileReference;
+			name = "bzip2.c";
+			path = "bzip2.c";
+			refType = 4;
+		};
+		49BAB40935C141284DDEDBB0 = {
+			fileRef = "2D1387CA92E7B83C7AA238C3";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		1206CF64F8C1F92EC094903A = {
+			isa = PBXFileReference;
+			name = "bzip2recover.c";
+			path = "bzip2recover.c";
+			refType = 4;
+		};
+		E68D5173313EB24EB6AFB588 = {
+			fileRef = "1206CF64F8C1F92EC094903A";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		A67B8472F07710730B1A65A6 = {
+			isa = PBXFileReference;
+			name = "bzlib.c";
+			path = "bzlib.c";
+			refType = 4;
+		};
+		073A456043675F94B290BF38 = {
+			fileRef = "A67B8472F07710730B1A65A6";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		4F0E030A358521399CBED216 = {
+			isa = PBXFileReference;
+			name = "compress.c";
+			path = "compress.c";
+			refType = 4;
+		};
+		F0B812F12D4E387E164C08CA = {
+			fileRef = "4F0E030A358521399CBED216";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		E4963078FA93DBEC2187D7F9 = {
+			isa = PBXFileReference;
+			name = "crctable.c";
+			path = "crctable.c";
+			refType = 4;
+		};
+		A8502C038383F2263D9F535B = {
+			fileRef = "E4963078FA93DBEC2187D7F9";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		F0812A417B5CDC8410F46318 = {
+			isa = PBXFileReference;
+			name = "decompress.c";
+			path = "decompress.c";
+			refType = 4;
+		};
+		5ACDD5FFF2571C7525F5C865 = {
+			fileRef = "F0812A417B5CDC8410F46318";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		1FBABB53DE6D299406E0B1C4 = {
+			isa = PBXFileReference;
+			name = "dlltest.c";
+			path = "dlltest.c";
+			refType = 4;
+		};
+		7F236BB26302222D44BCE204 = {
+			fileRef = "1FBABB53DE6D299406E0B1C4";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		E0C23925AB8CD2B5ABB37299 = {
+			isa = PBXFileReference;
+			name = "huffman.c";
+			path = "huffman.c";
+			refType = 4;
+		};
+		29E5C2E345BE18EE7EA7E7EA = {
+			fileRef = "E0C23925AB8CD2B5ABB37299";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		9B7647ED06AB611CB5940F0D = {
+			isa = PBXFileReference;
+			name = "mk251.c";
+			path = "mk251.c";
+			refType = 4;
+		};
+		F0D0BE4A78F1C805C16B75E8 = {
+			fileRef = "9B7647ED06AB611CB5940F0D";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		0FF94DC47955112DB15E0EAC = {
+			isa = PBXFileReference;
+			name = "randtable.c";
+			path = "randtable.c";
+			refType = 4;
+		};
+		4D9D1882C93BFDC69685F1A6 = {
+			fileRef = "0FF94DC47955112DB15E0EAC";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		C39847DB296B7349423E0064 = {
+			isa = PBXFileReference;
+			name = "spewG.c";
+			path = "spewG.c";
+			refType = 4;
+		};
+		BA2658468AADE426C773A8F4 = {
+			fileRef = "C39847DB296B7349423E0064";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		83FCC70E088E2445162F5B06 = {
+			isa = PBXFileReference;
+			name = "unzcrash.c";
+			path = "unzcrash.c";
+			refType = 4;
+		};
+		468F05744565E6F98A421E8F = {
+			fileRef = "83FCC70E088E2445162F5B06";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		87EE656180C24A82312A7776 = {
+			isa = PBXFileReference;
+			name = "bzlib.h";
+			path = "bzlib.h";
+			refType = 4;
+		};
+		7EFA77EF168F57958A945003 = {
+			isa = PBXFileReference;
+			name = "bzlib_private.h";
+			path = "bzlib_private.h";
+			refType = 4;
+		};
+		6101BEFC669F8B36ED8508C4 = {
+			isa = PBXFileReference;
+			name = "bzip2-1.0.5.pro";
+			path = "bzip2-1.0.5.pro";
+			refType = 4;
+		};
+		883D7615C4D2DE3FA1218F12 = {
+			isa = PBXGroup;
+			children = (
+				"87EE656180C24A82312A7776",
+				"7EFA77EF168F57958A945003");
+			name = "Headers";
+			refType = 4;
+		};
+		FB61758D0F0FDA4BA867C3D5 = {
+			isa = PBXGroup;
+			children = (
+				"2868F90ADCBF0268B9C7BFF1",
+				"2D1387CA92E7B83C7AA238C3",
+				"1206CF64F8C1F92EC094903A",
+				"A67B8472F07710730B1A65A6",
+				"4F0E030A358521399CBED216",
+				"E4963078FA93DBEC2187D7F9",
+				"F0812A417B5CDC8410F46318",
+				"1FBABB53DE6D299406E0B1C4",
+				"E0C23925AB8CD2B5ABB37299",
+				"9B7647ED06AB611CB5940F0D",
+				"0FF94DC47955112DB15E0EAC",
+				"C39847DB296B7349423E0064",
+				"83FCC70E088E2445162F5B06");
+			name = "Sources";
+			refType = 4;
+		};
+		7CABE3C80E79AD2B307756D2 = {
+			isa = PBXGroup;
+			children = (
+				"6101BEFC669F8B36ED8508C4");
+			name = "Sources [qmake]";
+			refType = 4;
+		};
+		A0A52A2ADF7A1E2A99738674 = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			generatedFileNames = (
+				"19EAA3B7E64DA9723FCAEB5B",
+				"49BAB40935C141284DDEDBB0",
+				"E68D5173313EB24EB6AFB588",
+				"073A456043675F94B290BF38",
+				"F0B812F12D4E387E164C08CA",
+				"A8502C038383F2263D9F535B",
+				"5ACDD5FFF2571C7525F5C865",
+				"7F236BB26302222D44BCE204",
+				"29E5C2E345BE18EE7EA7E7EA",
+				"F0D0BE4A78F1C805C16B75E8",
+				"4D9D1882C93BFDC69685F1A6",
+				"BA2658468AADE426C773A8F4",
+				"468F05744565E6F98A421E8F");
+			isa = PBXShellScriptBuildPhase;
+			name = "Qt Preprocessors";
+			neededFileNames = (
+				"19EAA3B7E64DA9723FCAEB5B",
+				"49BAB40935C141284DDEDBB0",
+				"E68D5173313EB24EB6AFB588",
+				"073A456043675F94B290BF38",
+				"F0B812F12D4E387E164C08CA",
+				"A8502C038383F2263D9F535B",
+				"5ACDD5FFF2571C7525F5C865",
+				"7F236BB26302222D44BCE204",
+				"29E5C2E345BE18EE7EA7E7EA",
+				"F0D0BE4A78F1C805C16B75E8",
+				"4D9D1882C93BFDC69685F1A6",
+				"BA2658468AADE426C773A8F4",
+				"468F05744565E6F98A421E8F");
+			shellPath = "/bin/sh";
+			shellScript = "make\ -C\ /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/bzip2-1.0.5\ -f\ bz2.xcodeproj/qt_preprocess.mak";
+		};
+		C29B8785722055ED95EF7B57 = {
+			buildActionMask = 2147483647;
+			files = (
+				"19EAA3B7E64DA9723FCAEB5B",
+				"49BAB40935C141284DDEDBB0",
+				"E68D5173313EB24EB6AFB588",
+				"073A456043675F94B290BF38",
+				"F0B812F12D4E387E164C08CA",
+				"A8502C038383F2263D9F535B",
+				"5ACDD5FFF2571C7525F5C865",
+				"7F236BB26302222D44BCE204",
+				"29E5C2E345BE18EE7EA7E7EA",
+				"F0D0BE4A78F1C805C16B75E8",
+				"4D9D1882C93BFDC69685F1A6",
+				"BA2658468AADE426C773A8F4",
+				"468F05744565E6F98A421E8F");
+			isa = PBXSourcesBuildPhase;
+			name = "Build Sources";
+		};
+		2A1043669E6E5A7426EA502A = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			isa = PBXFrameworksBuildPhase;
+			name = "Frameworks & Libraries";
+		};
+		F6069D5A5DA8AA28EDB8B3C6 = {
+			name = "Project Copy";
+			buildActionMask = 2147483647;
+			dstPath = "/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib/macx";
+			dstSubfolderSpec = 0;
+			files = (
+"07E0DFA73EB56DCB9E28CDD9");
+			isa = PBXCopyFilesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07E0DFA73EB56DCB9E28CDD9 = {
+			fileRef = "3A7165C8957BC94FCF91354B";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		05596AB53D8D521C69802C27 = {
+			children = (
+				"FB61758D0F0FDA4BA867C3D5",
+				"883D7615C4D2DE3FA1218F12",
+				"7CABE3C80E79AD2B307756D2");
+			isa = PBXGroup;
+			name = "bz2";
+			path = "";
+			refType = 4;
+		};
+		3A7165C8957BC94FCF91354B = {
+			isa = PBXFileReference;
+			explicitFileType = "compiled.mach-o.dylib";
+			path = "libbz2.a";
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		068F80C7519D0528FB08E821 = {
+			children = (
+				"3A7165C8957BC94FCF91354B");
+			isa = PBXGroup;
+			name = "Products";
+			refType = 4;
+		};
+		7C7AEE5125BEF064ACCAED02 = {
+			buildPhases = (
+				"D7BA7D76DAB5DD13389D6332",
+				"A0A52A2ADF7A1E2A99738674",
+				"F6069D5A5DA8AA28EDB8B3C6",
+				"C29B8785722055ED95EF7B57",
+				"2A1043669E6E5A7426EA502A");
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"/Library/Frameworks/QtCore.framework/Versions/4/Headers",
+					"/usr/include/QtCore",
+					"/Library/Frameworks/QtGui.framework/Versions/4/Headers",
+					"/usr/include/QtGui",
+					"/usr/include",
+					".",
+					".",
+					"/usr/local/include",
+					"/System/Library/Frameworks/CarbonCore.framework/Headers",
+					"/usr/local/Qt4.5/mkspecs/macx-xcode");
+				LIBRARY_SEARCH_PATHS = (
+					);
+				OPTIMIZATION_CFLAGS = (
+					);
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED");
+				LEXFLAGS = "";
+				YACCFLAGS = "-d";
+				OTHER_REZFLAGS = "";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				PREBINDING = NO;
+				BUILD_ROOT = "/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/bzip2-1.0.5";
+				INSTALL_DIR = "/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/bzip2-1.0.5/../lib/macx/";
+				INSTALL_PATH = "";
+				DYLIB_CURRENT_VERSION = "1.0.0";
+				DYLIB_COMPATIBILITY_VERSION = "1.0";
+				MACOSX_DEPLOYMENT_TARGET = "10.3";
+				LIBRARY_STYLE = "STATIC";
+				PRODUCT_NAME = "bz2";
+			};
+			conditionalBuildSettings = {
+			};
+			dependencies = (
+				);
+			productReference = "3A7165C8957BC94FCF91354B";
+			shouldUseHeadermap = 1;
+			isa = PBXNativeTarget;
+			name = "bz2";
+			productName = "bz2";
+			productType = "com.apple.product-type.library.static";
+			startupPath = "<<ProjectDirectory>>";
+			productInstallPath = "../lib/macx/";
+		};
+		8DB1DD96F65B1BF1FFC506E0 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = "NO";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "YES";
+				GCC_OPTIMIZATION_LEVEL = "0";
+			};
+			name = "Debug";
+		};
+		2C641C3335766025DD51B7BD = {
+			buildRules = (
+				);
+			buildSettings = {
+				COPY_PHASE_STRIP = "NO";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "YES";
+				GCC_OPTIMIZATION_LEVEL = "0";
+			};
+			isa = "PBXBuildStyle";
+			name = "Debug";
+		};
+		95E1EB2E5DDD587BE5B3E548 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = "YES";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "NO";
+			};
+			name = "Release";
+		};
+		26DE8D2AEA4B3714B41E931F = {
+			buildRules = (
+				);
+			buildSettings = {
+				COPY_PHASE_STRIP = "YES";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "NO";
+			};
+			isa = "PBXBuildStyle";
+			name = "Release";
+		};
+		2A951308CDB28F104D0A4BD2 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"8DB1DD96F65B1BF1FFC506E0",
+				"95E1EB2E5DDD587BE5B3E548");
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationIsName = "Debug";
+		};
+		91B15E841AA80083484172DE = {
+			buildStyles = (
+				"2C641C3335766025DD51B7BD",
+				"26DE8D2AEA4B3714B41E931F");
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = "05596AB53D8D521C69802C27";
+			buildConfigurationList = "2A951308CDB28F104D0A4BD2";
+			projectDirPath = "";
+			targets = (
+				"7C7AEE5125BEF064ACCAED02");
+		};
+	};
+	rootObject = "91B15E841AA80083484172DE";
+}

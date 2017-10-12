@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/oven/!svn/ver/1/trunk/src/primitives
+END
+ovVector3D.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/oven/!svn/ver/1/trunk/src/primitives/ovVector3D.cpp
+END
+rayTriangleIntersect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/oven/!svn/ver/1/trunk/src/primitives/rayTriangleIntersect.cpp
+END
+ovKDTree.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/oven/!svn/ver/1/trunk/src/primitives/ovKDTree.cpp
+END
+Matrix.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/oven/!svn/ver/1/trunk/src/primitives/Matrix.cpp
+END
+GeometricObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/oven/!svn/ver/1/trunk/src/primitives/GeometricObject.cpp
+END
+Polygons.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/oven/!svn/ver/1/trunk/src/primitives/Polygons.cpp
+END
+Geometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/oven/!svn/ver/1/trunk/src/primitives/Geometry.cpp
+END
+TransformationMatrix.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/oven/!svn/ver/1/trunk/src/primitives/TransformationMatrix.cpp
+END

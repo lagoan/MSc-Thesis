@@ -1,0 +1,80 @@
+10
+
+dir
+2
+http://lagoan@svn.omarrodriguez.org/spatula/trunk
+http://lagoan@svn.omarrodriguez.org/spatula
+
+
+
+2010-10-19T18:14:05.216566Z
+2
+lagoan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+700f0424-19e0-4b9b-9ebd-138776221104
+
+build
+dir
+
+tmp
+dir
+
+external
+dir
+
+vcglib
+dir
+
+src
+dir
+
+spatula.pro
+file
+
+
+
+
+2011-01-29T19:46:26.000000Z
+17afc8be089a8e94e8e8838f1a2d050c
+2010-10-14T21:40:32.933316Z
+1
+lagoan
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3007
+
+resources
+dir
+

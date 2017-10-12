@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/oven/!svn/ver/1/trunk/include/primitives
+END
+Polygons.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/oven/!svn/ver/1/trunk/include/primitives/Polygons.h
+END
+Geometry.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/oven/!svn/ver/1/trunk/include/primitives/Geometry.h
+END
+TransformationMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/oven/!svn/ver/1/trunk/include/primitives/TransformationMatrix.h
+END
+Vertex.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/oven/!svn/ver/1/trunk/include/primitives/Vertex.h
+END
+ovVector3D.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/oven/!svn/ver/1/trunk/include/primitives/ovVector3D.h
+END
+rayTriangleIntersect.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/oven/!svn/ver/1/trunk/include/primitives/rayTriangleIntersect.h
+END
+ovKDTree.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/oven/!svn/ver/1/trunk/include/primitives/ovKDTree.h
+END
+Matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/oven/!svn/ver/1/trunk/include/primitives/Matrix.h
+END
+Polygon.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/oven/!svn/ver/1/trunk/include/primitives/Polygon.h
+END
+ParticleInstance.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/oven/!svn/ver/1/trunk/include/primitives/ParticleInstance.h
+END

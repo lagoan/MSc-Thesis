@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/update
+END
+flag.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/update/flag.h
+END
+topology.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/update/topology.h
+END
+color.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/update/color.h
+END
+curvature.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/update/curvature.h
+END
+texture.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/update/texture.h
+END
+position.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/update/position.h
+END
+bounding.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/update/bounding.h
+END
+selection.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/update/selection.h
+END
+edges.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/update/edges.h
+END
+normal.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/update/normal.h
+END
+quality.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/trimesh/update/quality.h
+END

@@ -1,0 +1,162 @@
+10
+
+dir
+2
+http://lagoan@svn.omarrodriguez.org/spatula/trunk/vcglib/apps/sample
+http://lagoan@svn.omarrodriguez.org/spatula
+
+
+
+2010-10-14T21:40:32.933316Z
+1
+lagoan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+700f0424-19e0-4b9b-9ebd-138776221104
+
+trimesh_QT
+dir
+
+trimesh_optional
+dir
+
+sample.pro
+file
+
+
+
+
+2011-01-29T19:45:45.000000Z
+ab17e0e93f86162f395bc4216bbbef99
+2010-10-14T21:40:32.933316Z
+1
+lagoan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+777
+
+trimesh_hole
+dir
+
+trimesh_ball_pivoting
+dir
+
+edgemesh_grid
+dir
+
+colorspace
+dir
+
+trimesh_join
+dir
+
+trimesh_attribute
+dir
+
+polygonmesh_base
+dir
+
+trimesh_isosurface
+dir
+
+trimesh_pos_demo
+dir
+
+trackball_SDL
+dir
+
+space_minimal
+dir
+
+trimesh_intersection
+dir
+
+trimesh_refine
+dir
+
+img_filters
+dir
+
+trimesh_smooth
+dir
+
+trimesh_base
+dir
+
+trimesh_topology
+dir
+
+aabb_binary_tree
+dir
+
+trimesh_clustering
+dir
+
+sample.sln
+file
+
+
+
+
+2011-01-29T19:45:45.000000Z
+1c15fbe759b04bc870ab8468ace0e9ed
+2010-10-14T21:40:32.933316Z
+1
+lagoan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4089
+
+trimesh_SDL
+dir
+

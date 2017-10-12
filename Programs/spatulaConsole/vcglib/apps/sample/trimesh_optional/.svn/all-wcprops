@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_optional
+END
+trimesh_optional.pro
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_optional/trimesh_optional.pro
+END
+trimesh_optional.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_optional/trimesh_optional.cpp
+END
+trimesh_optional_occ.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_optional/trimesh_optional_occ.cpp
+END
+trimesh_simpdata_simp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_optional/trimesh_simpdata_simp.cpp
+END
+trimesh_optional_ocf.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_optional/trimesh_optional_ocf.cpp
+END

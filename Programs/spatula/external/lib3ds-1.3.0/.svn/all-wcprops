@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/configure
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/Makefile.in
+END
+lib3ds-config.1
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/lib3ds-config.1
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/AUTHORS
+END
+3ds-utils.spec.in
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/3ds-utils.spec.in
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/configure.in
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/ChangeLog
+END
+depcomp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/depcomp
+END
+lib3ds-config.1.in
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/lib3ds-config.1.in
+END
+lib3ds-config.in
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/lib3ds-config.in
+END
+config.guess
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/config.guess
+END
+config.sub
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/config.sub
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/README
+END
+ltmain.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/ltmain.sh
+END
+lib3ds.m4
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/lib3ds.m4
+END
+config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/config.h.in
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/TODO
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/INSTALL
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/COPYING
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/Makefile.am
+END
+missing
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/missing
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/NEWS
+END
+aclocal.m4
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/aclocal.m4
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/install-sh
+END
+lib3ds.spec.in
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/spatula/!svn/ver/1/trunk/external/lib3ds-1.3.0/lib3ds.spec.in
+END

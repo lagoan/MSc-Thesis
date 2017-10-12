@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/spatula/!svn/ver/1/trunk/vcglib/apps/trimeshinfo
+END
+history.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/spatula/!svn/ver/1/trunk/vcglib/apps/trimeshinfo/history.txt
+END
+SlotsNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/spatula/!svn/ver/1/trunk/vcglib/apps/trimeshinfo/SlotsNode.h
+END
+InstancesNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/spatula/!svn/ver/1/trunk/vcglib/apps/trimeshinfo/InstancesNode.h
+END
+XMLTree.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/vcglib/apps/trimeshinfo/XMLTree.h
+END
+trimeshinfo.pro
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/spatula/!svn/ver/1/trunk/vcglib/apps/trimeshinfo/trimeshinfo.pro
+END
+defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/spatula/!svn/ver/1/trunk/vcglib/apps/trimeshinfo/defs.h
+END
+trimeshinfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/spatula/!svn/ver/1/trunk/vcglib/apps/trimeshinfo/trimeshinfo.cpp
+END
+ClassesNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/spatula/!svn/ver/1/trunk/vcglib/apps/trimeshinfo/ClassesNode.h
+END
+Node.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/spatula/!svn/ver/1/trunk/vcglib/apps/trimeshinfo/Node.h
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/spatula/!svn/ver/1/trunk/vcglib/apps/trimeshinfo/readme.txt
+END

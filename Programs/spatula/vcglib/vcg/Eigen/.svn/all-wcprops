@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen
+END
+LU
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/LU
+END
+QtAlignedMalloc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/QtAlignedMalloc
+END
+Cholesky
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/Cholesky
+END
+QR
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/QR
+END
+Eigen
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/Eigen
+END
+Core
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/Core
+END
+Geometry
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/Geometry
+END
+LeastSquares
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/LeastSquares
+END
+SVD
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/SVD
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/CMakeLists.txt
+END
+Sparse
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/Sparse
+END
+StdVector
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/StdVector
+END
+Array
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/Array
+END
+Dense
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/spatula/!svn/ver/1/trunk/vcglib/vcg/Eigen/Dense
+END

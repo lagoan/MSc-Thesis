@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/spatula/!svn/ver/1/trunk/external/TSAI30B3/MINPACK
+END
+LMDIF.F
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/external/TSAI30B3/MINPACK/LMDIF.F
+END
+QRFAC.F
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/external/TSAI30B3/MINPACK/QRFAC.F
+END
+F2C.PS
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/spatula/!svn/ver/1/trunk/external/TSAI30B3/MINPACK/F2C.PS
+END
+LMPAR.C
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/external/TSAI30B3/MINPACK/LMPAR.C
+END
+LMPAR.F
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/external/TSAI30B3/MINPACK/LMPAR.F
+END
+F2C.H
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/spatula/!svn/ver/1/trunk/external/TSAI30B3/MINPACK/F2C.H
+END
+ENORM.C
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/external/TSAI30B3/MINPACK/ENORM.C
+END
+ENORM.F
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/external/TSAI30B3/MINPACK/ENORM.F
+END
+DPMPAR.C
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/spatula/!svn/ver/1/trunk/external/TSAI30B3/MINPACK/DPMPAR.C
+END
+QRSOLV.C
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/spatula/!svn/ver/1/trunk/external/TSAI30B3/MINPACK/QRSOLV.C
+END
+DPMPAR.F
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/spatula/!svn/ver/1/trunk/external/TSAI30B3/MINPACK/DPMPAR.F
+END
+QRSOLV.F
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/spatula/!svn/ver/1/trunk/external/TSAI30B3/MINPACK/QRSOLV.F
+END
+FDJAC2.C
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/spatula/!svn/ver/1/trunk/external/TSAI30B3/MINPACK/FDJAC2.C
+END
+LMDIF.C
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/external/TSAI30B3/MINPACK/LMDIF.C
+END
+QRFAC.C
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/external/TSAI30B3/MINPACK/QRFAC.C
+END
+FDJAC2.F
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/spatula/!svn/ver/1/trunk/external/TSAI30B3/MINPACK/FDJAC2.F
+END

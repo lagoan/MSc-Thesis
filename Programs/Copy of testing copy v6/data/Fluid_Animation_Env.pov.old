@@ -1,0 +1,181 @@
+// Persistence Of Vision raytracer version 3.5 sample file.
+// Utah Teapot w/ Bezier patches
+// adapted by Alexander Enzmann
+
+
+global_settings { assumed_gamma 1.0 }
+
+#include "shapes.inc"
+#include "colors.inc"
+#include "textures.inc"
+#include "glass.inc"
+
+#declare My_Glass_Texture =
+texture {                                     
+   pigment {rgbf < 0.75, 1, 0.75, 0.95> }
+   finish {
+      specular 0.05
+      roughness 0.001
+      ambient 0.05
+      diffuse 0.05
+      reflection {
+         0.75
+      }
+   }
+}
+
+#declare My_Glass_Interior =
+interior {
+    ior 1.5
+    fade_distance 1000
+    fade_power 1
+//    fade_color <1, 1, 1>
+}
+
+#declare My_Glass_Material =
+material {
+        texture { My_Glass_Texture  }
+        interior { My_Glass_Interior  }  
+}
+
+#declare My_Fluid_Texture =
+texture {                                     
+   pigment {rgb < 1, 1.0, 1> }
+   finish {
+      specular 0.05
+      roughness 0.05
+      ambient 0.95
+      diffuse 0.95
+      reflection {
+         0.0
+      }
+   }
+}
+
+#declare My_Fluid_Interior =
+interior {
+    ior 1.33
+    fade_distance 1
+    fade_power 1
+//    fade_color <1, 1, 1>
+}
+
+#declare My_Fluid_Material =
+material {
+        texture { My_Fluid_Texture  }
+        interior { My_Fluid_Interior  }  
+}
+
+#declare m_cylLength = 400.000000;
+#declare m_cylRadius = 50.000000;
+#declare m_cylTopCtrPos = <0.000000, 0.000000, 200.000000>;
+#declare m_cylBtmCtrPos = <0.000000, 0.000000, -200.000000>;
+#declare m_rtzaOrgDirection = <0.000000, 0.000000, 1.000000>;
+  
+#declare rodCtrPos = <0.5*(m_cylTopCtrPos.x + m_cylBtmCtrPos.x),
+                      0.5*(m_cylTopCtrPos.y + m_cylBtmCtrPos.y),
+                      0.5*(m_cylTopCtrPos.z + m_cylBtmCtrPos.z)>;
+
+#declare My_Focus = <0.0000, -200.0000, 0.0000>;
+#declare My_Camera_Location = <600.0000, 0.0000, -1000.0000>;
+
+#declare box_m_bsbMinPos = <-20, -120, -20>;
+#declare box_m_bsbMaxPos = <20, -80, 20>;
+#declare nozzle_m_cylLength = 50.000000;
+#declare nozzle_m_cylRadius = 40.000000;
+#declare nozzle_m_bcOpenOutletWidth = 20.000000;
+#declare nozzle_m_cylTopCtrPos = <-27.000000, 25.000000, 5.000000>;
+#declare nozzle_m_cylBtmCtrPos = <-71.721360, 2.639320, 5.000000>;
+#declare nozzle_m_cylDirection = <0.894427, 0.447214, 0.000000>;
+              
+fog {
+        fog_type   2
+        fog_offset 100
+        fog_alt    1
+        distance 1000
+        color rgb <0, 0, 0>
+}
+
+camera {
+   location  My_Camera_Location
+/*   direction <0.0, 0.0,  1.0>*/
+   up        <0.0, 1.0,  0.0>
+   right     <4/4, 0.0,  0.0>
+   look_at   My_Focus
+}
+
+light_source {
+        <100.0, 5000.0, -200.0> colour White
+        spotlight
+        point_at rodCtrPos
+        radius 40
+        falloff 50
+        fade_distance 15000
+        fade_power 1            
+        area_light <10, 0, 0>, <0, 0, 10>, 4, 4
+        adaptive 1
+//        point_at <0, 0, 0>
+}
+
+#declare Rod = 
+cylinder {
+        m_cylTopCtrPos,
+        m_cylBtmCtrPos,   
+        m_cylRadius
+}
+
+object {
+        Rod
+        material { My_Glass_Material }
+}
+  
+#declare Inner_Cylinder = 
+cylinder {
+        nozzle_m_cylTopCtrPos,
+        nozzle_m_cylBtmCtrPos,   
+        nozzle_m_cylRadius
+}
+
+#declare Outer_Cylinder = 
+cylinder {
+        nozzle_m_cylTopCtrPos,
+        nozzle_m_cylBtmCtrPos,   
+        nozzle_m_cylRadius+10
+}
+
+#declare Mug = 
+difference
+{
+  object { Outer_Cylinder }
+  object { Inner_Cylinder }
+  material { My_Glass_Material }
+}
+
+// object { Mug }
+
+#declare Ball = 
+sphere {
+        nozzle_m_cylTopCtrPos, nozzle_m_cylRadius
+        material { My_Fluid_Material }
+}  
+
+//object { Ball }
+
+#declare Box = 
+box {
+        box_m_bsbMinPos, box_m_bsbMaxPos
+        material { My_Fluid_Material }
+}  
+
+//object { Box }
+
+/* Floor */
+#declare Floor =
+plane {
+   y, m_tblCenter_Level
+   pigment {
+        color rgb <0.5, 0.9, 0.5>
+   }
+}
+
+object { Floor }               

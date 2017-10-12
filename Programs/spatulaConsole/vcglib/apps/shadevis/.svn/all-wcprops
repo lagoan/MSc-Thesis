@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/spatula/!svn/ver/1/trunk/vcglib/apps/shadevis
+END
+history.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/spatula/!svn/ver/1/trunk/vcglib/apps/shadevis/history.txt
+END
+shadevis.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/vcglib/apps/shadevis/shadevis.txt
+END
+shadevis.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/spatula/!svn/ver/1/trunk/vcglib/apps/shadevis/shadevis.cpp
+END
+simplepic.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/spatula/!svn/ver/1/trunk/vcglib/apps/shadevis/simplepic.h
+END
+visshader.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/spatula/!svn/ver/1/trunk/vcglib/apps/shadevis/visshader.h
+END

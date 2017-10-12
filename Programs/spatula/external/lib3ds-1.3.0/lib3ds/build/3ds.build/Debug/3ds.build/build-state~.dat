@@ -1,0 +1,654 @@
+T3ds
+v7
+r0
+t276409551.442733
+cCheck dependencies
+cPhaseScriptExecution "Qt Qmake" /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Script-D7BA7D76DAB5DD13389D6332.sh
+cPhaseScriptExecution "Qt Preprocessors" /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Script-A0A52A2ADF7A1E2A99738674.sh
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/atmosphere.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/atmosphere.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/background.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/background.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/camera.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/camera.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/chunk.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/ease.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/ease.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/file.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/io.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/io.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/light.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/light.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/material.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/material.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/matrix.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/matrix.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/mesh.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/mesh.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/node.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/node.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/quat.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/quat.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/shadow.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/shadow.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/tcb.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tcb.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/tracks.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/vector.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/vector.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/viewport.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/viewport.c normal i386 c com.apple.compilers.gcc.4_2
+cLibtool /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/lib3ds.a normal i386
+cPBXCp /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib/macx/lib3ds.a build/Debug/lib3ds.a
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib/macx/lib3ds.a
+t1254716751
+s371984
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/atmosphere.c
+c000000004990C1F00000000000001D51
+t1234223600
+s7505
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/atmosphere.h
+c000000004990C1F00000000000000A24
+t1234223600
+s2596
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/background.c
+c000000004990C1F000000000000017CB
+t1234223600
+s6091
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/background.h
+c000000004990C1F0000000000000080E
+t1234223600
+s2062
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/3ds.LinkFileList
+c000000004AC9754E0000000000000A73
+t1254716750
+s2675
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/atmosphere.o
+t1254716750
+s13784
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/background.o
+t1254716750
+s13144
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/camera.o
+t1254716750
+s12744
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/chunk.o
+t1254716750
+s18388
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/ease.o
+t1254716750
+s2976
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/file.o
+t1254716750
+s52128
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/io.o
+t1254716750
+s12936
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/light.o
+t1254716750
+s19520
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/material.o
+t1254716750
+s35752
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/matrix.o
+t1254716751
+s20560
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/mesh.o
+t1254716751
+s29284
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/node.o
+t1254716751
+s33916
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/quat.o
+t1254716751
+s13820
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/shadow.o
+t1254716751
+s10648
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/tcb.o
+t1254716751
+s5536
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/tracks.o
+t1254716751
+s38216
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/vector.o
+t1254716751
+s10876
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/viewport.o
+t1254716751
+s18884
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Script-A0A52A2ADF7A1E2A99738674.sh
+c000000004AC9754E000000000000008D
+t1254716750
+s141
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Script-D7BA7D76DAB5DD13389D6332.sh
+c000000004AC9754E000000000000008C
+t1254716750
+s140
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/lib3ds.a
+t1254716751
+s371984
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/camera.c
+c000000004990C1F00000000000001582
+t1234223600
+s5506
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/camera.h
+c000000004990C1F0000000000000075F
+t1234223600
+s1887
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c
+c000000004990C1F00000000000001686
+t1234223600
+s5766
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.h
+c000000004990C1F00000000000002CC4
+t1234223600
+s11460
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunktable.h
+c000000004990C1F00000000000002DBC
+t1234223600
+s11708
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/ease.c
+c000000004990C1F000000000000006B5
+t1234223600
+s1717
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/ease.h
+c000000004990C1F00000000000000518
+t1234223600
+s1304
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c
+c000000004990C1F0000000000000AF33
+t1234223600
+s44851
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.h
+c000000004990C1F0000000000000129E
+t1234223600
+s4766
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/io.c
+c000000004990C1F000000000000025A8
+t1234223600
+s9640
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/io.h
+c000000004990C1F00000000000000E83
+t1234223600
+s3715
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/light.c
+c000000004990C1F00000000000002B54
+t1234223600
+s11092
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/light.h
+c000000004990C1F0000000000000093A
+t1234223600
+s2362
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/material.c
+c000000004990C1F00000000000007556
+t1234223600
+s30038
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/material.h
+c000000004990C1F00000000000001292
+t1234223600
+s4754
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/matrix.c
+c000000004990C1F0000000000000382F
+t1234223600
+s14383
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/matrix.h
+c000000004990C1F00000000000000BDC
+t1234223600
+s3036
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/mesh.c
+c000000004990C1F00000000000006439
+t1234223600
+s25657
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/mesh.h
+c000000004990C1F00000000000001599
+t1234223600
+s5529
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/node.c
+c000000004990C1F00000000000007021
+t1234223600
+s28705
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/node.h
+c000000004990C1F0000000000000129A
+t1234223600
+s4762
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/quat.c
+c000000004990C1F00000000000001B89
+t1234223600
+s7049
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/quat.h
+c000000004990C1F00000000000000A52
+t1234223600
+s2642
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/shadow.c
+c000000004990C1F00000000000000EC5
+t1234223600
+s3781
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/shadow.h
+c000000004990C1F0000000000000063A
+t1234223600
+s1594
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tcb.c
+c000000004990C1F00000000000000C96
+t1234223600
+s3222
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tcb.h
+c000000004990C1F00000000000000779
+t1234223600
+s1913
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c
+c000000004990C1F00000000000007204
+t1234223600
+s29188
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.h
+c000000004990C1F00000000000001AE1
+t1234223600
+s6881
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/types.h
+c000000004990C1F000000000000011A7
+t1234223600
+s4519
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/vector.c
+c000000004990C1F000000000000019EF
+t1234223600
+s6639
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/vector.h
+c000000004990C1F000000000000009EA
+t1234223600
+s2538
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/viewport.c
+c000000004990C1F000000000000037F2
+t1234223600
+s14322
+
+N/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/viewport.h
+c000000004990C1F00000000000000E5B
+t1234223600
+s3675
+
+N/usr/include/assert.h
+c000000004A5C14A60000000000000DCB
+t1247548582
+s3531
+
+N/usr/include/float.h
+c000000004A5C14A60000000000001F2C
+t1247548582
+s7980
+
+N/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/usr/include/stdarg.h
+c000000004A5C14A600000000000000EA
+t1247548582
+s234
+
+N/usr/include/stdint.h
+c000000004A11A512000000000000190C
+t1242670354
+s6412
+
+N/usr/include/stdio.h
+c000000004A5C14A70000000000004174
+t1247548583
+s16756
+
+N/usr/include/stdlib.h
+c000000004A5C14A70000000000002DF5
+t1247548583
+s11765
+
+N/usr/include/string.h
+c000000004A5C14A70000000000001731
+t1247548583
+s5937
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies276409550#276409550#0(0"0(0#1#0"7947009927035180032#0"0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/atmosphere.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/atmosphere.c normal i386 c com.apple.compilers.gcc.4_2
+s276409550.556916
+e276409550.607945
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/atmosphere.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/atmosphere.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@108"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/atmosphere.c276409550#276409550#0(0"0(0#0#100"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/atmosphere.c4300882208#1531"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/atmosphere.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/atmosphere.o0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/background.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/background.c normal i386 c com.apple.compilers.gcc.4_2
+s276409550.558102
+e276409550.619585
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/background.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/background.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@108"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/background.c276409550#276409550#0(0"0(0#0#100"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/background.c4300882208#1531"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/background.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/background.o0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/camera.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/camera.c normal i386 c com.apple.compilers.gcc.4_2
+s276409550.608056
+e276409550.685526
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/camera.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/camera.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@104"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/camera.c276409550#276409550#0(0"0(0#0#96"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/camera.c4300882208#1523"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/camera.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/camera.o0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/chunk.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c normal i386 c com.apple.compilers.gcc.4_2
+s276409550.619702
+e276409550.686840
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/chunk.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c:44: warning: unused parameter 'c'
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c:51: warning: unused parameter 'c'
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c: In function 'lib3ds_chunk_debug_dump':
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c:66: warning: format '%lu' expects type 'long unsigned int', but argument 5 has type 'Lib3dsDword'
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c: At top level:
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c:162: warning: unused parameter 'c'
+lSLF07#2@103"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c276409550#276409550#0(832"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c:44: warning: unused parameter 'c'/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c:51: warning: unused parameter 'c'/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c: In function 'lib3ds_chunk_debug_dump':/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c:66: warning: format '%lu' expects type 'long unsigned int', but argument 5 has type 'Lib3dsDword'/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c: At top level:/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c:162: warning: unused parameter 'c'5(22@20"Unused parameter 'c'276409550#0#130#0(6@95"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c255916400#44#0#44#0#20"unused parameter '*'0(22@20"Unused parameter 'c'276409550#130#130#0(6@95"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c255916400#51#0#51#0#20"unused parameter '*'0(22@84"Format '%lu' expects type 'long unsigned int', but argument 5 has type 'Lib3dsDword'276409550#396#194#0(6@95"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c255916400#66#0#66#0#56"format '*' expects type '*', but argument * has type '*'0(23@13"At top level:276409550#590#111#0(6@95"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c255916400#0#0#0#0#0"0(22@20"Unused parameter 'c'276409550#701#131#0(6@95"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c255916400#162#0#162#0#20"unused parameter '*'0(0#0#95"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c4300882208#1521"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/chunk.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/chunk.o0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/ease.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/ease.c normal i386 c com.apple.compilers.gcc.4_2
+s276409550.685641
+e276409550.722800
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/ease.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/ease.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@102"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/ease.c276409550#276409550#0(0"0(0#0#94"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/ease.c4300882208#1519"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/ease.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/ease.o0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/file.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c normal i386 c com.apple.compilers.gcc.4_2
+s276409550.686921
+e276409550.863625
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/file.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c: In function 'file_bounding_box_of_nodes_impl':
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c:1915: warning: enumeration value 'LIB3DS_UNKNOWN_NODE' not handled in switch
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c:1915: warning: enumeration value 'LIB3DS_AMBIENT_NODE' not handled in switch
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c:1915: warning: enumeration value 'LIB3DS_CAMERA_NODE' not handled in switch
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c:1915: warning: enumeration value 'LIB3DS_TARGET_NODE' not handled in switch
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c:1915: warning: enumeration value 'LIB3DS_LIGHT_NODE' not handled in switch
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c:1915: warning: enumeration value 'LIB3DS_SPOT_NODE' not handled in switch
+lSLF07#2@102"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c276409550#276409550#0(1168"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c: In function 'file_bounding_box_of_nodes_impl':/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c:1915: warning: enumeration value 'LIB3DS_UNKNOWN_NODE' not handled in switch/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c:1915: warning: enumeration value 'LIB3DS_AMBIENT_NODE' not handled in switch/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c:1915: warning: enumeration value 'LIB3DS_CAMERA_NODE' not handled in switch/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c:1915: warning: enumeration value 'LIB3DS_TARGET_NODE' not handled in switch/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c:1915: warning: enumeration value 'LIB3DS_LIGHT_NODE' not handled in switch/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c:1915: warning: enumeration value 'LIB3DS_SPOT_NODE' not handled in switch6(22@61"Enumeration value 'LIB3DS_UNKNOWN_NODE' not handled in switch276409550#143#172#0(6@94"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c255916400#1915#0#1915#0#0"0(22@61"Enumeration value 'LIB3DS_AMBIENT_NODE' not handled in switch276409550#315#172#0(6@94"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c255916400#1915#0#1915#0#0"0(22@60"Enumeration value 'LIB3DS_CAMERA_NODE' not handled in switch276409550#487#171#0(6@94"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c255916400#1915#0#1915#0#0"0(22@60"Enumeration value 'LIB3DS_TARGET_NODE' not handled in switch276409550#658#171#0(6@94"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c255916400#1915#0#1915#0#0"0(22@59"Enumeration value 'LIB3DS_LIGHT_NODE' not handled in switch276409550#829#170#0(6@94"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c255916400#1915#0#1915#0#0"0(22@58"Enumeration value 'LIB3DS_SPOT_NODE' not handled in switch276409550#999#169#0(6@94"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c255916400#1915#0#1915#0#0"0(0#0#94"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c4300882208#1519"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/file.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/file.o0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/io.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/io.c normal i386 c com.apple.compilers.gcc.4_2
+s276409550.722908
+e276409550.795877
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/io.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/io.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@100"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/io.c276409550#276409550#0(0"0(0#0#92"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/io.c4300882208#1515"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/io.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/io.o0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/light.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/light.c normal i386 c com.apple.compilers.gcc.4_2
+s276409550.795985
+e276409550.890408
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/light.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/light.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/light.c:36:1: warning: "/*" within comment
+lSLF07#2@103"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/light.c276409550#276409550#0(131"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/light.c:36:1: warning: "/*" within comment1(22@19""/*" within comment276409550#0#131#0(6@95"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/light.c255916400#36#0#36#0#0"0(0#0#95"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/light.c4300882208#1521"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/light.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/light.o0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/material.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/material.c normal i386 c com.apple.compilers.gcc.4_2
+s276409550.863737
+e276409550.988081
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/material.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/material.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@106"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/material.c276409550#276409551#0(0"0(0#0#98"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/material.c4300882208#1527"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/material.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/material.o0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/matrix.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/matrix.c normal i386 c com.apple.compilers.gcc.4_2
+s276409550.890511
+e276409551.004592
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/matrix.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/matrix.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@104"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/matrix.c276409550#276409551#0(0"0(0#0#96"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/matrix.c4300882208#1523"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/matrix.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/matrix.o0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/mesh.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/mesh.c normal i386 c com.apple.compilers.gcc.4_2
+s276409550.988184
+e276409551.116579
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/mesh.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/mesh.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/mesh.c: In function 'lib3ds_mesh_dump':
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/mesh.c:575: warning: format '%ld' expects type 'long int', but argument 3 has type 'Lib3dsDword'
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/mesh.c:575: warning: format '%ld' expects type 'long int', but argument 4 has type 'Lib3dsDword'
+lSLF07#2@102"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/mesh.c276409550#276409551#0(498"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/mesh.c: In function 'lib3ds_mesh_dump':/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/mesh.c:575: warning: format '%ld' expects type 'long int', but argument 3 has type 'Lib3dsDword'/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/mesh.c:575: warning: format '%ld' expects type 'long int', but argument 4 has type 'Lib3dsDword'2(22@75"Format '%ld' expects type 'long int', but argument 3 has type 'Lib3dsDword'276409551#128#185#0(6@94"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/mesh.c255916400#575#0#575#0#56"format '*' expects type '*', but argument * has type '*'0(22@75"Format '%ld' expects type 'long int', but argument 4 has type 'Lib3dsDword'276409551#313#185#0(6@94"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/mesh.c255916400#575#0#575#0#56"format '*' expects type '*', but argument * has type '*'0(0#0#94"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/mesh.c4300882208#1519"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/mesh.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/mesh.o0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/node.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/node.c normal i386 c com.apple.compilers.gcc.4_2
+s276409551.004697
+e276409551.117831
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/node.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/node.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/node.c:488: warning: unused parameter 'file'
+lSLF07#2@102"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/node.c276409551#276409551#0(133"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/node.c:488: warning: unused parameter 'file'1(22@23"Unused parameter 'file'276409551#0#133#0(6@94"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/node.c255916400#488#0#488#0#20"unused parameter '*'0(0#0#94"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/node.c4300882208#1519"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/node.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/node.o0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/quat.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/quat.c normal i386 c com.apple.compilers.gcc.4_2
+s276409551.116688
+e276409551.202217
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/quat.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/quat.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@102"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/quat.c276409551#276409551#0(0"0(0#0#94"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/quat.c4300882208#1519"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/quat.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/quat.o0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/shadow.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/shadow.c normal i386 c com.apple.compilers.gcc.4_2
+s276409551.117912
+e276409551.175953
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/shadow.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/shadow.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@104"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/shadow.c276409551#276409551#0(0"0(0#0#96"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/shadow.c4300882208#1523"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/shadow.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/shadow.o0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/tcb.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tcb.c normal i386 c com.apple.compilers.gcc.4_2
+s276409551.176061
+e276409551.223308
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/tcb.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tcb.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@101"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tcb.c276409551#276409551#0(0"0(0#0#93"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tcb.c4300882208#1517"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tcb.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/tcb.o0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/tracks.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c normal i386 c com.apple.compilers.gcc.4_2
+s276409551.202326
+e276409551.372952
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/tracks.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c:1410: warning: unused parameter 'track'
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c:1410: warning: unused parameter 'io'
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c: In function 'lib3ds_dump_tracks':
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c:1506: warning: enumeration value 'LIB3DS_UNKNOWN_NODE' not handled in switch
+lSLF07#2@104"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c276409551#276409551#0(577"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c:1410: warning: unused parameter 'track'/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c:1410: warning: unused parameter 'io'/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c: In function 'lib3ds_dump_tracks':/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c:1506: warning: enumeration value 'LIB3DS_UNKNOWN_NODE' not handled in switch3(22@24"Unused parameter 'track'276409551#0#137#0(6@96"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c255916400#1410#0#1410#0#20"unused parameter '*'0(22@21"Unused parameter 'io'276409551#137#134#0(6@96"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c255916400#1410#0#1410#0#20"unused parameter '*'0(22@61"Enumeration value 'LIB3DS_UNKNOWN_NODE' not handled in switch276409551#403#174#0(6@96"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c255916400#1506#0#1506#0#0"0(0#0#96"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c4300882208#1523"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/tracks.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/tracks.o0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/vector.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/vector.c normal i386 c com.apple.compilers.gcc.4_2
+s276409551.223430
+e276409551.280754
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/vector.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/vector.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@104"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/vector.c276409551#276409551#0(0"0(0#0#96"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/vector.c4300882208#1523"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/vector.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/vector.o0#
+
+CCompileC build/3ds.build/Debug/3ds.build/Objects-normal/i386/viewport.o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/viewport.c normal i386 c com.apple.compilers.gcc.4_2
+s276409551.280864
+e276409551.373256
+r1
+xCompileC
+xbuild/3ds.build/Debug/3ds.build/Objects-normal/i386/viewport.o
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/viewport.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/viewport.c: In function 'lib3ds_viewport_dump':
+o/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/viewport.c:383: warning: format '%ld' expects type 'long int', but argument 2 has type 'Lib3dsDword'
+lSLF07#2@106"Compile /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/viewport.c276409551#276409551#0(325"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/viewport.c: In function 'lib3ds_viewport_dump':/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/viewport.c:383: warning: format '%ld' expects type 'long int', but argument 2 has type 'Lib3dsDword'1(22@75"Format '%ld' expects type 'long int', but argument 2 has type 'Lib3dsDword'276409551#136#189#0(6@98"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/viewport.c255916400#383#0#383#0#56"format '*' expects type '*', but argument * has type '*'0(0#0#98"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/viewport.c4300882208#1527"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mmacosx-version-min=10.3 -gdwarf-2 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds.hmap -F/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/usr/include -I.. -I. -I. -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.5/mkspecs/macx-xcode -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources/i386 -I/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources -pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/viewport.c -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/viewport.o0#
+
+CLibtool /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/lib3ds.a normal i386
+s276409551.373325
+e276409551.422169
+r1
+xLibtool
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/lib3ds.a
+xnormal
+xi386
+lSLF07#2@40"Libtool build/Debug/lib3ds.a normal i386276409551#276409551#0(0"0(0#0#0"4300882208#572"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv MACOSX_DEPLOYMENT_TARGET 10.3    /Developer/usr/bin/libtool -static -arch_only i386 -L/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug -filelist /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/3ds.LinkFileList -o /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/lib3ds.a0#
+
+CPBXCp /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib/macx/lib3ds.a build/Debug/lib3ds.a
+s276409551.422300
+e276409551.442672
+r1
+xPBXCp
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib/macx/lib3ds.a
+xbuild/Debug/lib3ds.a
+lSLF07#2@25"Copy build/Debug/lib3ds.a276409551#276409551#0(0"0(0#0#108"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/lib3ds.a4300882208#429"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/lib3ds.a /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib/macx0#
+
+CPhaseScriptExecution "Qt Preprocessors" /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Script-A0A52A2ADF7A1E2A99738674.sh
+s276409550.536898
+e276409550.556811
+r1
+xPhaseScriptExecution
+xQt Preprocessors
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Script-A0A52A2ADF7A1E2A99738674.sh
+omake: Nothing to be done for `preprocess'.
+lSLF07#2@42"Run custom shell script 'Qt Preprocessors'276409550#276409550#0(43"make: Nothing to be done for `preprocess'.1(13@43"make: Nothing to be done for `preprocess'.276409550#0#43#0(1@0"0(0#0#0"4300882208#16530"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER kuervo    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build    setenv BUILD_ROOT /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug    setenv CACHE_ROOT /var/folders/W7/W7dd4JTuEjuIPxjMgNlfk++++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/W7/W7dd4JTuEjuIPxjMgNlfk++++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/lib3ds.a    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/W7/W7dd4JTuEjuIPxjMgNlfk++++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug    setenv CONFIGURATION_TEMP_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/3ds.dst    setenv DWARF_DSYM_FILE_NAME lib3ds.a.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug    setenv DYLIB_COMPATIBILITY_VERSION 1.0    setenv DYLIB_CURRENT_VERSION 1.0.0    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLE_EXTENSION a    setenv EXECUTABLE_NAME lib3ds.a    setenv EXECUTABLE_PATH lib3ds.a    setenv EXECUTABLE_PREFIX lib    setenv EXECUTABLE_SUFFIX .a    setenv FILE_LIST /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/FixedFiles    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME lib3ds.a    setenv GCC3_VERSION 3.3    setenv GCC_ENABLE_SYMBOL_SEPARATION NO    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE NO    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include\" /Library/Frameworks/QtCore.framework/Versions/4/Headers /usr/include/QtCore /Library/Frameworks/QtGui.framework/Versions/4/Headers /usr/include/QtGui /usr/include .. . . /usr/local/include /System/Library/Frameworks/CarbonCore.framework/Headers /usr/local/Qt4.5/mkspecs/macx-xcode"    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PREPROCESS NO    setenv INSTALL_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/../../lib/macx/    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER kuervo    setenv INSTALL_ROOT /tmp/3ds.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug\" "    setenv LIBRARY_STYLE STATIC    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/3ds.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE staticlib    setenv MACOSX_DEPLOYMENT_TARGET 10.3    setenv MAC_OS_X_VERSION_ACTUAL 1061    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0601    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal    setenv OBJROOT /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CFLAGS "-pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED"    setenv OTHER_CPLUSPLUSFLAGS "-pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED"    setenv PACKAGE_TYPE com.apple.package-type.static-library    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PFE_FILE_C_DIALECTS c    setenv PKGINFO_FILE_PATH /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH /usr/local/include    setenv PRODUCT_NAME 3ds    setenv PRODUCT_SETTINGS_PATH     setenv PRODUCT_TYPE com.apple.product-type.library.static    setenv PROFILING_CODE NO    setenv PROJECT 3ds    setenv PROJECT_DERIVED_FILE_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/DerivedSources    setenv PROJECT_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv PROJECT_FILE_PATH /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/3ds.xcodeproj    setenv PROJECT_NAME 3ds    setenv PROJECT_TEMP_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build    setenv PUBLIC_HEADERS_FOLDER_PATH /usr/local/include    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/ResourceManagerResources    setenv REZ_EXECUTABLE YES    setenv REZ_OBJECTS_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SED /usr/bin/sed    setenv SEPARATE_STRIP YES    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/DerivedSources    setenv SHARED_PRECOMPS_DIR /var/folders/W7/W7dd4JTuEjuIPxjMgNlfk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv SRCROOT /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE debugging    setenv SYMBOL_REPOSITORY_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/SymbolRepositories    setenv SYMROOT /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME 3ds    setenv TARGET_BUILD_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug    setenv TARGET_NAME 3ds    setenv TARGET_TEMP_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build    setenv TEMP_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build    setenv TEMP_FILES_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build    setenv TEMP_FILE_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build    setenv TEMP_ROOT /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build    setenv UID 501    setenv UNSTRIPPED_PRODUCT NO    setenv USER kuervo    setenv USER_APPS_DIR /Users/kuervo/Applications    setenv USER_LIBRARY_DIR /Users/kuervo/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSION_INFO_BUILDER kuervo    setenv VERSION_INFO_FILE 3ds_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:3ds  PROJECT:3ds-\""    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0320    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv YACCFLAGS -d    /bin/sh -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Script-A0A52A2ADF7A1E2A99738674.sh0#
+
+CPhaseScriptExecution "Qt Qmake" /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Script-D7BA7D76DAB5DD13389D6332.sh
+s276409550.493627
+e276409550.536789
+r1
+xPhaseScriptExecution
+xQt Qmake
+x/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Script-D7BA7D76DAB5DD13389D6332.sh
+omake: `3ds.xcodeproj/project.pbxproj' is up to date.
+lSLF07#2@34"Run custom shell script 'Qt Qmake'276409550#276409550#0(53"make: `3ds.xcodeproj/project.pbxproj' is up to date.1(13@53"make: `3ds.xcodeproj/project.pbxproj' is up to date.276409550#0#53#0(1@0"0(0#0#0"28147716717477992#16530"    cd /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER kuervo    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build    setenv BUILD_ROOT /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug    setenv CACHE_ROOT /var/folders/W7/W7dd4JTuEjuIPxjMgNlfk++++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/W7/W7dd4JTuEjuIPxjMgNlfk++++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/lib3ds.a    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/W7/W7dd4JTuEjuIPxjMgNlfk++++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug    setenv CONFIGURATION_TEMP_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/3ds.dst    setenv DWARF_DSYM_FILE_NAME lib3ds.a.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug    setenv DYLIB_COMPATIBILITY_VERSION 1.0    setenv DYLIB_CURRENT_VERSION 1.0.0    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLE_EXTENSION a    setenv EXECUTABLE_NAME lib3ds.a    setenv EXECUTABLE_PATH lib3ds.a    setenv EXECUTABLE_PREFIX lib    setenv EXECUTABLE_SUFFIX .a    setenv FILE_LIST /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/FixedFiles    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME lib3ds.a    setenv GCC3_VERSION 3.3    setenv GCC_ENABLE_SYMBOL_SEPARATION NO    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE NO    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/include\" /Library/Frameworks/QtCore.framework/Versions/4/Headers /usr/include/QtCore /Library/Frameworks/QtGui.framework/Versions/4/Headers /usr/include/QtGui /usr/include .. . . /usr/local/include /System/Library/Frameworks/CarbonCore.framework/Headers /usr/local/Qt4.5/mkspecs/macx-xcode"    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PREPROCESS NO    setenv INSTALL_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/../../lib/macx/    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER kuervo    setenv INSTALL_ROOT /tmp/3ds.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/3ds-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug\" "    setenv LIBRARY_STYLE STATIC    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal/i386/3ds.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE staticlib    setenv MACOSX_DEPLOYMENT_TARGET 10.3    setenv MAC_OS_X_VERSION_ACTUAL 1061    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0601    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Objects-normal    setenv OBJROOT /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CFLAGS "-pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED"    setenv OTHER_CPLUSPLUSFLAGS "-pipe -g -fPIC -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED"    setenv PACKAGE_TYPE com.apple.package-type.static-library    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PFE_FILE_C_DIALECTS c    setenv PKGINFO_FILE_PATH /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH /usr/local/include    setenv PRODUCT_NAME 3ds    setenv PRODUCT_SETTINGS_PATH     setenv PRODUCT_TYPE com.apple.product-type.library.static    setenv PROFILING_CODE NO    setenv PROJECT 3ds    setenv PROJECT_DERIVED_FILE_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/DerivedSources    setenv PROJECT_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv PROJECT_FILE_PATH /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/3ds.xcodeproj    setenv PROJECT_NAME 3ds    setenv PROJECT_TEMP_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build    setenv PUBLIC_HEADERS_FOLDER_PATH /usr/local/include    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/ResourceManagerResources    setenv REZ_EXECUTABLE YES    setenv REZ_OBJECTS_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SED /usr/bin/sed    setenv SEPARATE_STRIP YES    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug/DerivedSources    setenv SHARED_PRECOMPS_DIR /var/folders/W7/W7dd4JTuEjuIPxjMgNlfk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv SRCROOT /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE debugging    setenv SYMBOL_REPOSITORY_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/SymbolRepositories    setenv SYMROOT /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME 3ds    setenv TARGET_BUILD_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/Debug    setenv TARGET_NAME 3ds    setenv TARGET_TEMP_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build    setenv TEMP_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build    setenv TEMP_FILES_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build    setenv TEMP_FILE_DIR /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build    setenv TEMP_ROOT /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build    setenv UID 501    setenv UNSTRIPPED_PRODUCT NO    setenv USER kuervo    setenv USER_APPS_DIR /Users/kuervo/Applications    setenv USER_LIBRARY_DIR /Users/kuervo/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSION_INFO_BUILDER kuervo    setenv VERSION_INFO_FILE 3ds_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:3ds  PROJECT:3ds-\""    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0320    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv YACCFLAGS -d    /bin/sh -c /Users/kuervo/Workspace/MeshLabSrc_AllInc_v122/meshlab/src/external/lib3ds-1.3.0/lib3ds/build/3ds.build/Debug/3ds.build/Script-D7BA7D76DAB5DD13389D6332.sh0#
+

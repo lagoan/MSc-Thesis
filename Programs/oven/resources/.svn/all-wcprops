@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/oven/!svn/ver/1/trunk/resources
+END
+icons.qrc
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/oven/!svn/ver/1/trunk/resources/icons.qrc
+END
+oven.icns
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/oven/!svn/ver/1/trunk/resources/oven.icns
+END
+MainWindow.ui
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/oven/!svn/ver/1/trunk/resources/MainWindow.ui
+END

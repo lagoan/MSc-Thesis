@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/spatula/!svn/ver/1/trunk/vcglib/wrap/ply
+END
+plylib.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/spatula/!svn/ver/1/trunk/vcglib/wrap/ply/plylib.h
+END
+plystuff.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/spatula/!svn/ver/1/trunk/vcglib/wrap/ply/plystuff.h
+END
+plylib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/spatula/!svn/ver/1/trunk/vcglib/wrap/ply/plylib.cpp
+END

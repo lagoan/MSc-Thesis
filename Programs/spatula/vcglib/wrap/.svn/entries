@@ -1,0 +1,138 @@
+10
+
+dir
+2
+http://lagoan@svn.omarrodriguez.org/spatula/trunk/vcglib/wrap
+http://lagoan@svn.omarrodriguez.org/spatula
+
+
+
+2010-10-14T21:40:32.933316Z
+1
+lagoan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+700f0424-19e0-4b9b-9ebd-138776221104
+
+mt
+dir
+
+callback.h
+file
+
+
+
+
+2011-01-29T19:46:24.000000Z
+f9a6dff9925fc1e740d399ae15c852dc
+2010-10-14T21:40:32.933316Z
+1
+lagoan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2760
+
+minpack
+dir
+
+bmt
+dir
+
+io_tetramesh
+dir
+
+system
+dir
+
+qt
+dir
+
+gui
+dir
+
+utils.h
+file
+
+
+
+
+2011-01-29T19:46:24.000000Z
+4276f421e179ddad9722c858ad902e1c
+2010-10-14T21:40:32.933316Z
+1
+lagoan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3295
+
+math
+dir
+
+dae
+dir
+
+opensg
+dir
+
+io_trimesh
+dir
+
+gl
+dir
+
+ply
+dir
+
+io_edgemesh
+dir
+

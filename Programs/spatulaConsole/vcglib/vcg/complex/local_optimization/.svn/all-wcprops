@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/local_optimization
+END
+tri_edge_collapse_quadric.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/local_optimization/tri_edge_collapse_quadric.h
+END
+tri_edge_flip.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/local_optimization/tri_edge_flip.h
+END
+tri_edge_collapse.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/local_optimization/tri_edge_collapse.h
+END
+tetra_edge_collapse.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/spatula/!svn/ver/1/trunk/vcglib/vcg/complex/local_optimization/tetra_edge_collapse.h
+END

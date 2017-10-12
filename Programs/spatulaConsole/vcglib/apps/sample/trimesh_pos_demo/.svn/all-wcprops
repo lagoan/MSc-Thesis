@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_pos_demo
+END
+trimesh_pos_demo.pro
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_pos_demo/trimesh_pos_demo.pro
+END
+trimesh_vfiter_demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_pos_demo/trimesh_vfiter_demo.cpp
+END
+trimesh_pos_demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_pos_demo/trimesh_pos_demo.cpp
+END
+mesh_type.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_pos_demo/mesh_type.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_pos_demo/main.cpp
+END
+glwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_pos_demo/glwidget.cpp
+END
+window.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_pos_demo/window.cpp
+END
+glwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_pos_demo/glwidget.h
+END
+window.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/spatula/!svn/ver/1/trunk/vcglib/apps/sample/trimesh_pos_demo/window.h
+END
